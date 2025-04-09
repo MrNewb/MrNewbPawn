@@ -1,7 +1,6 @@
 local function sliderSelect(item)
     if not item then return end
     local itemSearch = Config.PawnItems[item]
-    print(itemSearch)
     if not itemSearch then return NotifyPlayer(locale("Warnings.DoNotHave"), "error", 6000) end
     local itemLabel = Bridge.Inventory.GetItemInfo(item).label
     local itemCount = Bridge.Inventory.GetItemCount(item)

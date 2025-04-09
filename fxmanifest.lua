@@ -32,6 +32,8 @@ dependencies {
 
 escrow_ignore {
 	'src/shared/*.lua',     	-- Config files
+	'src/client/*.lua',   	-- open files
 	'src/open/client/*.lua',   	-- open files
+	'src/server/*.lua',   	-- open files
 	'src/open/server/*.lua',   	-- open files
 }
