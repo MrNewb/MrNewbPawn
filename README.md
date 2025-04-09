@@ -6,6 +6,9 @@ This script is one of my oldest projects. Despite never being actively maintaine
 
 ---
 
+![image](https://github.com/user-attachments/assets/1752e96e-0819-4f9e-8034-772f06fc478a)
+
+
 ## 🛠️ What’s New
 
 - **🔌 Community Bridge Integration**  
