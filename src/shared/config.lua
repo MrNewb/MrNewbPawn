@@ -33,6 +33,8 @@ Config.PawnItems = {
     ['diamond_necklace_silver'] = 125,
     ['iron_ingot'] = 125,
     ['carbon'] = 125,
+    ['10kgoldchain'] = 125,
+    ['goldchain'] = 125,
 }
 
 Config.FoundryLocations = {
