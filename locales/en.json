@@ -1,0 +1,28 @@
+{
+    "PawnShop": {
+        "Title": "PawnShop",
+        "Description": "PawnShop is a place where you can sell your items for money.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Speak To PawnShop Owner",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "The PawnShop is closed!",
+        "SellItems": "Sell Item For ",
+        "AmountToSell": "The Amount You Want To Sell",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Smelting",
+        "MenuDescription": "Smelt items to create new items.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Smelt Items",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "The Amount You Want To Smelt",
+        "SmeltingSuccess": "You have successfully smelted the item down!"
+    },
+    "Warnings": {
+        "DoNotHave": "You do not have this item!",
+        "Smelting": "Smelting...",
+        "InvalidItem": "This item cannot be smelted!"
+    }
+}
