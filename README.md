@@ -6,6 +6,9 @@ This script is one of my oldest projects. Despite never being actively maintaine
 
 ---
 
+![image](https://github.com/user-attachments/assets/1752e96e-0819-4f9e-8034-772f06fc478a)
+
+
 ## 🛠️ What’s New
 
 - **🔌 Community Bridge Integration**  
@@ -45,4 +48,4 @@ Make sure these are installed and set up correctly for full functionality.
 I'm open to feedback and feature requests — feel free to share any ideas. Just wanted to give something simple, effective, and best of all — **free** — back to the community.
 
 Thanks for the continued support!  
-**– MrNewbPawn**
+**– MrNewb**
