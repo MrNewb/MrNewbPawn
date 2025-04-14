@@ -30,11 +30,10 @@ Config.PawnShops = {
 }
 
 Config.PawnItems = {
-    ['diamond_necklace_silver'] = 125,
-    ['iron_ingot'] = 125,
-    ['carbon'] = 125,
-    ['10kgoldchain'] = 125,
-    ['goldchain'] = 125,
+    ['metalscrap'] = 10,
+    ['iron'] = 3,
+    ['diamond_ring'] = 125,
+    ['radio'] = 10,
 }
 
 Config.FoundryLocations = {
@@ -42,8 +41,10 @@ Config.FoundryLocations = {
 }
 
 Config.MeltableItems = {
-    ['diamond_necklace_silver'] = {
-        {itemName = 'iron_ingot', count = 1},
-        {itemName = 'carbon', count = 12}
+    ['metalscrap'] = {
+        {itemName = 'iron', count = 1}
+    },
+    ['diamond_ring'] = {
+        {itemName = 'diamond', count = 1}
     },
 }
