@@ -1,5 +1,9 @@
 Config = {}
 
+Config.Utility = {
+    Debug = false,
+}
+
 Config.PawnShops = {
     Dylan = {
         position = vector4(411.3616, 313.7914, 102.0207, 211.4422),

@@ -7,6 +7,7 @@ function RegisterPawnPoints()
             Bridge.Point.Register(k, v.position, 50, { CreatedPed = nil },
             function(point, args)
                 local timeOfDayValid = VerifyDayTime(k)
+                DebugInfo("Shop is currently open: " .. tostring(timeOfDayValid))
                 if timeOfDayValid then
                     local createdPed = Bridge.Utility.CreatePed(v.model, v.position, v.position.w, false, nil)
                     SetEntityHeading(createdPed, v.position.w)
@@ -36,6 +37,7 @@ function RegisterPawnPoints()
             end,
             function(point, args)-- OnExit
                 if args and args.CreatedPed and DoesEntityExist(args.CreatedPed) then
+                    DebugInfo("Removing ped: " .. args.CreatedPed)
                     SetEntityAsMissionEntity(args.CreatedPed, false, true)
                     DeleteEntity(args.CreatedPed)
                     CreatedPeds[k] = nil

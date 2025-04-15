@@ -18,7 +18,8 @@
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "The Amount You Want To Smelt",
-        "SmeltingSuccess": "You have successfully smelted the item down!"
+        "SmeltingSuccess": "You have successfully smelted the item down!",
+        "ProgressBarLabel": "Smelting "
     },
     "Warnings": {
         "DoNotHave": "You do not have this item!",

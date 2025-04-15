@@ -34,6 +34,7 @@ function GeneratePawnMenus(shop)
             iconColor = locale("PawnShop.color"),
             onSelect = function()
                 sliderSelect(k)
+                DebugInfo("Selected item: " .. k)
             end,
         })
     end

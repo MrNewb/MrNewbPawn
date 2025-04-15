@@ -1,3 +1,18 @@
+local function progressBarLogic(itemcount, item, label)
+    local duration = itemcount * 1000
+    local newLabel = locale("Smelting.ProgressBarLabel") .. " " .. itemcount .. "x " .. label
+    local success = BeginProgressBar(duration, newLabel)
+    local count = 0
+    CreateThread(function()
+        while not success and count < duration do
+            Wait(1)
+            count = count + 1
+        end
+    end)
+    TriggerServerEvent('MrNewbPawn_V2:Server:Scrapping', item, itemcount)
+end
+
+
 local function sliderSelect(item)
     if not item then return end
     local itemSearch = Config.MeltableItems[item]
@@ -11,7 +26,7 @@ local function sliderSelect(item)
 	})
 
 	if not input or not input[1] then return end
-    TriggerServerEvent('MrNewbPawn_V2:Server:Scrapping', item, input[1])
+    progressBarLogic(input[1], item, itemLabel)
 end
 
 function GenerateMeltMenu()
@@ -39,6 +54,7 @@ function GenerateMeltMenu()
             iconColor = locale("Smelting.MenuIconColor"),
             onSelect = function()
                 sliderSelect(k)
+                DebugInfo("Selected item: " .. k)
 			end,
         })
     end

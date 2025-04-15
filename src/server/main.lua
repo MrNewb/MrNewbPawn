@@ -7,6 +7,7 @@ RegisterNetEvent("MrNewbPawn_V2:Server:SellPawn", function(item, amount)
     Bridge.Inventory.RemoveItem(src, item, amount)
     local price = verified * amount
     Bridge.Framework.AddAccountBalance(src, "money", price)
+    DebugInfo("Player " .. src .. " sold " .. amount .. " of item " .. item .. " for $" .. price)
 end)
 
 RegisterNetEvent('MrNewbPawn_V2:Server:Scrapping', function(itemName, amount)
@@ -19,6 +20,7 @@ RegisterNetEvent('MrNewbPawn_V2:Server:Scrapping', function(itemName, amount)
     for _, reward in pairs(meltableItems) do
         local rewardCount = reward.count * amount
         Bridge.Inventory.AddItem(src, reward.itemName, rewardCount)
+        DebugInfo("Player " .. src .. " received " .. rewardCount .. " of item " .. reward.itemName)
     end
     Bridge.Notify.SendNotify(src, locale("Smelting.SmeltingSuccess"), "success", 6000)
 end)
