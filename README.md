@@ -15,13 +15,13 @@ This script is one of my oldest projects. Despite never being actively maintaine
   The script has been migrated to use [`community_bridge`](https://github.com/The-Order-Of-The-Sacred-Framework/community_bridge), enabling compatibility with **QBCore**, **QBox**, and modern versions of **ESX**. This improves integration and support across current frameworks.
 
 - **🏪 Multiple Shop Support**  
-  Easily set up multiple pawn shops across your map, each with customizable blips and menus to match your server’s layout or roleplay flavor.
+  Easily set up multiple pawn shops across your map, each with customizable blips to match your server’s layout or roleplay flavor.
 
 - **⏰ Optional Time-Based Availability**  
   Time-based open and close functionality is still available, but can now be toggled off via the config.
 
 - **🔥 Item Smelting**  
-  A new feature in the config allows certain items to be smelted down, adding more gameplay depth.
+  A new feature in the config allows certain items to be smelted down, at specified locations adding more gameplay depth.
 
 - **🗺️ Blip Control**  
   All blips are optional — keep your map clean or fully marked, entirely your choice.
@@ -41,7 +41,6 @@ Make sure these are installed and set up correctly for full functionality.
 
 ## 💬 Notes & Feedback
 
-- The code isn’t the most optimized or visually beautiful, but it’s functional and includes basic security checks.
 - This isn’t a full rewrite — just a lightweight upgrade to improve compatibility and add features.
 - Not quite a "v2", but a solid refresh for those still using or discovering the script.
 

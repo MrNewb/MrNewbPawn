@@ -2,8 +2,8 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 name 'MrNewbPawn'
-description 'A very old pawn shop system, slightly modernized to keep working. This script focuses on a minimilistic approach, with no fancy features. It is a simple pawn shop system that allows you to buy and sell items.'
-version '0.1.0'
+description 'A basic, minimally featured pawn shop system. Its an older system, slightly updated to remain functional, focusing solely on buying and selling items without any extra frills.'
+version '1.0.0'
 
 shared_scripts {
 	'@ox_lib/init.lua',

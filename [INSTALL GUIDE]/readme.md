@@ -1,0 +1,1 @@
+Please follow the install steps at -------> https://mrnewbs-scrips.gitbook.io/guide
