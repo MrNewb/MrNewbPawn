@@ -12,15 +12,15 @@
 
 ## Overview
 
-**MrNewbPawn** is a refreshed pawn shop system for FiveM roleplay servers. This modernized version brings Community Bridge integration for universal framework compatibility while maintaining the simplicity that made it trusted by the community.
+**MrNewbPawn** is a refreshed pawn shop system for FiveM servers with Community Bridge integration for universal framework compatibility.
 
 ### Key Features
 
-- **Multi-Location Support** - Unlimited pawn shops with individual configurations
-- **Universal Framework Compatibility** - ESX, QBCore, and Qbox/QBX support via Community Bridge
-- **Advanced Smelting System** - Transform items into materials with location-specific rules
-- **Flexible Operations** - Optional time-based availability and customizable blips
-- **Lightweight Design** - Optimized performance with minimal server impact
+- **Multi-Location Support** - Unlimited shops with individual configurations
+- **Universal Compatibility** - ESX, QBCore, and Qbox/QBX via Community Bridge
+- **Advanced Smelting** - Transform items with location-specific rules
+- **Flexible Operations** - Optional timing and customizable blips
+- **Lightweight Design** - Optimized performance
 
 <details>
 <summary><strong>Enhanced Features</strong></summary>
@@ -41,25 +41,16 @@
 <summary><strong>Step-by-Step Installation</strong></summary>
 
 ### Prerequisites
-- **Community Bridge** - Required bridge system (install first)
-- **Ox Library** - Essential utility library
-- **Framework** - ESX, QBCore, or Qbox/QBX (automatically detected)
-- **Inventory System** - Framework-compatible inventory
+- **Community Bridge** (install first) • **Ox Library** • **Framework** (auto-detected) • **Inventory System**
 
 ### Quick Setup
-1. Download and extract the resource to your `resources` folder
-2. Add `ensure MrNewbPawn` to your `server.cfg`
-3. Configure shop locations and settings in the config file
-4. Set up item smelting configurations (optional)
-5. Configure time-based availability (optional)
-6. Restart your server
+1. Extract to `resources` folder
+2. Add `ensure MrNewbPawn` to `server.cfg`
+3. Configure shop locations and settings
+4. Restart server
 
-### Configuration Options
-- **Shop Locations** - Define multiple pawn shop positions
-- **Blip Settings** - Customize map markers and visibility
-- **Time Controls** - Set opening/closing hours or disable timing
-- **Smelting Rules** - Configure which items can be processed
-- **Economic Settings** - Adjust pricing and transaction limits
+### Configuration
+**Shop Locations** • **Blip Settings** • **Time Controls** • **Smelting Rules** • **Economic Settings**
 
 For detailed configuration guides, visit our complete documentation.
 
@@ -73,18 +64,15 @@ For detailed configuration guides, visit our complete documentation.
 ![Community Bridge](https://img.shields.io/badge/Requires-Community_Bridge-critical?style=for-the-badge&logo=bridge&logoColor=white) ![Ox Library](https://img.shields.io/badge/Requires-ox__lib-orange?style=for-the-badge&logo=library&logoColor=white)
 
 **Required Dependencies:**
-- **[Community Bridge](https://github.com/The-Order-Of-The-Sacred-Framework/community_bridge)** - Essential bridge system for cross-framework compatibility
-- **[Ox Library](https://github.com/overextended/ox_lib)** - Core utility library for enhanced functionality
-- **Framework** - ESX, QBCore, or Qbox/QBX (detected automatically via Community Bridge)
-- **Inventory System** - Compatible with all inventory systems supported by Community Bridge
+- **[Community Bridge](https://github.com/The-Order-Of-The-Sacred-Framework/community_bridge)** - Cross-framework compatibility bridge
+- **[Ox Library](https://github.com/overextended/ox_lib)** - Core utility library
+- **Framework** - ESX, QBCore, or Qbox/QBX (auto-detected)
+- **Inventory System** - Any system supported by Community Bridge
 
 ### Framework Support
 ![ESX](https://img.shields.io/badge/ESX-✅_Compatible-green?style=flat-square) ![QBCore](https://img.shields.io/badge/QBCore-✅_Compatible-green?style=flat-square) ![Qbox](https://img.shields.io/badge/Qbox/QBX-✅_Compatible-green?style=flat-square)
 
-**Supported Frameworks:**
-- **ESX** - Full compatibility with modern ESX versions
-- **QBCore** - Complete QB-Core integration and support
-- **Qbox/QBX** - Modern Qbox framework compatibility (Qbox and QBX are the same framework)
+**Supported:** ESX • QBCore • Qbox/QBX (Qbox and QBX are the same framework)
 
 ---
 
@@ -105,32 +93,24 @@ For detailed configuration guides, visit our complete documentation.
 ## Documentation & Support
 
 ### Resources
-- **[Complete Documentation](https://mrnewbs-scrips.gitbook.io/guide)** - Installation guides and configuration
-- **[Video Tutorials](https://www.youtube.com/@mrnewb2819)** - Step-by-step setup guides
-- **[GitHub Repository](https://github.com/MrNewb/MrNewbPawn)** - Source code and issue tracking
+- **[Documentation](https://mrnewbs-scrips.gitbook.io/guide)** • **[Video Tutorials](https://www.youtube.com/@mrnewb2819)** • **[GitHub Repository](https://github.com/MrNewb/MrNewbPawn)**
 
 ### Community Support
 [![Discord](https://discordapp.com/api/guilds/1204398264812830720/widget.png?style=banner2)](https://discord.gg/mrnewbscripts)
 
-**Join our Discord community** for:
-- Real-time support and troubleshooting
-- Feature requests and suggestions
-- Community showcase and feedback
-- Direct developer communication
+**Join our Discord for support, feature requests, and community feedback.**
 
 ### Developer Notes
 **From MrNewb:**
-> "This script holds a special place as one of my oldest projects. While it was never actively maintained, seeing it still in use by the community means everything. This refresh brings it up to modern standards while keeping the simplicity that made it effective. It's not a complete rewrite, but a solid upgrade - and as always, completely free for the community."
+> "This script holds a special place as one of my oldest projects. This refresh brings it up to modern standards while keeping the simplicity that made it effective - and as always, completely free for the community."
 
 ---
 
-## Contributing & Development
+## Contributing & Community
 
-**Community Contributions:**
-- **Pull Requests** • **Issue Reporting** • **Feature Suggestions** • **Community Driven Development**
+**Contributions:** Pull Requests • Issue Reporting • Feature Suggestions • Community Driven
 
-**Development Philosophy:**
-- **Lightweight Design** • **Framework Compatibility** • **User-Friendly Configuration** • **Community First**
+**Values:** Free Resource • No Reselling • Legacy Support • Regular Updates • Community First
 
 ---
 
