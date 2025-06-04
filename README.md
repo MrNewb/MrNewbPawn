@@ -134,13 +134,6 @@ For detailed configuration guides, visit our complete documentation.
 
 ---
 
-## Important Notes
-
-**Community Values:**
-- **Free Resource** • **No Reselling** • **Legacy Support** • **Regular Updates** • **Community First**
-
----
-
 <details>
 <summary><strong>SEO Keywords & Search Optimization</strong></summary>
 
