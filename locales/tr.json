@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Rehin Dükkânı",
+        "Description": "Rehin dükkânı eşyalarınızı para karşılığında satabileceğiniz bir yerdir.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Rehin dükkânı sahibiyle konuş",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Rehin dükkânı kapalı!",
+        "SellItems": "Eşyayı sat ",
+        "AmountToSell": "Satmak istediğiniz miktar",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Eritme",
+        "MenuDescription": "Yeni eşyalar oluşturmak için eşyaları eritin.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Eşyaları erit",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Eritmek istediğiniz miktar",
+        "SmeltingSuccess": "Eşyayı başarıyla erittiniz!",
+        "ProgressBarLabel": "Eritme "
+    },
+    "Warnings": {
+        "DoNotHave": "Bu eşyaya sahip değilsiniz!",
+        "Smelting": "Eritme...",
+        "InvalidItem": "Bu eşya eritilemez!"
+    }
+}

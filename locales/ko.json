@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "전당포",
+        "Description": "전당포는 돈을 위해 물건을 팔 수 있는 곳입니다.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "전당포 주인과 대화하기",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "전당포가 문을 닫았습니다!",
+        "SellItems": "아이템 판매 가격: ",
+        "AmountToSell": "판매하고 싶은 수량",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "제련",
+        "MenuDescription": "아이템을 제련하여 새로운 아이템을 만드세요.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "아이템 제련하기",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "제련하고 싶은 수량",
+        "SmeltingSuccess": "아이템을 성공적으로 제련했습니다!",
+        "ProgressBarLabel": "제련 중 "
+    },
+    "Warnings": {
+        "DoNotHave": "이 아이템을 가지고 있지 않습니다!",
+        "Smelting": "제련 중...",
+        "InvalidItem": "이 아이템은 제련할 수 없습니다!"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Lombard",
+        "Description": "Lombard to miejsce, gdzie możesz sprzedać swoje przedmioty za pieniądze.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Porozmawiaj z właścicielem lombardu",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Lombard jest zamknięty!",
+        "SellItems": "Sprzedaj przedmiot za ",
+        "AmountToSell": "Ilość którą chcesz sprzedać",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Przetapianie",
+        "MenuDescription": "Przetapiaj przedmioty aby stworzyć nowe przedmioty.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Przetapiaj przedmioty",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Ilość którą chcesz przetopić",
+        "SmeltingSuccess": "Pomyślnie przetapiłeś przedmiot!",
+        "ProgressBarLabel": "Przetapianie "
+    },
+    "Warnings": {
+        "DoNotHave": "Nie masz tego przedmiotu!",
+        "Smelting": "Przetapianie...",
+        "InvalidItem": "Ten przedmiot nie może być przetopiony!"
+    }
+}

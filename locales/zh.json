@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "当铺",
+        "Description": "当铺是您可以出售物品换取金钱的地方。",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "与当铺老板交谈",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "当铺已关门！",
+        "SellItems": "出售物品价格 ",
+        "AmountToSell": "您想要出售的数量",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "熔炼",
+        "MenuDescription": "熔炼物品以创造新物品。",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "熔炼物品",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "您想要熔炼的数量",
+        "SmeltingSuccess": "您已成功熔炼了物品！",
+        "ProgressBarLabel": "熔炼中 "
+    },
+    "Warnings": {
+        "DoNotHave": "您没有这个物品！",
+        "Smelting": "熔炼中...",
+        "InvalidItem": "这个物品不能被熔炼！"
+    }
+}

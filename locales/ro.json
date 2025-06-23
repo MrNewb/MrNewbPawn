@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Amanet",
+        "Description": "Amanetul este un loc unde poți vinde obiectele tale pentru bani.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Vorbește cu proprietarul amanetului",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Amanetul este închis!",
+        "SellItems": "Vinde obiectul pentru ",
+        "AmountToSell": "Cantitatea pe care vrei să o vinzi",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Topire",
+        "MenuDescription": "Topește obiecte pentru a crea obiecte noi.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Topește obiecte",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Cantitatea pe care vrei să o topești",
+        "SmeltingSuccess": "Ai topit cu succes obiectul!",
+        "ProgressBarLabel": "Topire "
+    },
+    "Warnings": {
+        "DoNotHave": "Nu ai acest obiect!",
+        "Smelting": "Topire...",
+        "InvalidItem": "Acest obiect nu poate fi topit!"
+    }
+}

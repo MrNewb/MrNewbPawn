@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "โรงรับจำนำ",
+        "Description": "โรงรับจำนำเป็นสถานที่ที่คุณสามารถขายสิ่งของของคุณเพื่อแลกเงิน",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "พูดกับเจ้าของโรงรับจำนำ",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "โรงรับจำนำปิดแล้ว!",
+        "SellItems": "ขายสินค้าในราคา ",
+        "AmountToSell": "จำนวนที่คุณต้องการขาย",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "การหลอม",
+        "MenuDescription": "หลอมสินค้าเพื่อสร้างสินค้าใหม่",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "หลอมสินค้า",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "จำนวนที่คุณต้องการหลอม",
+        "SmeltingSuccess": "คุณได้หลอมสินค้าสำเร็จแล้ว!",
+        "ProgressBarLabel": "กำลังหลอม "
+    },
+    "Warnings": {
+        "DoNotHave": "คุณยังไม่มีสินค้านี้!",
+        "Smelting": "กำลังหลอม...",
+        "InvalidItem": "สินค้านี้ไม่สามารถหลอมได้!"
+    }
+}

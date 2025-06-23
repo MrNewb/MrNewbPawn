@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Pantelåner",
+        "Description": "Pantelåner er et sted, hvor du kan sælge dine ting for penge.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Tal med pantelåner ejer",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Pantelåneren er lukket!",
+        "SellItems": "Sælg genstand for ",
+        "AmountToSell": "Mængden du vil sælge",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Smeltning",
+        "MenuDescription": "Smelt genstande for at skabe nye genstande.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Smelt genstande",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Mængden du vil smelte",
+        "SmeltingSuccess": "Du har med succes smeltet genstanden ned!",
+        "ProgressBarLabel": "Smeltning "
+    },
+    "Warnings": {
+        "DoNotHave": "Du har ikke denne genstand!",
+        "Smelting": "Smeltning...",
+        "InvalidItem": "Denne genstand kan ikke smeltes!"
+    }
+}

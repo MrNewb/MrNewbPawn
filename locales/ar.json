@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "بيت الرهن",
+        "Description": "بيت الرهن هو مكان يمكنك فيه بيع أغراضك مقابل المال.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "تحدث إلى صاحب بيت الرهن",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "بيت الرهن مغلق!",
+        "SellItems": "بيع السلعة مقابل ",
+        "AmountToSell": "الكمية التي تريد بيعها",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "الصهر",
+        "MenuDescription": "اصهر الأشياء لإنشاء أشياء جديدة.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "صهر الأشياء",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "الكمية التي تريد صهرها",
+        "SmeltingSuccess": "لقد نجحت في صهر السلعة!",
+        "ProgressBarLabel": "صهر "
+    },
+    "Warnings": {
+        "DoNotHave": "لا تملك هذه السلعة!",
+        "Smelting": "صهر...",
+        "InvalidItem": "لا يمكن صهر هذه السلعة!"
+    }
+}

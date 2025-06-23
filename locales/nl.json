@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Pandjeshuis",
+        "Description": "Het pandjeshuis is een plek waar je je spullen voor geld kunt verkopen.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Praat met de pandjeshuiseigenaar",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Het pandjeshuis is gesloten!",
+        "SellItems": "Verkoop item voor ",
+        "AmountToSell": "De hoeveelheid die je wilt verkopen",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Smelten",
+        "MenuDescription": "Smelt items om nieuwe items te maken.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Smelt items",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "De hoeveelheid die je wilt smelten",
+        "SmeltingSuccess": "Je hebt het item succesvol gesmolten!",
+        "ProgressBarLabel": "Smelten "
+    },
+    "Warnings": {
+        "DoNotHave": "Je hebt dit item niet!",
+        "Smelting": "Smelten...",
+        "InvalidItem": "Dit item kan niet gesmolten worden!"
+    }
+}

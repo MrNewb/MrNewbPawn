@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Casa de Empeños",
+        "Description": "La Casa de Empeños es un lugar donde puedes vender tus artículos por dinero.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Hablar con el dueño de la casa de empeños",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "¡La Casa de Empeños está cerrada!",
+        "SellItems": "Vender artículo por ",
+        "AmountToSell": "La cantidad que quieres vender",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Fundición",
+        "MenuDescription": "Funde artículos para crear nuevos artículos.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Fundir artículos",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "La cantidad que quieres fundir",
+        "SmeltingSuccess": "¡Has fundido exitosamente el artículo!",
+        "ProgressBarLabel": "Fundiendo "
+    },
+    "Warnings": {
+        "DoNotHave": "¡No tienes este artículo!",
+        "Smelting": "Fundiendo...",
+        "InvalidItem": "¡Este artículo no se puede fundir!"
+    }
+}

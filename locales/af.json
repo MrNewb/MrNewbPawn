@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Pandjieswinkel",
+        "Description": "Pandjieswinkel is 'n plek waar jy jou items vir geld kan verkoop.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Praat met Pandjieswinkel Eienaar",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Die Pandjieswinkel is gesluit!",
+        "SellItems": "Verkoop Item vir ",
+        "AmountToSell": "Die Bedrag wat jy wil verkoop",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Smelting",
+        "MenuDescription": "Smelt items om nuwe items te skep.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Smelt Items",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Die Bedrag wat jy wil smelt",
+        "SmeltingSuccess": "Jy het die item suksesvol gesmelt!",
+        "ProgressBarLabel": "Smelting "
+    },
+    "Warnings": {
+        "DoNotHave": "Jy het nie hierdie item nie!",
+        "Smelting": "Smelting...",
+        "InvalidItem": "Hierdie item kan nie gesmelt word nie!"
+    }
+}

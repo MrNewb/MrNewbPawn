@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Zastaváreň",
+        "Description": "Zastaváreň je místo, kde můžete prodat své předměty za peníze.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Mluvit s majitelem zastavárny",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Zastaváreň je zavřená!",
+        "SellItems": "Prodat předmět za ",
+        "AmountToSell": "Množství, které chcete prodat",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Tavení",
+        "MenuDescription": "Tavte předměty k vytvoření nových předmětů.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Tavit předměty",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Množství, které chcete roztavit",
+        "SmeltingSuccess": "Úspěšně jste roztavili předmět!",
+        "ProgressBarLabel": "Tavení "
+    },
+    "Warnings": {
+        "DoNotHave": "Nemáte tento předmět!",
+        "Smelting": "Tavení...",
+        "InvalidItem": "Tento předmět nelze roztavit!"
+    }
+}

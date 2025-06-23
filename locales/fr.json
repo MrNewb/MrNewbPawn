@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Prêteur sur Gages",
+        "Description": "Le prêteur sur gages est un endroit où vous pouvez vendre vos objets contre de l'argent.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Parler au propriétaire du prêteur sur gages",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Le prêteur sur gages est fermé !",
+        "SellItems": "Vendre l'objet pour ",
+        "AmountToSell": "La quantité que vous voulez vendre",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Fonte",
+        "MenuDescription": "Fondez des objets pour créer de nouveaux objets.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Fondre des objets",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "La quantité que vous voulez fondre",
+        "SmeltingSuccess": "Vous avez fondu l'objet avec succès !",
+        "ProgressBarLabel": "Fonte "
+    },
+    "Warnings": {
+        "DoNotHave": "Vous n'avez pas cet objet !",
+        "Smelting": "Fonte...",
+        "InvalidItem": "Cet objet ne peut pas être fondu !"
+    }
+}

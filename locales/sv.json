@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Pantbank",
+        "Description": "Pantbanken är en plats där du kan sälja dina föremål för pengar.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Prata med pantbankens ägare",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Pantbanken är stängd!",
+        "SellItems": "Sälj föremål för ",
+        "AmountToSell": "Mängden du vill sälja",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Smältning",
+        "MenuDescription": "Smält föremål för att skapa nya föremål.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Smält föremål",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Mängden du vill smälta",
+        "SmeltingSuccess": "Du har framgångsrikt smält ner föremålet!",
+        "ProgressBarLabel": "Smältning "
+    },
+    "Warnings": {
+        "DoNotHave": "Du har inte detta föremål!",
+        "Smelting": "Smältning...",
+        "InvalidItem": "Detta föremål kan inte smältas!"
+    }
+}

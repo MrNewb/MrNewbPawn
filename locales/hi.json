@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "प्यादा की दुकान",
+        "Description": "प्यादा की दुकान एक ऐसी जगह है जहाँ आप अपना सामान पैसे के लिए बेच सकते हैं।",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "प्यादा दुकान के मालिक से बात करें",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "प्यादा की दुकान बंद है!",
+        "SellItems": "वस्तु बेचें इसके लिए ",
+        "AmountToSell": "वह मात्रा जो आप बेचना चाहते हैं",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "गलाना",
+        "MenuDescription": "नई वस्तुएं बनाने के लिए वस्तुओं को गलाएं।",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "वस्तुओं को गलाएं",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "वह मात्रा जो आप गलाना चाहते हैं",
+        "SmeltingSuccess": "आपने सफलतापूर्वक वस्तु को गला दिया है!",
+        "ProgressBarLabel": "गलाना "
+    },
+    "Warnings": {
+        "DoNotHave": "आपके पास यह वस्तु नहीं है!",
+        "Smelting": "गलाना...",
+        "InvalidItem": "यह वस्तु नहीं गलाई जा सकती!"
+    }
+}

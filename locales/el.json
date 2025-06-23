@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Ενεχυροδανειστήριο",
+        "Description": "Το ενεχυροδανειστήριο είναι ένα μέρος όπου μπορείτε να πουλήσετε τα αντικείμενά σας για χρήματα.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Μιλήστε με τον ιδιοκτήτη του ενεχυροδανειστηρίου",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Το ενεχυροδανειστήριο είναι κλειστό!",
+        "SellItems": "Πούλημα αντικειμένου για ",
+        "AmountToSell": "Η ποσότητα που θέλετε να πουλήσετε",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Τήξη",
+        "MenuDescription": "Λιώστε αντικείμενα για να δημιουργήσετε νέα αντικείμενα.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Λίωμα αντικειμένων",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Η ποσότητα που θέλετε να λιώσετε",
+        "SmeltingSuccess": "Λιώσατε με επιτυχία το αντικείμενο!",
+        "ProgressBarLabel": "Τήξη "
+    },
+    "Warnings": {
+        "DoNotHave": "Δεν έχετε αυτό το αντικείμενο!",
+        "Smelting": "Τήξη...",
+        "InvalidItem": "Αυτό το αντικείμενο δεν μπορεί να λιώσει!"
+    }
+}

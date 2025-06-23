@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Zálogház",
+        "Description": "A zálogház egy hely, ahol eladhatod a tárgyaidat pénzért.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Beszélj a zálogház tulajdonosával",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "A zálogház zárva van!",
+        "SellItems": "Tárgy eladása ezért: ",
+        "AmountToSell": "A mennyiség, amit el akarsz adni",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Olvasztás",
+        "MenuDescription": "Olvassz le tárgyakat új tárgyak létrehozásához.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Tárgyak olvasztása",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "A mennyiség, amit le akarsz olvasztani",
+        "SmeltingSuccess": "Sikeresen leolvasztottad a tárgyat!",
+        "ProgressBarLabel": "Olvasztás "
+    },
+    "Warnings": {
+        "DoNotHave": "Nincs nálad ez a tárgy!",
+        "Smelting": "Olvasztás...",
+        "InvalidItem": "Ez a tárgy nem olvasztható le!"
+    }
+}

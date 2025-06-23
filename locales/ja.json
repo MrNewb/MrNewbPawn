@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "質屋",
+        "Description": "質屋はあなたのアイテムをお金で売ることができる場所です。",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "質屋の店主と話す",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "質屋は閉まっています！",
+        "SellItems": "アイテムを売る ",
+        "AmountToSell": "売りたい数量",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "精錬",
+        "MenuDescription": "アイテムを精錬して新しいアイテムを作成します。",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "アイテムを精錬する",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "精錬したい数量",
+        "SmeltingSuccess": "アイテムの精錬に成功しました！",
+        "ProgressBarLabel": "精錬中 "
+    },
+    "Warnings": {
+        "DoNotHave": "このアイテムを持っていません！",
+        "Smelting": "精錬中...",
+        "InvalidItem": "このアイテムは精錬できません！"
+    }
+}

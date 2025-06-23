@@ -1,0 +1,29 @@
+{
+    "PawnShop": {
+        "Title": "Panttilainaamo",
+        "Description": "Panttilainaamo on paikka, jossa voit myydä tavarasi rahaksi.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Puhu panttilainaamon omistajan kanssa",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Panttilainaamo on kiinni!",
+        "SellItems": "Myy esine hintaan ",
+        "AmountToSell": "Määrä, jonka haluat myydä",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Sulatus",
+        "MenuDescription": "Sulata esineitä luodaksesi uusia esineitä.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Sulata esineitä",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Määrä, jonka haluat sulattaa",
+        "SmeltingSuccess": "Olet onnistuneesti sulattanut esineen!",
+        "ProgressBarLabel": "Sulatetaan "
+    },
+    "Warnings": {
+        "DoNotHave": "Sinulla ei ole tätä esinettä!",
+        "Smelting": "Sulatetaan...",
+        "InvalidItem": "Tätä esinettä ei voi sulattaa!"
+    }
+}
