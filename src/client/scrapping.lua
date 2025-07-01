@@ -1,7 +1,6 @@
 local function progressBarLogic(itemcount, item, label)
     local duration = itemcount * 1000
-    local newLabel = locale("Smelting.ProgressBarLabel") .. " " .. itemcount .. "x " .. label
-    local success = BeginProgressBar(duration, newLabel)
+    local success = BeginProgressBar(duration, string.format(locale("Smelting.ProgressBarLabel"), itemcount, label))
     local count = 0
     CreateThread(function()
         while not success and count < duration do
@@ -17,8 +16,8 @@ local function sliderSelect(item)
     if not item then return end
     local itemSearch = Config.MeltableItems[item]
     if not itemSearch then return NotifyPlayer(locale("Warnings.DoNotHave"), "error", 6000) end
-    local itemLabel = Bridge.Inventory.GetItemInfo(item).label
-    local itemCount = Bridge.Inventory.GetItemCount(item)
+    local itemLabel = GetItemInfo(item).label
+    local itemCount = GetItemCount(item)
     if itemCount <= 0 then return NotifyPlayer(locale("Warnings.DoNotHave"), "error", 6000) end
     local maxAmount = itemCount
     local input = lib.inputDialog(itemLabel,{
@@ -39,11 +38,11 @@ function GenerateMeltMenu()
     local menuID = GenerateRandomString()
 
     for k, v in pairs(Config.MeltableItems) do
-        local keyInfo = Bridge.Inventory.GetItemInfo(k)
+        local keyInfo = GetItemInfo(k)
         local rewardDescriptions = {}
 
         for _, reward in ipairs(v) do
-            local rewardInfo = Bridge.Inventory.GetItemInfo(reward.itemName)
+            local rewardInfo = GetItemInfo(reward.itemName)
             table.insert(rewardDescriptions, string.format("%d x %s", reward.count, rewardInfo.label))
         end
 
@@ -54,7 +53,6 @@ function GenerateMeltMenu()
             iconColor = locale("Smelting.MenuIconColor"),
             onSelect = function()
                 sliderSelect(k)
-                DebugInfo("Selected item: " .. k)
 			end,
         })
     end

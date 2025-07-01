@@ -1,25 +1,25 @@
 {
     "PawnShop": {
         "Title": "Ломбард",
-        "Description": "Ломбард - это место, где вы можете продать свои вещи за деньги.",
+        "Description": "Ломбард - это место, где вы можете продать свои предметы за деньги.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Поговорить с владельцем ломбарда",
+        "TargetLabel": "Поговорить с Владельцем Ломбарда",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Ломбард закрыт!",
-        "SellItems": "Продать предмет за ",
-        "AmountToSell": "Количество, которое вы хотите продать",
+        "SellItems": "Продать Предмет За ",
+        "AmountToSell": "Количество для Продажи",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Плавка",
-        "MenuDescription": "Плавьте предметы, чтобы создать новые предметы.",
+        "MenuDescription": "Переплавляйте предметы для создания новых предметов.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Плавить предметы",
+        "TargetLabel": "Переплавить Предметы",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Количество, которое вы хотите переплавить",
+        "AmountToSmelt": "Количество для Плавки",
         "SmeltingSuccess": "Вы успешно переплавили предмет!",
-        "ProgressBarLabel": "Плавка "
+        "ProgressBarLabel": "Плавка x %s %s"
     },
     "Warnings": {
         "DoNotHave": "У вас нет этого предмета!",

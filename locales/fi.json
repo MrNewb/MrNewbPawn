@@ -1,29 +1,29 @@
 {
     "PawnShop": {
         "Title": "Panttilainaamo",
-        "Description": "Panttilainaamo on paikka, jossa voit myydä tavarasi rahaksi.",
+        "Description": "Panttilainaamo on paikka, jossa voit myydä tavaroitasi rahasta.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Puhu panttilainaamon omistajan kanssa",
+        "TargetLabel": "Puhu Panttilainaamon Omistajan kanssa",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Panttilainaamo on kiinni!",
-        "SellItems": "Myy esine hintaan ",
-        "AmountToSell": "Määrä, jonka haluat myydä",
+        "SellItems": "Myy Tavara ",
+        "AmountToSell": "Myytävä Määrä",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Sulatus",
-        "MenuDescription": "Sulata esineitä luodaksesi uusia esineitä.",
+        "MenuDescription": "Sulata tavaroita luodaksesi uusia tavaroita.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Sulata esineitä",
+        "TargetLabel": "Sulata Tavaroita",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Määrä, jonka haluat sulattaa",
-        "SmeltingSuccess": "Olet onnistuneesti sulattanut esineen!",
-        "ProgressBarLabel": "Sulatetaan "
+        "AmountToSmelt": "Sulatettava Määrä",
+        "SmeltingSuccess": "Olet sulauttanut tavaran onnistuneesti!",
+        "ProgressBarLabel": "Sulatetaan x %s %s"
     },
     "Warnings": {
-        "DoNotHave": "Sinulla ei ole tätä esinettä!",
+        "DoNotHave": "Sinulla ei ole tätä tavaraa!",
         "Smelting": "Sulatetaan...",
-        "InvalidItem": "Tätä esinettä ei voi sulattaa!"
+        "InvalidItem": "Tätä tavaraa ei voi sulattaa!"
     }
 }

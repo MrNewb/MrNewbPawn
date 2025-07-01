@@ -1,25 +1,25 @@
 {
     "PawnShop": {
         "Title": "Casa de Empeños",
-        "Description": "La Casa de Empeños es un lugar donde puedes vender tus artículos por dinero.",
+        "Description": "La casa de empeños es un lugar donde puedes vender tus artículos por dinero.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Hablar con el dueño de la casa de empeños",
+        "TargetLabel": "Hablar con el Propietario de la Casa de Empeños",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "¡La Casa de Empeños está cerrada!",
-        "SellItems": "Vender artículo por ",
-        "AmountToSell": "La cantidad que quieres vender",
+        "ShopClosed": "¡La casa de empeños está cerrada!",
+        "SellItems": "Vender Artículo Por ",
+        "AmountToSell": "Cantidad a Vender",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Fundición",
         "MenuDescription": "Funde artículos para crear nuevos artículos.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Fundir artículos",
+        "TargetLabel": "Fundir Artículos",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "La cantidad que quieres fundir",
+        "AmountToSmelt": "Cantidad a Fundir",
         "SmeltingSuccess": "¡Has fundido exitosamente el artículo!",
-        "ProgressBarLabel": "Fundiendo "
+        "ProgressBarLabel": "Fundiendo x %s %s"
     },
     "Warnings": {
         "DoNotHave": "¡No tienes este artículo!",

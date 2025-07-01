@@ -1,25 +1,25 @@
 {
     "PawnShop": {
         "Title": "Banco dei Pegni",
-        "Description": "Il banco dei pegni è un luogo dove puoi vendere i tuoi oggetti per denaro.",
+        "Description": "Il banco dei pegni è un posto dove puoi vendere i tuoi oggetti per denaro.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Parla con il proprietario del banco dei pegni",
+        "TargetLabel": "Parla con il Proprietario del Banco dei Pegni",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Il banco dei pegni è chiuso!",
-        "SellItems": "Vendi oggetto per ",
-        "AmountToSell": "La quantità che vuoi vendere",
+        "SellItems": "Vendi Oggetto Per ",
+        "AmountToSell": "Quantità da Vendere",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Fusione",
         "MenuDescription": "Fondi oggetti per creare nuovi oggetti.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Fondi oggetti",
+        "TargetLabel": "Fondi Oggetti",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "La quantità che vuoi fondere",
+        "AmountToSmelt": "Quantità da Fondere",
         "SmeltingSuccess": "Hai fuso con successo l'oggetto!",
-        "ProgressBarLabel": "Fusione "
+        "ProgressBarLabel": "Fondendo x %s %s"
     },
     "Warnings": {
         "DoNotHave": "Non hai questo oggetto!",

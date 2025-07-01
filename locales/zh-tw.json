@@ -1,13 +1,13 @@
 {
     "PawnShop": {
         "Title": "當舖",
-        "Description": "當舖是您可以出售物品換取金錢的地方。",
+        "Description": "當舖是一個您可以出售物品換取金錢的地方。",
         "MenuIcon": "fa-solid fa-store",
         "TargetLabel": "與當舖老闆交談",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "當舖已關門！",
-        "SellItems": "出售物品價格 ",
-        "AmountToSell": "您想要出售的數量",
+        "SellItems": "出售物品 ",
+        "AmountToSell": "出售數量",
         "color": "orange"
     },
     "Smelting": {
@@ -17,13 +17,13 @@
         "TargetLabel": "熔煉物品",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "您想要熔煉的數量",
+        "AmountToSmelt": "熔煉數量",
         "SmeltingSuccess": "您已成功熔煉了物品！",
-        "ProgressBarLabel": "熔煉中 "
+        "ProgressBarLabel": "正在熔煉 x %s %s"
     },
     "Warnings": {
         "DoNotHave": "您沒有這個物品！",
         "Smelting": "熔煉中...",
-        "InvalidItem": "這個物品不能被熔煉！"
+        "InvalidItem": "此物品無法熔煉！"
     }
 }

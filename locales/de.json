@@ -1,29 +1,29 @@
 {
     "PawnShop": {
         "Title": "Pfandhaus",
-        "Description": "Das Pfandhaus ist ein Ort, wo Sie Ihre Gegenstände für Geld verkaufen können.",
+        "Description": "Das Pfandhaus ist ein Ort, an dem Sie Ihre Gegenstände gegen Geld verkaufen können.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Mit Pfandhaus-Besitzer sprechen",
+        "TargetLabel": "Mit dem Pfandhaus-Besitzer sprechen",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Das Pfandhaus ist geschlossen!",
         "SellItems": "Gegenstand verkaufen für ",
-        "AmountToSell": "Die Menge, die Sie verkaufen möchten",
+        "AmountToSell": "Zu verkaufende Menge",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Schmelzen",
-        "MenuDescription": "Schmelzen Sie Gegenstände, um neue Gegenstände zu erstellen.",
+        "MenuDescription": "Gegenstände schmelzen, um neue Gegenstände zu erstellen.",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "Gegenstände schmelzen",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Die Menge, die Sie schmelzen möchten",
-        "SmeltingSuccess": "Sie haben den Gegenstand erfolgreich eingeschmolzen!",
-        "ProgressBarLabel": "Schmelzen "
+        "AmountToSmelt": "Zu schmelzende Menge",
+        "SmeltingSuccess": "Sie haben den Gegenstand erfolgreich geschmolzen!",
+        "ProgressBarLabel": "Schmelze x %s %s"
     },
     "Warnings": {
         "DoNotHave": "Sie haben diesen Gegenstand nicht!",
-        "Smelting": "Schmelzen...",
+        "Smelting": "Schmelze...",
         "InvalidItem": "Dieser Gegenstand kann nicht geschmolzen werden!"
     }
 }

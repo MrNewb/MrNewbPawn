@@ -1,25 +1,25 @@
 {
     "PawnShop": {
-        "Title": "Pandjeshuis",
-        "Description": "Het pandjeshuis is een plek waar je je spullen voor geld kunt verkopen.",
+        "Title": "Lommerd",
+        "Description": "De lommerd is een plaats waar je je items kunt verkopen voor geld.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Praat met de pandjeshuiseigenaar",
+        "TargetLabel": "Praat met de Lommerd Eigenaar",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "Het pandjeshuis is gesloten!",
-        "SellItems": "Verkoop item voor ",
-        "AmountToSell": "De hoeveelheid die je wilt verkopen",
+        "ShopClosed": "De lommerd is gesloten!",
+        "SellItems": "Verkoop Item Voor ",
+        "AmountToSell": "Hoeveelheid te Verkopen",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Smelten",
         "MenuDescription": "Smelt items om nieuwe items te maken.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Smelt items",
+        "TargetLabel": "Smelt Items",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "De hoeveelheid die je wilt smelten",
+        "AmountToSmelt": "Hoeveelheid te Smelten",
         "SmeltingSuccess": "Je hebt het item succesvol gesmolten!",
-        "ProgressBarLabel": "Smelten "
+        "ProgressBarLabel": "Smelten x %s %s"
     },
     "Warnings": {
         "DoNotHave": "Je hebt dit item niet!",

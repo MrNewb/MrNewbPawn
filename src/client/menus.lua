@@ -2,13 +2,14 @@ local function sliderSelect(item)
     if not item then return end
     local itemSearch = Config.PawnItems[item]
     if not itemSearch then return NotifyPlayer(locale("Warnings.DoNotHave"), "error", 6000) end
-    local itemLabel = Bridge.Inventory.GetItemInfo(item).label
-    local itemCount = Bridge.Inventory.GetItemCount(item)
+    local itemLabel = GetItemInfo(item).label
+    local itemCount = GetItemCount(item)
     if itemCount <= 0 then return NotifyPlayer(locale("Warnings.DoNotHave"), "error", 6000) end
     local maxAmount = itemCount
     local input = lib.inputDialog(itemLabel,{
         { type = 'slider', label = locale("PawnShop.AmountToSell"), min = 1, max = maxAmount, step = 1 },
 	})
+    -- wish qb-input had slider support
 
 	if not input or not input[1] then return end
     TriggerServerEvent("MrNewbPawn_V2:Server:SellPawn", item, input[1])
@@ -26,15 +27,14 @@ function GeneratePawnMenus(shop)
     local menuID = GenerateRandomString()
 
     for k, v in pairs(Config.PawnItems) do
-        local itemLabel = Bridge.Inventory.GetItemInfo(k).label
+        local itemLabel = GetItemInfo(k).label
         table.insert(menuOptions, {
             title = itemLabel,
             description = string.format(locale("PawnShop.SellItems") .. " $%d", v),
-            icon = Bridge.Inventory.GetItemInfo(k).image,
+            icon = GetItemInfo(k).image,
             iconColor = locale("PawnShop.color"),
             onSelect = function()
                 sliderSelect(k)
-                DebugInfo("Selected item: " .. k)
             end,
         })
     end

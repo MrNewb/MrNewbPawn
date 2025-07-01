@@ -1,25 +1,25 @@
 {
     "PawnShop": {
         "Title": "Casa de Penhores",
-        "Description": "A Casa de Penhores é um lugar onde você pode vender seus itens por dinheiro.",
+        "Description": "A casa de penhores é um lugar onde você pode vender seus itens por dinheiro.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Falar com o dono da casa de penhores",
+        "TargetLabel": "Falar com o Proprietário da Casa de Penhores",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "A Casa de Penhores está fechada!",
-        "SellItems": "Vender item por ",
-        "AmountToSell": "A quantidade que você quer vender",
+        "ShopClosed": "A casa de penhores está fechada!",
+        "SellItems": "Vender Item Por ",
+        "AmountToSell": "Quantidade a Vender",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Fundição",
         "MenuDescription": "Fundir itens para criar novos itens.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Fundir itens",
+        "TargetLabel": "Fundir Itens",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "A quantidade que você quer fundir",
+        "AmountToSmelt": "Quantidade a Fundir",
         "SmeltingSuccess": "Você fundiu o item com sucesso!",
-        "ProgressBarLabel": "Fundindo "
+        "ProgressBarLabel": "Fundindo x %s %s"
     },
     "Warnings": {
         "DoNotHave": "Você não tem este item!",

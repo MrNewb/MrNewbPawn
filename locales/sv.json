@@ -3,27 +3,27 @@
         "Title": "Pantbank",
         "Description": "Pantbanken är en plats där du kan sälja dina föremål för pengar.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Prata med pantbankens ägare",
+        "TargetLabel": "Prata med Pantbankens Ägare",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Pantbanken är stängd!",
-        "SellItems": "Sälj föremål för ",
-        "AmountToSell": "Mängden du vill sälja",
+        "SellItems": "Sälj Föremål För ",
+        "AmountToSell": "Mängd att Sälja",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Smältning",
         "MenuDescription": "Smält föremål för att skapa nya föremål.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Smält föremål",
+        "TargetLabel": "Smält Föremål",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Mängden du vill smälta",
-        "SmeltingSuccess": "Du har framgångsrikt smält ner föremålet!",
-        "ProgressBarLabel": "Smältning "
+        "AmountToSmelt": "Mängd att Smälta",
+        "SmeltingSuccess": "Du har smält föremålet framgångsrikt!",
+        "ProgressBarLabel": "Smälter x %s %s"
     },
     "Warnings": {
         "DoNotHave": "Du har inte detta föremål!",
-        "Smelting": "Smältning...",
+        "Smelting": "Smälter...",
         "InvalidItem": "Detta föremål kan inte smältas!"
     }
 }

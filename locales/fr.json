@@ -3,27 +3,27 @@
         "Title": "Prêteur sur Gages",
         "Description": "Le prêteur sur gages est un endroit où vous pouvez vendre vos objets contre de l'argent.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Parler au propriétaire du prêteur sur gages",
+        "TargetLabel": "Parler au Propriétaire du Prêteur sur Gages",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Le prêteur sur gages est fermé !",
-        "SellItems": "Vendre l'objet pour ",
-        "AmountToSell": "La quantité que vous voulez vendre",
+        "SellItems": "Vendre l'Objet Pour ",
+        "AmountToSell": "Quantité à Vendre",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Fonte",
-        "MenuDescription": "Fondez des objets pour créer de nouveaux objets.",
+        "MenuDescription": "Faire fondre des objets pour créer de nouveaux objets.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Fondre des objets",
+        "TargetLabel": "Faire Fondre les Objets",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "La quantité que vous voulez fondre",
-        "SmeltingSuccess": "Vous avez fondu l'objet avec succès !",
-        "ProgressBarLabel": "Fonte "
+        "AmountToSmelt": "Quantité à Faire Fondre",
+        "SmeltingSuccess": "Vous avez fait fondre l'objet avec succès !",
+        "ProgressBarLabel": "Fonte de x %s %s"
     },
     "Warnings": {
         "DoNotHave": "Vous n'avez pas cet objet !",
-        "Smelting": "Fonte...",
+        "Smelting": "Fonte en cours...",
         "InvalidItem": "Cet objet ne peut pas être fondu !"
     }
 }

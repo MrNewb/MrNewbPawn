@@ -3,27 +3,27 @@
         "Title": "Ενεχυροδανειστήριο",
         "Description": "Το ενεχυροδανειστήριο είναι ένα μέρος όπου μπορείτε να πουλήσετε τα αντικείμενά σας για χρήματα.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Μιλήστε με τον ιδιοκτήτη του ενεχυροδανειστηρίου",
+        "TargetLabel": "Μιλήστε με τον Ιδιοκτήτη του Ενεχυροδανειστηρίου",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Το ενεχυροδανειστήριο είναι κλειστό!",
-        "SellItems": "Πούλημα αντικειμένου για ",
-        "AmountToSell": "Η ποσότητα που θέλετε να πουλήσετε",
+        "SellItems": "Πώληση Αντικειμένου για ",
+        "AmountToSell": "Ποσότητα προς Πώληση",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Τήξη",
         "MenuDescription": "Λιώστε αντικείμενα για να δημιουργήσετε νέα αντικείμενα.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Λίωμα αντικειμένων",
+        "TargetLabel": "Λιώσιμο Αντικειμένων",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Η ποσότητα που θέλετε να λιώσετε",
-        "SmeltingSuccess": "Λιώσατε με επιτυχία το αντικείμενο!",
-        "ProgressBarLabel": "Τήξη "
+        "AmountToSmelt": "Ποσότητα προς Τήξη",
+        "SmeltingSuccess": "Έχετε λιώσει επιτυχώς το αντικείμενο!",
+        "ProgressBarLabel": "Λιώνει x %s %s"
     },
     "Warnings": {
         "DoNotHave": "Δεν έχετε αυτό το αντικείμενο!",
-        "Smelting": "Τήξη...",
+        "Smelting": "Λιώνει...",
         "InvalidItem": "Αυτό το αντικείμενο δεν μπορεί να λιώσει!"
     }
 }

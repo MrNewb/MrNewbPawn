@@ -1,29 +1,29 @@
 {
     "PawnShop": {
-        "Title": "Pandjieswinkel",
-        "Description": "Pandjieswinkel is 'n plek waar jy jou items vir geld kan verkoop.",
+        "Title": "Pantwinkel",
+        "Description": "Die pantwinkel is 'n plek waar jy jou items vir geld kan verkoop.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Praat met Pandjieswinkel Eienaar",
+        "TargetLabel": "Praat met die Pantwinkel Eienaar",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "Die Pandjieswinkel is gesluit!",
-        "SellItems": "Verkoop Item vir ",
-        "AmountToSell": "Die Bedrag wat jy wil verkoop",
+        "ShopClosed": "Die pantwinkel is toe!",
+        "SellItems": "Verkoop Item Vir ",
+        "AmountToSell": "Hoeveelheid om te Verkoop",
         "color": "orange"
     },
     "Smelting": {
-        "MenuTitle": "Smelting",
+        "MenuTitle": "Smelt",
         "MenuDescription": "Smelt items om nuwe items te skep.",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "Smelt Items",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Die Bedrag wat jy wil smelt",
+        "AmountToSmelt": "Hoeveelheid om te Smelt",
         "SmeltingSuccess": "Jy het die item suksesvol gesmelt!",
-        "ProgressBarLabel": "Smelting "
+        "ProgressBarLabel": "Smelt x %s %s"
     },
     "Warnings": {
         "DoNotHave": "Jy het nie hierdie item nie!",
-        "Smelting": "Smelting...",
+        "Smelting": "Smelt...",
         "InvalidItem": "Hierdie item kan nie gesmelt word nie!"
     }
 }

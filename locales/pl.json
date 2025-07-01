@@ -3,23 +3,23 @@
         "Title": "Lombard",
         "Description": "Lombard to miejsce, gdzie możesz sprzedać swoje przedmioty za pieniądze.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Porozmawiaj z właścicielem lombardu",
+        "TargetLabel": "Porozmawiaj z Właścicielem Lombardu",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Lombard jest zamknięty!",
-        "SellItems": "Sprzedaj przedmiot za ",
-        "AmountToSell": "Ilość którą chcesz sprzedać",
+        "SellItems": "Sprzedaj Przedmiot Za ",
+        "AmountToSell": "Ilość do Sprzedania",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Przetapianie",
-        "MenuDescription": "Przetapiaj przedmioty aby stworzyć nowe przedmioty.",
+        "MenuDescription": "Przetap przedmioty, aby stworzyć nowe przedmioty.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Przetapiaj przedmioty",
+        "TargetLabel": "Przetap Przedmioty",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Ilość którą chcesz przetopić",
-        "SmeltingSuccess": "Pomyślnie przetapiłeś przedmiot!",
-        "ProgressBarLabel": "Przetapianie "
+        "AmountToSmelt": "Ilość do Przetopienia",
+        "SmeltingSuccess": "Pomyślnie przetopiłeś przedmiot!",
+        "ProgressBarLabel": "Przetapianie x %s %s"
     },
     "Warnings": {
         "DoNotHave": "Nie masz tego przedmiotu!",

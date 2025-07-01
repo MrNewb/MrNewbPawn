@@ -18,10 +18,49 @@ if IsDuplicityVersion() then
         if not message or not _type then return end
         return Bridge.Notify.SendNotify(src, message, _type, time)
     end
+
+    function GetItemCount(src, itemName)
+        return Bridge.Inventory.GetItemCount(src, itemName)
+    end
+
+    function RemoveItem(src, itemName, count)
+        return Bridge.Inventory.RemoveItem(src, itemName, count)
+    end
+
+    function AddItem(src, itemName, count)
+        return Bridge.Inventory.AddItem(src, itemName, count)
+    end
+
+    function AddAccountBalance(src, _type, amount)
+        return Bridge.Framework.AddAccountBalance(src, _type, amount)
+    end
+
+    CreateThread(function()
+        Wait(1000)
+        Bridge.Version.VersionChecker("MrNewb/MrNewbPawn", false)
+    end)
 else
+    function GetItemInfo(itemName)
+        return Bridge.Inventory.GetItemInfo(itemName)
+    end
+
+    function GetItemCount(itemName)
+        return Bridge.Inventory.GetItemCount(itemName)
+    end
+
     function NotifyPlayer(message, _type, time)
         if not message or not _type then return end
         return Bridge.Notify.SendNotify(message, _type, time)
+    end
+
+    function VerifyDayTime(storeName)
+        local currenthour = GetClockHours()
+        if Config.PawnShops[storeName] and Config.PawnShops[storeName].StoreHours then
+            local storeHours = Config.PawnShops[storeName].StoreHours
+            if storeHours.open <= currenthour and storeHours.close >= currenthour then return true end
+            return false
+        end
+        return true
     end
 
     function BeginProgressBar(duration, label)
@@ -42,4 +81,13 @@ else
             return false
         end)
     end
+
+    RegisterNetEvent("community_bridge:Client:OnPlayerLoaded", function()
+        RegisterPawnPoints()
+        RegisterGoldMeltPoints()
+    end)
+
+    RegisterNetEvent("community_bridge:Client:OnPlayerUnload", function()
+        MaidService()
+    end)
 end

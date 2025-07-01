@@ -1,3 +1,26 @@
+function BuildPedsAndTargets(createdPed, heading, k)
+    SetEntityHeading(createdPed, heading)
+    SetBlockingOfNonTemporaryEvents(createdPed, true)
+    SetPedDiesWhenInjured(createdPed, false)
+    SetPedCanPlayAmbientAnims(createdPed, true)
+    SetPedCanRagdollFromPlayerImpact(createdPed, false)
+    SetEntityInvincible(createdPed, true)
+    FreezeEntityPosition(createdPed, true)
+    TaskStartScenarioInPlace(createdPed, "WORLD_HUMAN_SMOKING", 0, true)
+    Bridge.Target.AddLocalEntity(createdPed, {
+        {
+            name = 'PawnShop ' .. k,
+            label = locale("PawnShop.TargetLabel"),
+            icon  = locale("PawnShop.TargetIcon"),
+            distance = 5,
+            onSelect = function()
+                if not VerifyDayTime(k) then return false, NotifyPlayer(locale("PawnShop.ShopClosed"), "error", 3000) end
+                GeneratePawnMenus(k)
+            end
+        },
+    })
+end
+
 function RegisterPawnPoints()
     for k, v in pairs(Config.PawnShops) do
             if v.Blip then
@@ -10,26 +33,7 @@ function RegisterPawnPoints()
                 DebugInfo("Shop is currently open: " .. tostring(timeOfDayValid))
                 if timeOfDayValid then
                     local createdPed = Bridge.Utility.CreatePed(v.model, v.position, v.position.w, false, nil)
-                    SetEntityHeading(createdPed, v.position.w)
-                    SetBlockingOfNonTemporaryEvents(createdPed, true)
-                    SetPedDiesWhenInjured(createdPed, false)
-                    SetPedCanPlayAmbientAnims(createdPed, true)
-                    SetPedCanRagdollFromPlayerImpact(createdPed, false)
-                    SetEntityInvincible(createdPed, true)
-                    FreezeEntityPosition(createdPed, true)
-                    TaskStartScenarioInPlace(createdPed, "WORLD_HUMAN_SMOKING", 0, true)
-                    Bridge.Target.AddLocalEntity(createdPed, {
-                        {
-                            name = 'PawnShop ' .. k,
-                            label = locale("PawnShop.TargetLabel"),
-                            icon  = locale("PawnShop.TargetIcon"),
-                            distance = 5,
-                            onSelect = function()
-                                if not VerifyDayTime(k) then return false, NotifyPlayer(locale("PawnShop.ShopClosed"), "error", 3000) end
-                                GeneratePawnMenus(k)
-                            end
-                        },
-                    })
+                    BuildPedsAndTargets(createdPed, v.position.w, k)
                     args.CreatedPed = createdPed
                     CreatedPeds[k] = createdPed
                 end
@@ -37,7 +41,6 @@ function RegisterPawnPoints()
             end,
             function(point, args)-- OnExit
                 if args and args.CreatedPed and DoesEntityExist(args.CreatedPed) then
-                    DebugInfo("Removing ped: " .. args.CreatedPed)
                     SetEntityAsMissionEntity(args.CreatedPed, false, true)
                     DeleteEntity(args.CreatedPed)
                     CreatedPeds[k] = nil

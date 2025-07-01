@@ -1,4 +1,5 @@
 # MrNewbPawn
+Docs available at https://mrnewbs-scrips.gitbook.io/guide
 
 > **Professional FiveM Pawn Shop System** - Modern multi-location pawn shop script with Community Bridge integration, item smelting, and flexible time-based operations.
 

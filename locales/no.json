@@ -3,27 +3,27 @@
         "Title": "Pantelåner",
         "Description": "Pantelåneren er et sted hvor du kan selge dine gjenstander for penger.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Snakk med pantelåner eier",
+        "TargetLabel": "Snakk med Pantelåner Eieren",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "Pantelåneren er lukket!",
-        "SellItems": "Selg gjenstand for ",
-        "AmountToSell": "Mengden du vil selge",
+        "ShopClosed": "Pantelåneren er stengt!",
+        "SellItems": "Selg Gjenstand For ",
+        "AmountToSell": "Mengde å Selge",
         "color": "orange"
     },
     "Smelting": {
         "MenuTitle": "Smelting",
         "MenuDescription": "Smelt gjenstander for å lage nye gjenstander.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Smelt gjenstander",
+        "TargetLabel": "Smelt Gjenstander",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Mengden du vil smelte",
-        "SmeltingSuccess": "Du har smeltet gjenstanden med suksess!",
-        "ProgressBarLabel": "Smelting "
+        "AmountToSmelt": "Mengde å Smelte",
+        "SmeltingSuccess": "Du har smeltet gjenstanden!",
+        "ProgressBarLabel": "Smelter x %s %s"
     },
     "Warnings": {
         "DoNotHave": "Du har ikke denne gjenstanden!",
-        "Smelting": "Smelting...",
+        "Smelting": "Smelter...",
         "InvalidItem": "Denne gjenstanden kan ikke smeltes!"
     }
 }

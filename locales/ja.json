@@ -5,25 +5,25 @@
         "MenuIcon": "fa-solid fa-store",
         "TargetLabel": "質屋の店主と話す",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "質屋は閉まっています！",
+        "ShopClosed": "質屋は閉店しています！",
         "SellItems": "アイテムを売る ",
-        "AmountToSell": "売りたい数量",
+        "AmountToSell": "売却数量",
         "color": "orange"
     },
     "Smelting": {
-        "MenuTitle": "精錬",
-        "MenuDescription": "アイテムを精錬して新しいアイテムを作成します。",
+        "MenuTitle": "製錬",
+        "MenuDescription": "アイテムを製錬して新しいアイテムを作る。",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "アイテムを精錬する",
+        "TargetLabel": "アイテムを製錬する",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "精錬したい数量",
-        "SmeltingSuccess": "アイテムの精錬に成功しました！",
-        "ProgressBarLabel": "精錬中 "
+        "AmountToSmelt": "製錬数量",
+        "SmeltingSuccess": "アイテムの製錬に成功しました！",
+        "ProgressBarLabel": "%s %s を x 製錬中"
     },
     "Warnings": {
         "DoNotHave": "このアイテムを持っていません！",
-        "Smelting": "精錬中...",
-        "InvalidItem": "このアイテムは精錬できません！"
+        "Smelting": "製錬中...",
+        "InvalidItem": "このアイテムは製錬できません！"
     }
 }
