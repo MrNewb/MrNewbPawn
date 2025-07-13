@@ -65,7 +65,7 @@ For detailed configuration guides, visit our complete documentation.
 ![Community Bridge](https://img.shields.io/badge/Requires-Community_Bridge-critical?style=for-the-badge&logo=bridge&logoColor=white) ![Ox Library](https://img.shields.io/badge/Requires-ox__lib-orange?style=for-the-badge&logo=library&logoColor=white)
 
 **Required Dependencies:**
-- **[Community Bridge](https://github.com/The-Order-Of-The-Sacred-Framework/community_bridge)** - Cross-framework compatibility bridge
+- **[Community Bridge](https://github.com/TheOrderFivem/community_bridge/tree/main)** - Cross-framework compatibility bridge
 - **[Ox Library](https://github.com/overextended/ox_lib)** - Core utility library
 - **Framework** - ESX, QBCore, or Qbox/QBX (auto-detected)
 - **Inventory System** - Any system supported by Community Bridge
