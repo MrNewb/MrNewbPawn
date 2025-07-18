@@ -3,7 +3,10 @@
 **A free, multi location pawn shop system for FiveM.**
 Supports ESX, QBCore, and Qbox/QBX using [Community Bridge](https://github.com/TheOrderFivem/community_bridge). Includes advanced smelting, optional shop hours, and full customization.
 
-[Documentation](https://mrnewbs-scrips.gitbook.io/guide) [Discord](https://discord.gg/mrnewbscripts) [Ko-fi](https://ko-fi.com/R5R76BIM9)
+
+[![Docs](https://img.shields.io/badge/Docs-GitBook-blue?style=for-the-badge&logo=gitbook)](https://mrnewbs-scrips.gitbook.io/guide)
+[![Discord](https://img.shields.io/discord/1204398264812830720?label=Discord&logo=discord&color=7289DA&style=for-the-badge)](https://discord.gg/mrnewbscripts)
+[![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/R5R76BIM9)
 
 ---
 
