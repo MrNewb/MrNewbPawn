@@ -20,11 +20,12 @@ local function sliderSelect(item)
     local itemCount = GetItemCount(item)
     if itemCount <= 0 then return NotifyPlayer(locale("Warnings.DoNotHave"), "error", 6000) end
     local maxAmount = itemCount
-    local input = lib.inputDialog(itemLabel,{
+    local input = OpenInputMenu(itemLabel,{
         { type = 'slider', label = locale("Smelting.AmountToSmelt"), min = 1, max = maxAmount, step = 1 },
 	})
 
 	if not input or not input[1] then return end
+    if tonumber(input[1]) <= 0 then return end
     progressBarLogic(input[1], item, itemLabel)
 end
 

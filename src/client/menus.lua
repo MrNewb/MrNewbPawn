@@ -9,7 +9,6 @@ local function sliderSelect(item)
     local input = OpenInputMenu(itemLabel, {
         { type = 'slider', label = locale("PawnShop.AmountToSell"), min = 1, max = maxAmount, step = 1 },
 	})
-    -- wish qb-input had slider support
 
 	if not input or not input[1] then return end
     if tonumber(input[1]) <= 0 then return end
