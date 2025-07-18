@@ -5,7 +5,9 @@ function locale(message)
 end
 
 function GenerateRandomString()
-    return Bridge.Ids.RandomLower(nil, 8)
+    local prefix = "MrNewbPawn_"
+    local randomString = Bridge.Ids.RandomLower(nil, 8)
+    return prefix .. randomString
 end
 
 function DebugInfo(message)
@@ -80,6 +82,14 @@ else
             if not cancelled then return true end
             return false
         end)
+    end
+
+    function GenerateLocalEntityTarget(entity, options)
+        return Bridge.Target.AddLocalEntity(entity, options)
+    end
+
+    function RemoveLocalEntityTarget(entity, optionName)
+        return Bridge.Target.RemoveLocalEntity(entity, optionName)
     end
 
     RegisterNetEvent("community_bridge:Client:OnPlayerLoaded", function()

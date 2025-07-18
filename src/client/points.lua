@@ -7,7 +7,7 @@ function BuildPedsAndTargets(createdPed, heading, k)
     SetEntityInvincible(createdPed, true)
     FreezeEntityPosition(createdPed, true)
     TaskStartScenarioInPlace(createdPed, "WORLD_HUMAN_SMOKING", 0, true)
-    Bridge.Target.AddLocalEntity(createdPed, {
+    GenerateLocalEntityTarget(createdPed, {
         {
             name = 'PawnShop ' .. k,
             label = locale("PawnShop.TargetLabel"),
@@ -41,7 +41,8 @@ function RegisterPawnPoints()
             end,
             function(point, args)-- OnExit
                 if args and args.CreatedPed and DoesEntityExist(args.CreatedPed) then
-                    SetEntityAsMissionEntity(args.CreatedPed, false, true)
+                    SetEntityAsMissionEntity(args.CreatedPed, true, true)
+                    RemoveLocalEntityTarget(args.CreatedPed)
                     DeleteEntity(args.CreatedPed)
                     CreatedPeds[k] = nil
                 end
