@@ -1,0 +1,30 @@
+{
+    "SubmitText": "Arrr, Submit!",
+    "PawnShop": {
+        "Title": "Pirate Pawn Shop",
+        "Description": "The pirate pawn shop be where ye sell yer loot fer doubloons.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Parley with the Pawn Shop Captain",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "The pawn shop be closed, matey!",
+        "SellItems": "Trade Booty Fer ",
+        "AmountToSell": "How Much Booty?",
+        "color": "gold"
+    },
+    "Smelting": {
+        "MenuTitle": "Blacksmithin'",
+        "MenuDescription": "Smelt yer loot to forge new treasures.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Smelt Yer Booty",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "gold",
+        "AmountToSmelt": "How Much to Smelt?",
+        "SmeltingSuccess": "Ye smelted the booty down, savvy!",
+        "ProgressBarLabel": "Smeltin' x %s %s"
+    },
+    "Warnings": {
+        "DoNotHave": "Ye don't have this booty, scallywag!",
+        "Smelting": "Smeltin'...",
+        "InvalidItem": "This booty can't be smelted, matey!"
+    }
+}

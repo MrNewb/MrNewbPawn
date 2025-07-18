@@ -55,6 +55,10 @@ else
         return Bridge.Notify.SendNotify(message, _type, time)
     end
 
+    function OpenInputMenu(label, options)
+        return Bridge.Input.Open(label, options, false, locale("SubmitText"))
+    end
+
     function VerifyDayTime(storeName)
         local currenthour = GetClockHours()
         if Config.PawnShops[storeName] and Config.PawnShops[storeName].StoreHours then

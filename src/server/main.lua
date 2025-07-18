@@ -1,5 +1,7 @@
 RegisterNetEvent("MrNewbPawn_V2:Server:SellPawn", function(item, amount)
     local src = source
+    amount = tonumber(amount)
+    if amount <= 0 then return NotifyPlayer(src, locale("Warnings.DoNotHave"), "error", 6000) end
     local verified = Config.PawnItems[item]
     if not verified then return NotifyPlayer(src, locale("Warnings.InvalidItem"), "error", 6000) end
     local itemCheck = GetItemCount(src, item)
@@ -11,6 +13,8 @@ end)
 
 RegisterNetEvent('MrNewbPawn_V2:Server:Scrapping', function(itemName, amount)
     local src = source
+    amount = tonumber(amount)
+    if amount <= 0 then return NotifyPlayer(src, locale("Warnings.DoNotHave"), "error", 6000) end
     local meltableItems = Config.MeltableItems[itemName]
     if not meltableItems then return NotifyPlayer(src, locale("Warnings.InvalidItem"), "error", 6000) end
     local itemCheck = GetItemCount(src, itemName)
