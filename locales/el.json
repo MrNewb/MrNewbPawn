@@ -7,7 +7,7 @@
         "TargetLabel": "Μιλήστε με τον Ιδιοκτήτη του Ενεχυροδανειστηρίου",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Το ενεχυροδανειστήριο είναι κλειστό!",
-        "SellItems": "Πώληση Αντικειμένου για ",
+        "SellItems": "Πώληση Αντικειμένου για $%s",
         "AmountToSell": "Ποσότητα προς Πώληση",
         "color": "orange"
     },

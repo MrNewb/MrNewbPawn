@@ -7,7 +7,7 @@
         "TargetLabel": "Porozmawiaj z Właścicielem Lombardu",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Lombard jest zamknięty!",
-        "SellItems": "Sprzedaj Przedmiot Za ",
+        "SellItems": "Sprzedaj Przedmiot Za $%s",
         "AmountToSell": "Ilość do Sprzedania",
         "color": "orange"
     },

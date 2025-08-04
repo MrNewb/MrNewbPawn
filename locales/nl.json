@@ -7,7 +7,7 @@
         "TargetLabel": "Praat met de Lommerd Eigenaar",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "De lommerd is gesloten!",
-        "SellItems": "Verkoop Item Voor ",
+        "SellItems": "Verkoop Item Voor $%s",
         "AmountToSell": "Hoeveelheid te Verkopen",
         "color": "orange"
     },

@@ -7,7 +7,7 @@
         "TargetLabel": "Puhu Panttilainaamon Omistajan kanssa",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Panttilainaamo on kiinni!",
-        "SellItems": "Myy Tavara ",
+        "SellItems": "Myy Tavara $%s",
         "AmountToSell": "Myytävä Määrä",
         "color": "orange"
     },

@@ -7,7 +7,7 @@
         "TargetLabel": "Speak to Pawn Shop Owner",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "The pawn shop is closed!",
-        "SellItems": "Sell Item For ",
+        "SellItems": "Sell Item For $%s",
         "AmountToSell": "Amount to Sell",
         "color": "orange"
     },

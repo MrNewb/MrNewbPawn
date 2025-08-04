@@ -30,7 +30,7 @@ function GeneratePawnMenus(shop)
         local itemLabel = GetItemInfo(k).label
         table.insert(menuOptions, {
             title = itemLabel,
-            description = string.format(locale("PawnShop.SellItems") .. " $%d", v),
+            description = locale("PawnShop.SellItems", v),
             icon = GetItemInfo(k).image,
             iconColor = locale("PawnShop.color"),
             onSelect = function()

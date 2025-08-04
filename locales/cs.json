@@ -7,7 +7,7 @@
         "TargetLabel": "Promluvit si s Majitelem Zástavárny",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Zástavárna je zavřená!",
-        "SellItems": "Prodat Předmět Za ",
+        "SellItems": "Prodat Předmět Za $%s",
         "AmountToSell": "Množství k Prodeji",
         "color": "orange"
     },

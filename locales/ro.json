@@ -7,7 +7,7 @@
         "TargetLabel": "Vorbește cu Proprietarul Amanetului",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Amanetul este închis!",
-        "SellItems": "Vinde Obiect Pentru ",
+        "SellItems": "Vinde Obiect Pentru  $%s",
         "AmountToSell": "Cantitatea de Vândut",
         "color": "orange"
     },

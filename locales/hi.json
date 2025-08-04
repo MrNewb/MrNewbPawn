@@ -7,7 +7,7 @@
         "TargetLabel": "गिरवी की दुकान के मालिक से बात करें",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "गिरवी की दुकान बंद है!",
-        "SellItems": "सामान बेचें ",
+        "SellItems": "सामान बेचें $%s",
         "AmountToSell": "बेचने की मात्रा",
         "color": "orange"
     },

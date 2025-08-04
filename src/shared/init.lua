@@ -1,7 +1,7 @@
 Bridge = exports.community_bridge:Bridge()
 
-function locale(message)
-    return Bridge.Language.Locale(message)
+function locale(message, ...)
+    return Bridge.Language.Locale(message, ...)
 end
 
 function GenerateRandomString()
@@ -16,44 +16,27 @@ function DebugInfo(message)
 end
 
 if IsDuplicityVersion() then
-    function NotifyPlayer(src, message, _type, time)
-        if not message or not _type then return end
-        return Bridge.Notify.SendNotify(src, message, _type, time)
-    end
+    NotifyPlayer = Bridge.Notify.SendNotify
 
-    function GetItemCount(src, itemName)
-        return Bridge.Inventory.GetItemCount(src, itemName)
-    end
+    GetItemCount = Bridge.Inventory.GetItemCount
 
-    function RemoveItem(src, itemName, count)
-        return Bridge.Inventory.RemoveItem(src, itemName, count)
-    end
+    RemoveItem = Bridge.Inventory.RemoveItem
 
-    function AddItem(src, itemName, count)
-        return Bridge.Inventory.AddItem(src, itemName, count)
-    end
+    AddItem = Bridge.Inventory.AddItem
 
-    function AddAccountBalance(src, _type, amount)
-        return Bridge.Framework.AddAccountBalance(src, _type, amount)
-    end
+    AddAccountBalance = Bridge.Framework.AddAccountBalance
 
-    CreateThread(function()
-        Wait(1000)
-        Bridge.Version.VersionChecker("MrNewb/MrNewbPawn", false)
+    AddEventHandler('onResourceStart', function(resource)
+        if resource ~= GetCurrentResourceName() then return end
+        Bridge.Version.VersionChecker("MrNewb/patchnotes", false, true, "MrNewbPawn", "MrNewb/MrNewbPawn")
     end)
 else
-    function GetItemInfo(itemName)
-        return Bridge.Inventory.GetItemInfo(itemName)
-    end
 
-    function GetItemCount(itemName)
-        return Bridge.Inventory.GetItemCount(itemName)
-    end
+    GetItemInfo = Bridge.Inventory.GetItemInfo
 
-    function NotifyPlayer(message, _type, time)
-        if not message or not _type then return end
-        return Bridge.Notify.SendNotify(message, _type, time)
-    end
+    GetItemCount = Bridge.Inventory.GetItemCount
+
+    NotifyPlayer = Bridge.Notify.SendNotify
 
     function OpenInputMenu(label, options)
         return Bridge.Input.Open(label, options, false, locale("SubmitText"))
@@ -70,31 +53,19 @@ else
     end
 
     function BeginProgressBar(duration, label)
-        Bridge.ProgressBar.Open({
+        local success = Bridge.ProgressBar.Open({
             duration = duration,
             label = label,
-            disable = {
-                move = true,
-                combat = true
-            },
-            anim = {
-                dict = "amb@prop_human_bum_bin@idle_b",
-                clip = "idle_d",
-                flag = 49,
-            }
-        }, function(cancelled)
-            if not cancelled then return true end
-            return false
-        end)
+            disable = { move = true, combat = true },
+            anim = { dict = "amb@prop_human_bum_bin@idle_b", clip = "idle_d", flag = 49,},
+            canCancel = true,
+        })
+        return success
     end
 
-    function GenerateLocalEntityTarget(entity, options)
-        return Bridge.Target.AddLocalEntity(entity, options)
-    end
+    GenerateLocalEntityTarget = Bridge.Target.AddLocalEntity
 
-    function RemoveLocalEntityTarget(entity, optionName)
-        return Bridge.Target.RemoveLocalEntity(entity, optionName)
-    end
+    RemoveLocalEntityTarget = Bridge.Target.RemoveLocalEntity
 
     RegisterNetEvent("community_bridge:Client:OnPlayerLoaded", function()
         RegisterPawnPoints()

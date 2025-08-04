@@ -1,6 +1,6 @@
 local function progressBarLogic(itemcount, item, label)
     local duration = itemcount * 1000
-    local success = BeginProgressBar(duration, string.format(locale("Smelting.ProgressBarLabel"), itemcount, label))
+    local success = BeginProgressBar(duration, locale("Smelting.ProgressBarLabel", itemcount, label))
     local count = 0
     CreateThread(function()
         while not success and count < duration do

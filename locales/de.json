@@ -7,7 +7,7 @@
         "TargetLabel": "Mit dem Pfandhaus-Besitzer sprechen",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Das Pfandhaus ist geschlossen!",
-        "SellItems": "Gegenstand verkaufen für ",
+        "SellItems": "Gegenstand verkaufen für $%s",
         "AmountToSell": "Zu verkaufende Menge",
         "color": "orange"
     },

@@ -7,7 +7,7 @@
         "TargetLabel": "与典当行老板交谈",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "典当行已关门！",
-        "SellItems": "出售物品 ",
+        "SellItems": "出售物品 $%s",
         "AmountToSell": "出售数量",
         "color": "orange"
     },

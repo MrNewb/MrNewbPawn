@@ -7,7 +7,7 @@
         "TargetLabel": "전당포 주인과 대화하기",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "전당포가 문을 닫았습니다!",
-        "SellItems": "아이템 판매 ",
+        "SellItems": "아이템 판매 $%s",
         "AmountToSell": "판매 수량",
         "color": "orange"
     },

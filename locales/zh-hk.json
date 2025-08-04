@@ -7,7 +7,7 @@
         "TargetLabel": "與當舖老闆交談",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "當舖已關門！",
-        "SellItems": "出售物品 ",
+        "SellItems": "出售物品 $%s",
         "AmountToSell": "出售數量",
         "color": "orange"
     },

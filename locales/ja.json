@@ -7,7 +7,7 @@
         "TargetLabel": "質屋の店主と話す",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "質屋は閉店しています！",
-        "SellItems": "アイテムを売る ",
+        "SellItems": "アイテムを売る $%s",
         "AmountToSell": "売却数量",
         "color": "orange"
     },

@@ -7,7 +7,7 @@
         "TargetLabel": "Prata med Pantbankens Ägare",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Pantbanken är stängd!",
-        "SellItems": "Sälj Föremål För ",
+        "SellItems": "Sälj Föremål För $%s",
         "AmountToSell": "Mängd att Sälja",
         "color": "orange"
     },

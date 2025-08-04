@@ -7,7 +7,7 @@
         "TargetLabel": "พูดกับเจ้าของโรงรับจำนำ",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "โรงรับจำนำปิดแล้ว!",
-        "SellItems": "ขายสินค้า ",
+        "SellItems": "ขายสินค้า $%s",
         "AmountToSell": "จำนวนที่จะขาย",
         "color": "orange"
     },

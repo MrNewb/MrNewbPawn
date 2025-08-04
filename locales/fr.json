@@ -7,7 +7,7 @@
         "TargetLabel": "Parler au Propriétaire du Prêteur sur Gages",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Le prêteur sur gages est fermé !",
-        "SellItems": "Vendre l'Objet Pour ",
+        "SellItems": "Vendre l'Objet Pour $%s",
         "AmountToSell": "Quantité à Vendre",
         "color": "orange"
     },

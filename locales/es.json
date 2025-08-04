@@ -7,7 +7,7 @@
         "TargetLabel": "Hablar con el Propietario de la Casa de Empeños",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "¡La casa de empeños está cerrada!",
-        "SellItems": "Vender Artículo Por ",
+        "SellItems": "Vender Artículo Por $%s",
         "AmountToSell": "Cantidad a Vender",
         "color": "orange"
     },

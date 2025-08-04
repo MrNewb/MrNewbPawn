@@ -7,7 +7,7 @@
         "TargetLabel": "Beszélj a Zálogház Tulajdonosával",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "A zálogház zárva van!",
-        "SellItems": "Tárgy Eladása ",
+        "SellItems": "Tárgy Eladása $%s",
         "AmountToSell": "Eladandó Mennyiség",
         "color": "orange"
     },

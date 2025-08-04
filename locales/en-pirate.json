@@ -7,7 +7,7 @@
         "TargetLabel": "Parley with the Pawn Shop Captain",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "The pawn shop be closed, matey!",
-        "SellItems": "Trade Booty Fer ",
+        "SellItems": "Trade Booty Fer $%s",
         "AmountToSell": "How Much Booty?",
         "color": "gold"
     },

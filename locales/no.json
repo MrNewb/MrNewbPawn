@@ -7,7 +7,7 @@
         "TargetLabel": "Snakk med Pantelåner Eieren",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Pantelåneren er stengt!",
-        "SellItems": "Selg Gjenstand For ",
+        "SellItems": "Selg Gjenstand For $%s",
         "AmountToSell": "Mengde å Selge",
         "color": "orange"
     },

@@ -1,0 +1,30 @@
+{
+    "SubmitText": "Pošalji",
+    "PawnShop": {
+        "Title": "Zalogajnica",
+        "Description": "Zalogajnica je mjesto gdje možete prodati svoje predmete za novac.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Razgovaraj sa vlasnikom zalogajnice",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Zalogajnica je zatvorena!",
+        "SellItems": "Prodaj predmet za $%s",
+        "AmountToSell": "Količina za prodaju",
+        "color": "orange"
+    },
+    "Smelting": {
+        "MenuTitle": "Taljenje",
+        "MenuDescription": "Talite predmete kako biste stvorili nove predmete.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Taljenje predmeta",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Količina za taljenje",
+        "SmeltingSuccess": "Uspješno ste istalili predmet!",
+        "ProgressBarLabel": "Taljenje x %s %s"
+    },
+    "Warnings": {
+        "DoNotHave": "Nemate ovaj predmet!",
+        "Smelting": "Taljenje...",
+        "InvalidItem": "Ovaj predmet se ne može taliti!"
+    }
+}
