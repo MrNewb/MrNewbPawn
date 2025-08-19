@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 name 'MrNewbPawn'
 description 'A basic, minimally featured pawn shop system. Its an older system, slightly updated to remain functional, focusing solely on buying and selling items without any extra frills.'
-version '1.2.0'
+version '1.2.1'
 
 shared_scripts {
 	'src/shared/config.lua',

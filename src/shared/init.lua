@@ -28,7 +28,7 @@ if IsDuplicityVersion() then
 
     AddEventHandler('onResourceStart', function(resource)
         if resource ~= GetCurrentResourceName() then return end
-        Bridge.Version.VersionChecker("MrNewb/patchnotes", false, true, "MrNewbPawn", "MrNewb/MrNewbPawn")
+        Bridge.Version.AdvancedVersionChecker("MrNewb/patchnotes", resource)
     end)
 else
 
