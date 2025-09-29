@@ -1,30 +1,48 @@
 {
-    "SubmitText": "Absenden",
+    "SubmitText": "Bestätigen",
     "PawnShop": {
         "Title": "Pfandhaus",
-        "Description": "Das Pfandhaus ist ein Ort, an dem Sie Ihre Gegenstände gegen Geld verkaufen können.",
+        "Description": "Das Pfandhaus ist ein Ort, an dem Sie Ihre Gegenstände für Geld verkaufen können.",
         "MenuIcon": "fa-solid fa-store",
         "TargetLabel": "Mit dem Pfandhaus-Besitzer sprechen",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Das Pfandhaus ist geschlossen!",
-        "SellItems": "Gegenstand verkaufen für $%s",
-        "AmountToSell": "Zu verkaufende Menge",
-        "color": "orange"
+        "SellItems": "Gegenstand für $%s verkaufen",
+        "AmountToSell": "Menge zu verkaufen",
+        "AmountToPurchase": "Menge zu kaufen",
+        "PawnedItemDescription": "kaufe x %s für $%s",
+        "SellingProgress": "Verkaufe x %s %s",
+        "SellTitle": "Gegenstände verkaufen",
+        "SoldItem": "Sie haben %s %s für $%s verkauft",
+        "PawnedTitle": "Verpfändeter Bestand",
+        "PawnedDescription": "Kaufen Sie Gegenstände, die zuvor an das Pfandhaus verkauft wurden.",
+        "SellDescription": "Verkaufen Sie Ihre Gegenstände an das Pfandhaus für schnelles Geld.",
+        "NoStock": "Derzeit ist kein Bestand verfügbar.",
+        "NoItemsToSell": "Sie haben keine Gegenstände zu verkaufen!",
+        "PurchasedPawnedItem": "Sie haben %s %s für $%s gekauft",
+        "color": "orange",
+        "NoPawnedItems": "Es sind keine verpfändeten Gegenstände zum Kauf verfügbar."
     },
     "Smelting": {
         "MenuTitle": "Schmelzen",
-        "MenuDescription": "Gegenstände schmelzen, um neue Gegenstände zu erstellen.",
+        "MenuDescription": "Schmelzen Sie Gegenstände, um Komponenten zu erhalten.",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "Gegenstände schmelzen",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Zu schmelzende Menge",
-        "SmeltingSuccess": "Sie haben den Gegenstand erfolgreich geschmolzen!",
+        "AmountToSmelt": "Menge zu schmelzen",
+        "SmeltingSuccess": "Sie haben den Gegenstand erfolgreich eingeschmolzen!",
         "ProgressBarLabel": "Schmelze x %s %s"
     },
     "Warnings": {
+        "Canceled": "Abgebrochen.",
         "DoNotHave": "Sie haben diesen Gegenstand nicht!",
         "Smelting": "Schmelze...",
         "InvalidItem": "Dieser Gegenstand kann nicht geschmolzen werden!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s hat x %s %s für $%s verkauft",
+        "PurchasedItem": "%s hat x %s %s für $%s vom Pfandhaus gekauft",
+        "SmeltedItem": "%s hat x %s %s geschmolzen"
     }
 }

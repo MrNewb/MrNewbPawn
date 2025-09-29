@@ -2,29 +2,47 @@
     "SubmitText": "Trimite",
     "PawnShop": {
         "Title": "Amanet",
-        "Description": "Amanetul este un loc unde îți poți vinde obiectele pentru bani.",
+        "Description": "Amanetul este un loc unde poți să îți vinzi obiectele pentru bani.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Vorbește cu Proprietarul Amanetului",
+        "TargetLabel": "Vorbește cu proprietarul amanetului",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Amanetul este închis!",
-        "SellItems": "Vinde Obiect Pentru  $%s",
-        "AmountToSell": "Cantitatea de Vândut",
-        "color": "orange"
+        "SellItems": "Vinde obiectul pentru $%s",
+        "AmountToSell": "Cantitatea de vânzare",
+        "AmountToPurchase": "Cantitatea de cumpărare",
+        "PawnedItemDescription": "cumpără x %s pentru $%s",
+        "SellingProgress": "Se vinde x %s %s",
+        "SellTitle": "Vinde obiecte",
+        "SoldItem": "Ai vândut %s %s pentru $%s",
+        "PawnedTitle": "Stoc amanetat",
+        "PawnedDescription": "Cumpără obiecte vândute anterior la amanet.",
+        "SellDescription": "Vinde-ți obiectele la amanet pentru bani rapizi.",
+        "NoStock": "Nu există stoc disponibil în acest moment.",
+        "NoItemsToSell": "Nu ai obiecte de vânzare!",
+        "PurchasedPawnedItem": "Ai cumpărat %s %s pentru $%s",
+        "color": "orange",
+        "NoPawnedItems": "Nu există obiecte amanetate disponibile pentru cumpărare."
     },
     "Smelting": {
         "MenuTitle": "Topire",
-        "MenuDescription": "Topește obiecte pentru a crea obiecte noi.",
+        "MenuDescription": "Topește obiecte pentru a obține componente.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Topește Obiecte",
+        "TargetLabel": "Topește obiecte",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Cantitatea de Topit",
+        "AmountToSmelt": "Cantitatea de topit",
         "SmeltingSuccess": "Ai topit cu succes obiectul!",
-        "ProgressBarLabel": "Topind x %s %s"
+        "ProgressBarLabel": "Topire x %s %s"
     },
     "Warnings": {
+        "Canceled": "Anulat.",
         "DoNotHave": "Nu ai acest obiect!",
-        "Smelting": "Topind...",
+        "Smelting": "Topire...",
         "InvalidItem": "Acest obiect nu poate fi topit!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s a vândut x %s %s pentru $%s",
+        "PurchasedItem": "%s a cumpărat x %s %s pentru $%s de la amanet",
+        "SmeltedItem": "%s a topit x %s %s"
     }
 }

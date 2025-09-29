@@ -1,30 +1,48 @@
 {
-    "SubmitText": "Pošalji",
+    "SubmitText": "Pošaljite",
     "PawnShop": {
-        "Title": "Zalogajnica",
-        "Description": "Zalogajnica je mjesto gdje možete prodati svoje predmete za novac.",
+        "Title": "Zalagaonica",
+        "Description": "Zalagaonica je mjesto gdje možete prodati svoje predmete za novac.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Razgovaraj sa vlasnikom zalogajnice",
+        "TargetLabel": "Razgovarajte s vlasnikom zalagaonice",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "Zalogajnica je zatvorena!",
-        "SellItems": "Prodaj predmet za $%s",
+        "ShopClosed": "Zalagaonica je zatvorena!",
+        "SellItems": "Prodajte predmet za $%s",
         "AmountToSell": "Količina za prodaju",
-        "color": "orange"
+        "AmountToPurchase": "Količina za kupnju",
+        "PawnedItemDescription": "kupite x %s za $%s",
+        "SellingProgress": "Prodavanje x %s %s",
+        "SellTitle": "Prodajte predmete",
+        "SoldItem": "Prodali ste %s %s za $%s",
+        "PawnedTitle": "Založena roba",
+        "PawnedDescription": "Kupite predmete koji su prethodno prodani u zalagaonicu.",
+        "SellDescription": "Prodajte svoje predmete u zalagaonicu za brz novac.",
+        "NoStock": "Trenutno nema dostupne robe.",
+        "NoItemsToSell": "Nemate predmete za prodaju!",
+        "PurchasedPawnedItem": "Kupili ste %s %s za $%s",
+        "color": "orange",
+        "NoPawnedItems": "Nema založenih predmeta dostupnih za kupnju."
     },
     "Smelting": {
         "MenuTitle": "Taljenje",
-        "MenuDescription": "Talite predmete kako biste stvorili nove predmete.",
+        "MenuDescription": "Rastopite predmete da biste dobili komponente.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Taljenje predmeta",
+        "TargetLabel": "Rastopite predmete",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "Količina za taljenje",
-        "SmeltingSuccess": "Uspješno ste istalili predmet!",
+        "SmeltingSuccess": "Uspješno ste rastopili predmet!",
         "ProgressBarLabel": "Taljenje x %s %s"
     },
     "Warnings": {
+        "Canceled": "Otkazano.",
         "DoNotHave": "Nemate ovaj predmet!",
         "Smelting": "Taljenje...",
-        "InvalidItem": "Ovaj predmet se ne može taliti!"
+        "InvalidItem": "Ovaj predmet se ne može rastopiti!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s je prodao x %s %s za $%s",
+        "PurchasedItem": "%s je kupio x %s %s za $%s iz zalagaonice",
+        "SmeltedItem": "%s je rastopио x %s %s"
     }
 }

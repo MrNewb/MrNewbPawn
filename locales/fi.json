@@ -2,29 +2,47 @@
     "SubmitText": "Lähetä",
     "PawnShop": {
         "Title": "Panttilainaamo",
-        "Description": "Panttilainaamo on paikka, jossa voit myydä tavaroitasi rahasta.",
+        "Description": "Panttilainaamo on paikka, jossa voit myydä tavarasi rahaksi.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Puhu Panttilainaamon Omistajan kanssa",
+        "TargetLabel": "Puhu panttilainaamon omistajan kanssa",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "Panttilainaamo on kiinni!",
-        "SellItems": "Myy Tavara $%s",
-        "AmountToSell": "Myytävä Määrä",
-        "color": "orange"
+        "ShopClosed": "Panttilainaamo on suljettu!",
+        "SellItems": "Myy esine $%s:lla",
+        "AmountToSell": "Myytävä määrä",
+        "AmountToPurchase": "Ostettava määrä",
+        "PawnedItemDescription": "osta x %s $%s:lla",
+        "SellingProgress": "Myydään x %s %s",
+        "SellTitle": "Myy esineitä",
+        "SoldItem": "Myit %s %s $%s:lla",
+        "PawnedTitle": "Pantattu varasto",
+        "PawnedDescription": "Osta esineitä, jotka on aiemmin myyty panttilainaamoon.",
+        "SellDescription": "Myy tavarasi panttilainaamoon nopeaa käteistä varten.",
+        "NoStock": "Varastoa ei ole tällä hetkellä saatavilla.",
+        "NoItemsToSell": "Sinulla ei ole esineitä myytäväksi!",
+        "PurchasedPawnedItem": "Ostit %s %s $%s:lla",
+        "color": "orange",
+        "NoPawnedItems": "Pantatuista esineistä ei ole saatavilla ostettavaksi."
     },
     "Smelting": {
         "MenuTitle": "Sulatus",
-        "MenuDescription": "Sulata tavaroita luodaksesi uusia tavaroita.",
+        "MenuDescription": "Sulata esineitä komponenttien saamiseksi.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Sulata Tavaroita",
+        "TargetLabel": "Sulata esineitä",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Sulatettava Määrä",
-        "SmeltingSuccess": "Olet sulauttanut tavaran onnistuneesti!",
+        "AmountToSmelt": "Sulatettava määrä",
+        "SmeltingSuccess": "Sulutit esineen onnistuneesti!",
         "ProgressBarLabel": "Sulatetaan x %s %s"
     },
     "Warnings": {
-        "DoNotHave": "Sinulla ei ole tätä tavaraa!",
+        "Canceled": "Peruutettu.",
+        "DoNotHave": "Sinulla ei ole tätä esinettä!",
         "Smelting": "Sulatetaan...",
-        "InvalidItem": "Tätä tavaraa ei voi sulattaa!"
+        "InvalidItem": "Tätä esinettä ei voi sulattaa!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s myi x %s %s $%s:lla",
+        "PurchasedItem": "%s osti x %s %s $%s:lla panttilainaamosta",
+        "SmeltedItem": "%s sulatti x %s %s"
     }
 }

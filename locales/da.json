@@ -1,30 +1,48 @@
 {
-    "SubmitText": "Indsend",
+    "SubmitText": "Send",
     "PawnShop": {
-        "Title": "Pantelåner",
-        "Description": "Pantelåneren er et sted, hvor du kan sælge dine genstande for penge.",
+        "Title": "Pantlåner",
+        "Description": "Pantlåneren er et sted, hvor du kan sælge dine ting for penge.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Tal med Pantelåner Ejeren",
+        "TargetLabel": "Tal med pantlånerejeren",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "Pantelåneren er lukket!",
-        "SellItems": "Sælg Genstand For $%s",
-        "AmountToSell": "Mængde at Sælge",
-        "color": "orange"
+        "ShopClosed": "Pantlåneren er lukket!",
+        "SellItems": "Sælg genstand for $%s",
+        "AmountToSell": "Mængde at sælge",
+        "AmountToPurchase": "Mængde at købe",
+        "PawnedItemDescription": "køb x %s for $%s",
+        "SellingProgress": "Sælger x %s %s",
+        "SellTitle": "Sælg genstande",
+        "SoldItem": "Du har solgt %s %s for $%s",
+        "PawnedTitle": "Pantsat lager",
+        "PawnedDescription": "Køb genstande tidligere solgt til pantlåneren.",
+        "SellDescription": "Sælg dine ting til pantlåneren for hurtige penge.",
+        "NoStock": "Der er intet lager tilgængeligt på nuværende tidspunkt.",
+        "NoItemsToSell": "Du har ingen genstande at sælge!",
+        "PurchasedPawnedItem": "Du har købt %s %s for $%s",
+        "color": "orange",
+        "NoPawnedItems": "Der er ingen pantsatte genstande tilgængelige til køb."
     },
     "Smelting": {
         "MenuTitle": "Smeltning",
-        "MenuDescription": "Smelt genstande for at skabe nye genstande.",
+        "MenuDescription": "Smelt genstande for at få komponenter.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Smelt Genstande",
+        "TargetLabel": "Smelt genstande",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Mængde at Smelte",
-        "SmeltingSuccess": "Du har smeltet genstanden!",
+        "AmountToSmelt": "Mængde at smelte",
+        "SmeltingSuccess": "Du har succesfuldt smeltet genstanden!",
         "ProgressBarLabel": "Smelter x %s %s"
     },
     "Warnings": {
+        "Canceled": "Aflyst.",
         "DoNotHave": "Du har ikke denne genstand!",
         "Smelting": "Smelter...",
         "InvalidItem": "Denne genstand kan ikke smeltes!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s har solgt x %s %s for $%s",
+        "PurchasedItem": "%s har købt x %s %s for $%s fra pantlåneren",
+        "SmeltedItem": "%s har smeltet x %s %s"
     }
 }

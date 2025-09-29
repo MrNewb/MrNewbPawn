@@ -7,24 +7,42 @@
         "TargetLabel": "Prata med Pantbankens Ägare",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Pantbanken är stängd!",
-        "SellItems": "Sälj Föremål För $%s",
-        "AmountToSell": "Mängd att Sälja",
-        "color": "orange"
+        "SellItems": "Sälj Föremål för $%s",
+        "AmountToSell": "Antal att Sälja",
+        "AmountToPurchase": "Antal att Köpa",
+        "PawnedItemDescription": "köp x %s för $%s",
+        "SellingProgress": "Säljer x %s %s",
+        "SellTitle": "Sälj Föremål",
+        "SoldItem": "Du har sålt %s %s för $%s",
+        "PawnedTitle": "Pantsatt Lager",
+        "PawnedDescription": "Köp föremål som tidigare sålts till pantbanken.",
+        "SellDescription": "Sälj dina föremål till pantbanken för snabba pengar.",
+        "NoStock": "Det finns inget lager tillgängligt för tillfället.",
+        "NoItemsToSell": "Du har inga föremål att sälja!",
+        "PurchasedPawnedItem": "Du har köpt %s %s för $%s",
+        "color": "orange",
+        "NoPawnedItems": "Det finns inga pantsatta föremål tillgängliga för köp."
     },
     "Smelting": {
         "MenuTitle": "Smältning",
-        "MenuDescription": "Smält föremål för att skapa nya föremål.",
+        "MenuDescription": "Smält föremål för att få komponenter.",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "Smält Föremål",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Mängd att Smälta",
-        "SmeltingSuccess": "Du har smält föremålet framgångsrikt!",
+        "AmountToSmelt": "Antal att Smälta",
+        "SmeltingSuccess": "Du har smält ner föremålet!",
         "ProgressBarLabel": "Smälter x %s %s"
     },
     "Warnings": {
+        "Canceled": "Avbrutet.",
         "DoNotHave": "Du har inte detta föremål!",
         "Smelting": "Smälter...",
         "InvalidItem": "Detta föremål kan inte smältas!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s har sålt x %s %s för $%s",
+        "PurchasedItem": "%s har köpt x %s %s för $%s från pantbanken",
+        "SmeltedItem": "%s har smält x %s %s"
     }
 }

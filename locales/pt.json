@@ -7,24 +7,42 @@
         "TargetLabel": "Falar com o Proprietário da Casa de Penhores",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "A casa de penhores está fechada!",
-        "SellItems": "Vender Item Por $%s",
-        "AmountToSell": "Quantidade a Vender",
-        "color": "orange"
+        "SellItems": "Vender Item por $%s",
+        "AmountToSell": "Quantidade para Vender",
+        "AmountToPurchase": "Quantidade para Comprar",
+        "PawnedItemDescription": "comprar x %s por $%s",
+        "SellingProgress": "Vendendo x %s %s",
+        "SellTitle": "Vender Itens",
+        "SoldItem": "Você vendeu %s %s por $%s",
+        "PawnedTitle": "Estoque Penhorado",
+        "PawnedDescription": "Compre itens previamente vendidos à casa de penhores.",
+        "SellDescription": "Venda seus itens à casa de penhores por dinheiro rápido.",
+        "NoStock": "Não há estoque disponível no momento.",
+        "NoItemsToSell": "Você não tem itens para vender!",
+        "PurchasedPawnedItem": "Você comprou %s %s por $%s",
+        "color": "orange",
+        "NoPawnedItems": "Não há itens penhorados disponíveis para compra."
     },
     "Smelting": {
         "MenuTitle": "Fundição",
-        "MenuDescription": "Fundir itens para criar novos itens.",
+        "MenuDescription": "Funda itens para obter componentes.",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "Fundir Itens",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Quantidade a Fundir",
+        "AmountToSmelt": "Quantidade para Fundir",
         "SmeltingSuccess": "Você fundiu o item com sucesso!",
         "ProgressBarLabel": "Fundindo x %s %s"
     },
     "Warnings": {
+        "Canceled": "Cancelado.",
         "DoNotHave": "Você não tem este item!",
         "Smelting": "Fundindo...",
         "InvalidItem": "Este item não pode ser fundido!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s vendeu x %s %s por $%s",
+        "PurchasedItem": "%s comprou x %s %s por $%s da casa de penhores",
+        "SmeltedItem": "%s fundiu x %s %s"
     }
 }

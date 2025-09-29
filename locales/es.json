@@ -2,29 +2,47 @@
     "SubmitText": "Enviar",
     "PawnShop": {
         "Title": "Casa de Empeños",
-        "Description": "La casa de empeños es un lugar donde puedes vender tus artículos por dinero.",
+        "Description": "La casa de empeños es un lugar donde puedes vender tus objetos por dinero.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Hablar con el Propietario de la Casa de Empeños",
+        "TargetLabel": "Hablar con el Dueño de la Casa de Empeños",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "¡La casa de empeños está cerrada!",
-        "SellItems": "Vender Artículo Por $%s",
+        "SellItems": "Vender Objeto por $%s",
         "AmountToSell": "Cantidad a Vender",
-        "color": "orange"
+        "AmountToPurchase": "Cantidad a Comprar",
+        "PawnedItemDescription": "comprar x %s por $%s",
+        "SellingProgress": "Vendiendo x %s %s",
+        "SellTitle": "Vender Objetos",
+        "SoldItem": "Has vendido %s %s por $%s",
+        "PawnedTitle": "Inventario Empeñado",
+        "PawnedDescription": "Compra objetos previamente vendidos a la casa de empeños.",
+        "SellDescription": "Vende tus objetos a la casa de empeños por dinero rápido.",
+        "NoStock": "No hay inventario disponible en este momento.",
+        "NoItemsToSell": "¡No tienes objetos para vender!",
+        "PurchasedPawnedItem": "Has comprado %s %s por $%s",
+        "color": "orange",
+        "NoPawnedItems": "No hay objetos empeñados disponibles para comprar."
     },
     "Smelting": {
         "MenuTitle": "Fundición",
-        "MenuDescription": "Funde artículos para crear nuevos artículos.",
+        "MenuDescription": "Funde objetos para obtener componentes.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Fundir Artículos",
+        "TargetLabel": "Fundir Objetos",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "Cantidad a Fundir",
-        "SmeltingSuccess": "¡Has fundido exitosamente el artículo!",
+        "SmeltingSuccess": "¡Has fundido el objeto exitosamente!",
         "ProgressBarLabel": "Fundiendo x %s %s"
     },
     "Warnings": {
-        "DoNotHave": "¡No tienes este artículo!",
+        "Canceled": "Cancelado.",
+        "DoNotHave": "¡No tienes este objeto!",
         "Smelting": "Fundiendo...",
-        "InvalidItem": "¡Este artículo no se puede fundir!"
+        "InvalidItem": "¡Este objeto no se puede fundir!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s ha vendido x %s %s por $%s",
+        "PurchasedItem": "%s ha comprado x %s %s por $%s de la casa de empeños",
+        "SmeltedItem": "%s ha fundido x %s %s"
     }
 }

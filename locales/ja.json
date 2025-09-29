@@ -2,29 +2,47 @@
     "SubmitText": "送信",
     "PawnShop": {
         "Title": "質屋",
-        "Description": "質屋はあなたのアイテムをお金で売ることができる場所です。",
+        "Description": "質屋はアイテムをお金と交換できる場所です。",
         "MenuIcon": "fa-solid fa-store",
         "TargetLabel": "質屋の店主と話す",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "質屋は閉店しています！",
-        "SellItems": "アイテムを売る $%s",
-        "AmountToSell": "売却数量",
-        "color": "orange"
+        "ShopClosed": "質屋は閉店中です！",
+        "SellItems": "アイテムを$%sで売る",
+        "AmountToSell": "売る数量",
+        "AmountToPurchase": "購入する数量",
+        "PawnedItemDescription": "x %sを$%sで購入",
+        "SellingProgress": "x %s %s を売却中",
+        "SellTitle": "アイテムを売る",
+        "SoldItem": "%s %sを$%sで売りました",
+        "PawnedTitle": "質入れ在庫",
+        "PawnedDescription": "以前質屋に売ったアイテムを購入します。",
+        "SellDescription": "アイテムを質屋に売って素早く現金を得ましょう。",
+        "NoStock": "現在在庫がありません。",
+        "NoItemsToSell": "売るアイテムがありません！",
+        "PurchasedPawnedItem": "%s %sを$%sで購入しました",
+        "color": "orange",
+        "NoPawnedItems": "購入可能な質入れアイテムがありません。"
     },
     "Smelting": {
-        "MenuTitle": "製錬",
-        "MenuDescription": "アイテムを製錬して新しいアイテムを作る。",
+        "MenuTitle": "精錬",
+        "MenuDescription": "アイテムを精錬してコンポーネントを得ます。",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "アイテムを製錬する",
+        "TargetLabel": "アイテムを精錬する",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "製錬数量",
-        "SmeltingSuccess": "アイテムの製錬に成功しました！",
-        "ProgressBarLabel": "%s %s を x 製錬中"
+        "AmountToSmelt": "精錬する数量",
+        "SmeltingSuccess": "アイテムの精錬に成功しました！",
+        "ProgressBarLabel": "x %s %sを精錬中"
     },
     "Warnings": {
+        "Canceled": "キャンセルされました。",
         "DoNotHave": "このアイテムを持っていません！",
-        "Smelting": "製錬中...",
-        "InvalidItem": "このアイテムは製錬できません！"
+        "Smelting": "精錬中...",
+        "InvalidItem": "このアイテムは精錬できません！"
+    },
+    "LogMessages": {
+        "SoldItem": "%sがx %s %sを$%sで売りました",
+        "PurchasedItem": "%sが質屋でx %s %sを$%sで購入しました",
+        "SmeltedItem": "%sがx %s %sを精錬しました"
     }
 }

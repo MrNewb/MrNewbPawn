@@ -1,30 +1,48 @@
 {
     "SubmitText": "ส่ง",
     "PawnShop": {
-        "Title": "โรงรับจำนำ",
-        "Description": "โรงรับจำนำเป็นสถานที่ที่คุณสามารถขายของคุณเพื่อเงิน",
+        "Title": "โรงรับฝาก",
+        "Description": "โรงรับฝากเป็นสถานที่คุณสามารถขายสิ่งของของคุณเพื่อแลกเงินได้",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "พูดกับเจ้าของโรงรับจำนำ",
+        "TargetLabel": "พูดกับเจ้าของโรงรับฝาก",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "โรงรับจำนำปิดแล้ว!",
-        "SellItems": "ขายสินค้า $%s",
+        "ShopClosed": "โรงรับฝากปิดแล้ว!",
+        "SellItems": "ขายสิ่งของในราคา $%s",
         "AmountToSell": "จำนวนที่จะขาย",
-        "color": "orange"
+        "AmountToPurchase": "จำนวนที่จะซื้อ",
+        "PawnedItemDescription": "ซื้อ x %s ในราคา $%s",
+        "SellingProgress": "กำลังขาย x %s %s",
+        "SellTitle": "ขายสิ่งของ",
+        "SoldItem": "คุณได้ขาย %s %s ในราคา $%s",
+        "PawnedTitle": "สินค้าที่ฝากไว้",
+        "PawnedDescription": "ซื้อสิ่งของที่ขายให้โรงรับฝากมาก่อน",
+        "SellDescription": "ขายสิ่งของของคุณให้โรงรับฝากเพื่อเงินสดด่วน",
+        "NoStock": "ไม่มีสินค้าในขณะนี้",
+        "NoItemsToSell": "คุณไม่มีสิ่งของที่จะขาย!",
+        "PurchasedPawnedItem": "คุณได้ซื้อ %s %s ในราคา $%s",
+        "color": "orange",
+        "NoPawnedItems": "ไม่มีสิ่งของที่ฝากไว้ให้ซื้อ"
     },
     "Smelting": {
-        "MenuTitle": "การหลอม",
-        "MenuDescription": "หลอมสินค้าเพื่อสร้างสินค้าใหม่",
+        "MenuTitle": "การหลอมโลหะ",
+        "MenuDescription": "หลอมโลหะสิ่งของเพื่อได้ชิ้นส่วน",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "หลอมสินค้า",
+        "TargetLabel": "หลอมโลหะสิ่งของ",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "จำนวนที่จะหลอม",
-        "SmeltingSuccess": "คุณหลอมสินค้าสำเร็จแล้ว!",
-        "ProgressBarLabel": "กำลังหลอม x %s %s"
+        "AmountToSmelt": "จำนวนที่จะหลอมโลหะ",
+        "SmeltingSuccess": "คุณได้หลอมโลหะสิ่งของสำเร็จแล้ว!",
+        "ProgressBarLabel": "กำลังหลอมโลหะ x %s %s"
     },
     "Warnings": {
-        "DoNotHave": "คุณไม่มีสินค้านี้!",
-        "Smelting": "กำลังหลอม...",
-        "InvalidItem": "สินค้านี้ไม่สามารถหลอมได้!"
+        "Canceled": "ยกเลิกแล้ว",
+        "DoNotHave": "คุณไม่มีสิ่งของนี้!",
+        "Smelting": "กำลังหลอมโลหะ...",
+        "InvalidItem": "สิ่งของนี้ไม่สามารถหลอมโลหะได้!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s ได้ขาย x %s %s ในราคา $%s",
+        "PurchasedItem": "%s ได้ซื้อ x %s %s ในราคา $%s จากโรงรับฝาก",
+        "SmeltedItem": "%s ได้หลอมโลหะ x %s %s"
     }
 }

@@ -1,30 +1,48 @@
 {
     "SubmitText": "Odeslat",
     "PawnShop": {
-        "Title": "Zástavárna",
-        "Description": "Zástavárna je místo, kde můžete prodat své předměty za peníze.",
+        "Title": "Zastávarní",
+        "Description": "Zastávarní je místo, kde můžete prodat své předměty za peníze.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Promluvit si s Majitelem Zástavárny",
+        "TargetLabel": "Mluvte s majitelem zastávarní",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "Zástavárna je zavřená!",
-        "SellItems": "Prodat Předmět Za $%s",
-        "AmountToSell": "Množství k Prodeji",
-        "color": "orange"
+        "ShopClosed": "Zastávarní je zavřena!",
+        "SellItems": "Prodat předmět za $%s",
+        "AmountToSell": "Množství k prodeji",
+        "AmountToPurchase": "Množství ke koupi",
+        "PawnedItemDescription": "koupit x %s za $%s",
+        "SellingProgress": "Prodávání x %s %s",
+        "SellTitle": "Prodat předměty",
+        "SoldItem": "Prodali jste %s %s za $%s",
+        "PawnedTitle": "Zastávené zboží",
+        "PawnedDescription": "Kupte předměty dříve prodalé do zastávarní.",
+        "SellDescription": "Prodejte své předměty do zastávarní za rychlé peníze.",
+        "NoStock": "V tuto chvíli není k dispozici žádné zboží.",
+        "NoItemsToSell": "Nemáte žádné předměty k prodeji!",
+        "PurchasedPawnedItem": "Koupili jste %s %s za $%s",
+        "color": "orange",
+        "NoPawnedItems": "Nejsou k dispozici žádné zastávené předměty k nákupu."
     },
     "Smelting": {
         "MenuTitle": "Tavení",
-        "MenuDescription": "Tavte předměty pro vytvoření nových předmětů.",
+        "MenuDescription": "Tavte předměty pro získání komponent.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Tavit Předměty",
+        "TargetLabel": "Tavit předměty",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Množství k Tavení",
+        "AmountToSmelt": "Množství k tavení",
         "SmeltingSuccess": "Úspěšně jste roztavili předmět!",
         "ProgressBarLabel": "Tavení x %s %s"
     },
     "Warnings": {
+        "Canceled": "Zrušeno.",
         "DoNotHave": "Nemáte tento předmět!",
         "Smelting": "Tavení...",
         "InvalidItem": "Tento předmět nelze roztavit!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s prodal x %s %s za $%s",
+        "PurchasedItem": "%s koupil x %s %s za $%s ze zastávarní",
+        "SmeltedItem": "%s roztavil x %s %s"
     }
 }

@@ -1,30 +1,48 @@
 {
     "SubmitText": "إرسال",
     "PawnShop": {
-        "Title": "محل الرهونات",
-        "Description": "محل الرهونات هو مكان حيث يمكنك بيع أغراضك مقابل المال.",
+        "Title": "محل الرهن",
+        "Description": "محل الرهن هو مكان يمكنك فيه بيع أغراضك مقابل المال.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "تحدث مع صاحب محل الرهونات",
+        "TargetLabel": "تحدث إلى صاحب محل الرهن",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "محل الرهونات مغلق!",
-        "SellItems": "بيع الصنف مقابل $%s",
+        "ShopClosed": "محل الرهن مغلق!",
+        "SellItems": "بيع عنصر بـ $%s",
         "AmountToSell": "الكمية المراد بيعها",
-        "color": "orange"
+        "AmountToPurchase": "الكمية المراد شراؤها",
+        "PawnedItemDescription": "شراء x %s بـ $%s",
+        "SellingProgress": "بيع x %s %s",
+        "SellTitle": "بيع العناصر",
+        "SoldItem": "لقد بعت %s %s بـ $%s",
+        "PawnedTitle": "مخزون مرهون",
+        "PawnedDescription": "اشتري عناصر بيعت سابقاً إلى محل الرهن.",
+        "SellDescription": "بع عناصرك إلى محل الرهن للحصول على نقد سريع.",
+        "NoStock": "لا يوجد مخزون متاح في الوقت الحالي.",
+        "NoItemsToSell": "ليس لديك عناصر لبيعها!",
+        "PurchasedPawnedItem": "لقد اشتريت %s %s بـ $%s",
+        "color": "orange",
+        "NoPawnedItems": "لا توجد عناصر مرهونة متاحة للشراء."
     },
     "Smelting": {
         "MenuTitle": "الصهر",
-        "MenuDescription": "اصهر الأصناف لإنشاء أصناف جديدة.",
+        "MenuDescription": "اصهر العناصر للحصول على مكونات.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "صهر الأصناف",
+        "TargetLabel": "صهر العناصر",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "الكمية المراد صهرها",
-        "SmeltingSuccess": "لقد قمت بصهر الصنف بنجاح!",
+        "SmeltingSuccess": "لقد نجحت في صهر العنصر!",
         "ProgressBarLabel": "صهر x %s %s"
     },
     "Warnings": {
-        "DoNotHave": "لا تملك هذا الصنف!",
+        "Canceled": "ملغى.",
+        "DoNotHave": "لا تملك هذا العنصر!",
         "Smelting": "جاري الصهر...",
-        "InvalidItem": "لا يمكن صهر هذا الصنف!"
+        "InvalidItem": "لا يمكن صهر هذا العنصر!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s باع x %s %s بـ $%s",
+        "PurchasedItem": "%s اشترى x %s %s بـ $%s من محل الرهن",
+        "SmeltedItem": "%s صهر x %s %s"
     }
 }

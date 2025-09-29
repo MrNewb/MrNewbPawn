@@ -7,24 +7,42 @@
         "TargetLabel": "Rehinci Sahibiyle Konuş",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Rehinci kapalı!",
-        "SellItems": "Eşya Sat $%s",
+        "SellItems": "Eşyayı $%s'ye Sat",
         "AmountToSell": "Satılacak Miktar",
-        "color": "orange"
+        "AmountToPurchase": "Satın Alınacak Miktar",
+        "PawnedItemDescription": "x %s satın al $%s karşılığında",
+        "SellingProgress": "x %s %s satılıyor",
+        "SellTitle": "Eşya Sat",
+        "SoldItem": "%s %s'yi $%s'ye sattınız",
+        "PawnedTitle": "Rehinli Stok",
+        "PawnedDescription": "Daha önce rehinciye satılan eşyaları satın alın.",
+        "SellDescription": "Hızlı nakit için eşyalarınızı rehinciye satın.",
+        "NoStock": "Şu anda mevcut stok yok.",
+        "NoItemsToSell": "Satacak eşyanız yok!",
+        "PurchasedPawnedItem": "%s %s'yi $%s'ye satın aldınız",
+        "color": "orange",
+        "NoPawnedItems": "Satın alınabilecek rehinli eşya yok."
     },
     "Smelting": {
         "MenuTitle": "Eritme",
-        "MenuDescription": "Yeni eşyalar oluşturmak için eşyaları eritin.",
+        "MenuDescription": "Bileşen elde etmek için eşyaları eritin.",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "Eşyaları Erit",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "Eritilecek Miktar",
         "SmeltingSuccess": "Eşyayı başarıyla erittiniz!",
-        "ProgressBarLabel": "Eritiliyor x %s %s"
+        "ProgressBarLabel": "x %s %s eritiliyor"
     },
     "Warnings": {
-        "DoNotHave": "Bu eşyaya sahip değilsiniz!",
+        "Canceled": "İptal edildi.",
+        "DoNotHave": "Bu eşyanız yok!",
         "Smelting": "Eritiliyor...",
         "InvalidItem": "Bu eşya eritilemez!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s x %s %s'yi $%s'ye sattı",
+        "PurchasedItem": "%s rehinciden x %s %s'yi $%s'ye satın aldı",
+        "SmeltedItem": "%s x %s %s'yi eritti"
     }
 }

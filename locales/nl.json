@@ -1,30 +1,48 @@
 {
     "SubmitText": "Verzenden",
     "PawnShop": {
-        "Title": "Lommerd",
-        "Description": "De lommerd is een plaats waar je je items kunt verkopen voor geld.",
+        "Title": "Pandjesbaas",
+        "Description": "De pandjesbaas is een plek waar je je spullen kunt verkopen voor geld.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Praat met de Lommerd Eigenaar",
+        "TargetLabel": "Praat met de Pandjesbaas Eigenaar",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "De lommerd is gesloten!",
-        "SellItems": "Verkoop Item Voor $%s",
-        "AmountToSell": "Hoeveelheid te Verkopen",
-        "color": "orange"
+        "ShopClosed": "De pandjesbaas is gesloten!",
+        "SellItems": "Verkoop Item voor $%s",
+        "AmountToSell": "Hoeveelheid om te Verkopen",
+        "AmountToPurchase": "Hoeveelheid om te Kopen",
+        "PawnedItemDescription": "koop x %s voor $%s",
+        "SellingProgress": "Verkopen x %s %s",
+        "SellTitle": "Verkoop Items",
+        "SoldItem": "Je hebt %s %s verkocht voor $%s",
+        "PawnedTitle": "Verpande Voorraad",
+        "PawnedDescription": "Koop items die eerder aan de pandjesbaas zijn verkocht.",
+        "SellDescription": "Verkoop je items aan de pandjesbaas voor snel geld.",
+        "NoStock": "Er is momenteel geen voorraad beschikbaar.",
+        "NoItemsToSell": "Je hebt geen items om te verkopen!",
+        "PurchasedPawnedItem": "Je hebt %s %s gekocht voor $%s",
+        "color": "orange",
+        "NoPawnedItems": "Er zijn geen verpande items beschikbaar om te kopen."
     },
     "Smelting": {
         "MenuTitle": "Smelten",
-        "MenuDescription": "Smelt items om nieuwe items te maken.",
+        "MenuDescription": "Smelt items om componenten te krijgen.",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "Smelt Items",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Hoeveelheid te Smelten",
+        "AmountToSmelt": "Hoeveelheid om te Smelten",
         "SmeltingSuccess": "Je hebt het item succesvol gesmolten!",
         "ProgressBarLabel": "Smelten x %s %s"
     },
     "Warnings": {
+        "Canceled": "Geannuleerd.",
         "DoNotHave": "Je hebt dit item niet!",
         "Smelting": "Smelten...",
-        "InvalidItem": "Dit item kan niet gesmolten worden!"
+        "InvalidItem": "Dit item kan niet worden gesmolten!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s heeft x %s %s verkocht voor $%s",
+        "PurchasedItem": "%s heeft x %s %s gekocht voor $%s van de pandjesbaas",
+        "SmeltedItem": "%s heeft x %s %s gesmolten"
     }
 }

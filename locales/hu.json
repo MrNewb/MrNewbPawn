@@ -1,30 +1,48 @@
 {
-    "SubmitText": "Küldés",
+    "SubmitText": "Elküldés",
     "PawnShop": {
-        "Title": "Zálogház",
-        "Description": "A zálogház egy hely, ahol eladhatod a tárgyaidat pénzért.",
+        "Title": "Zalógház",
+        "Description": "A zalógház egy hely, ahol eladásával pénzt kaphat tárgyaiért.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Beszélj a Zálogház Tulajdonosával",
+        "TargetLabel": "Beszéljen a zalógház tulajdonosával",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "A zálogház zárva van!",
-        "SellItems": "Tárgy Eladása $%s",
-        "AmountToSell": "Eladandó Mennyiség",
-        "color": "orange"
+        "ShopClosed": "A zalógház zárva van!",
+        "SellItems": "Tárgy eladása $%s-ért",
+        "AmountToSell": "Eladás mennyisége",
+        "AmountToPurchase": "Vásárlás mennyisége",
+        "PawnedItemDescription": "vásároljon x %s-t $%s-ért",
+        "SellingProgress": "Eladás x %s %s",
+        "SellTitle": "Tárgyak eladása",
+        "SoldItem": "Eladta %s %s-t $%s-ért",
+        "PawnedTitle": "Elzálogosított készlet",
+        "PawnedDescription": "Vásároljon korábban a zalógháznak eladott tárgyakat.",
+        "SellDescription": "Adja el tárgyait a zalógházban gyors pénzért.",
+        "NoStock": "Jelenleg nincs elérhető készlet.",
+        "NoItemsToSell": "Nincsenek eladásra szánt tárgyai!",
+        "PurchasedPawnedItem": "Megvásárolta %s %s-t $%s-ért",
+        "color": "orange",
+        "NoPawnedItems": "Nincsenek elzálogosított tárgyak vásárlásra."
     },
     "Smelting": {
         "MenuTitle": "Olvasztás",
-        "MenuDescription": "Olvassz tárgyakat új tárgyak létrehozásához.",
+        "MenuDescription": "Olvaszt tárgyakat komponensek nyeiréséhez.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Tárgyak Olvasztása",
+        "TargetLabel": "Tárgyak olvasztása",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Olvasztandó Mennyiség",
-        "SmeltingSuccess": "Sikeresen megolvasztottad a tárgyat!",
+        "AmountToSmelt": "Olvasztás mennyisége",
+        "SmeltingSuccess": "Sikeresen leolvasztotta a tárgyat!",
         "ProgressBarLabel": "Olvasztás x %s %s"
     },
     "Warnings": {
-        "DoNotHave": "Nincs nálad ez a tárgy!",
+        "Canceled": "Megszakítva.",
+        "DoNotHave": "Nincs ilyen tárgya!",
         "Smelting": "Olvasztás...",
         "InvalidItem": "Ez a tárgy nem olvasztható!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s eladott x %s %s-t $%s-ért",
+        "PurchasedItem": "%s megvásárolt x %s %s-t $%s-ért a zalógházból",
+        "SmeltedItem": "%s leolvasztott x %s %s-t"
     }
 }

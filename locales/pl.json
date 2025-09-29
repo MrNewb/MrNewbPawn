@@ -7,15 +7,27 @@
         "TargetLabel": "Porozmawiaj z Właścicielem Lombardu",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Lombard jest zamknięty!",
-        "SellItems": "Sprzedaj Przedmiot Za $%s",
-        "AmountToSell": "Ilość do Sprzedania",
-        "color": "orange"
+        "SellItems": "Sprzedaj Przedmiot za $%s",
+        "AmountToSell": "Ilość do Sprzedaży",
+        "AmountToPurchase": "Ilość do Zakupu",
+        "PawnedItemDescription": "kup x %s za $%s",
+        "SellingProgress": "Sprzedawanie x %s %s",
+        "SellTitle": "Sprzedaj Przedmioty",
+        "SoldItem": "Sprzedałeś %s %s za $%s",
+        "PawnedTitle": "Zastawione Towary",
+        "PawnedDescription": "Kup przedmioty wcześniej sprzedane do lombardu.",
+        "SellDescription": "Sprzedaj swoje przedmioty do lombardu za szybką gotówkę.",
+        "NoStock": "W tej chwili nie ma dostępnych towarów.",
+        "NoItemsToSell": "Nie masz przedmiotów do sprzedaży!",
+        "PurchasedPawnedItem": "Kupiłeś %s %s za $%s",
+        "color": "orange",
+        "NoPawnedItems": "Nie ma zastawionych przedmiotów dostępnych do zakupu."
     },
     "Smelting": {
         "MenuTitle": "Przetapianie",
-        "MenuDescription": "Przetap przedmioty, aby stworzyć nowe przedmioty.",
+        "MenuDescription": "Przetapiaj przedmioty, aby uzyskać komponenty.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Przetap Przedmioty",
+        "TargetLabel": "Przetapiaj Przedmioty",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "Ilość do Przetopienia",
@@ -23,8 +35,14 @@
         "ProgressBarLabel": "Przetapianie x %s %s"
     },
     "Warnings": {
+        "Canceled": "Anulowano.",
         "DoNotHave": "Nie masz tego przedmiotu!",
         "Smelting": "Przetapianie...",
-        "InvalidItem": "Ten przedmiot nie może być przetopiony!"
+        "InvalidItem": "Tego przedmiotu nie można przetopić!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s sprzedał x %s %s za $%s",
+        "PurchasedItem": "%s kupił x %s %s za $%s z lombardu",
+        "SmeltedItem": "%s przetopił x %s %s"
     }
 }

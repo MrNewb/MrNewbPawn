@@ -1,30 +1,48 @@
 {
     "SubmitText": "提交",
     "PawnShop": {
-        "Title": "典当行",
-        "Description": "典当行是一个您可以出售物品换取金钱的地方。",
+        "Title": "当铺",
+        "Description": "当铺是一个可以出售物品换取金钱的地方。",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "与典当行老板交谈",
+        "TargetLabel": "与当铺老板对话",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "典当行已关门！",
-        "SellItems": "出售物品 $%s",
+        "ShopClosed": "当铺已关门！",
+        "SellItems": "出售物品获得 $%s",
         "AmountToSell": "出售数量",
-        "color": "orange"
+        "AmountToPurchase": "购买数量",
+        "PawnedItemDescription": "购买 x %s 价格 $%s",
+        "SellingProgress": "正在出售 x %s %s",
+        "SellTitle": "出售物品",
+        "SoldItem": "你已出售 %s %s 获得 $%s",
+        "PawnedTitle": "当品库存",
+        "PawnedDescription": "购买之前出售给当铺的物品。",
+        "SellDescription": "将你的物品出售给当铺以获得快速现金。",
+        "NoStock": "目前没有库存可用。",
+        "NoItemsToSell": "你没有物品可出售！",
+        "PurchasedPawnedItem": "你已购买 %s %s 花费 $%s",
+        "color": "orange",
+        "NoPawnedItems": "没有当品可供购买。"
     },
     "Smelting": {
         "MenuTitle": "熔炼",
-        "MenuDescription": "熔炼物品以创造新物品。",
+        "MenuDescription": "熔炼物品以获得组件。",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "熔炼物品",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "熔炼数量",
-        "SmeltingSuccess": "您已成功熔炼了物品！",
+        "SmeltingSuccess": "你已成功熔炼了该物品！",
         "ProgressBarLabel": "正在熔炼 x %s %s"
     },
     "Warnings": {
-        "DoNotHave": "您没有这个物品！",
+        "Canceled": "已取消。",
+        "DoNotHave": "你没有这个物品！",
         "Smelting": "熔炼中...",
-        "InvalidItem": "此物品无法熔炼！"
+        "InvalidItem": "该物品无法熔炼！"
+    },
+    "LogMessages": {
+        "SoldItem": "%s 已出售 x %s %s 获得 $%s",
+        "PurchasedItem": "%s 已从当铺购买 x %s %s 花费 $%s",
+        "SmeltedItem": "%s 已熔炼 x %s %s"
     }
 }

@@ -6,25 +6,43 @@
         "MenuIcon": "fa-solid fa-store",
         "TargetLabel": "Parler au Propriétaire du Prêteur sur Gages",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "Le prêteur sur gages est fermé !",
-        "SellItems": "Vendre l'Objet Pour $%s",
+        "ShopClosed": "Le prêteur sur gages est fermé!",
+        "SellItems": "Vendre l'Objet pour $%s",
         "AmountToSell": "Quantité à Vendre",
-        "color": "orange"
+        "AmountToPurchase": "Quantité à Acheter",
+        "PawnedItemDescription": "acheter x %s pour $%s",
+        "SellingProgress": "Vendre x %s %s",
+        "SellTitle": "Vendre des Objets",
+        "SoldItem": "Vous avez vendu %s %s pour $%s",
+        "PawnedTitle": "Stock Mis en Gage",
+        "PawnedDescription": "Achetez des objets précédemment vendus au prêteur sur gages.",
+        "SellDescription": "Vendez vos objets au prêteur sur gages pour de l'argent rapide.",
+        "NoStock": "Il n'y a pas de stock disponible pour le moment.",
+        "NoItemsToSell": "Vous n'avez pas d'objets à vendre!",
+        "PurchasedPawnedItem": "Vous avez acheté %s %s pour $%s",
+        "color": "orange",
+        "NoPawnedItems": "Il n'y a pas d'objets mis en gage disponibles à l'achat."
     },
     "Smelting": {
         "MenuTitle": "Fonte",
-        "MenuDescription": "Faire fondre des objets pour créer de nouveaux objets.",
+        "MenuDescription": "Fondez des objets pour obtenir des composants.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Faire Fondre les Objets",
+        "TargetLabel": "Fondre des Objets",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "Quantité à Faire Fondre",
-        "SmeltingSuccess": "Vous avez fait fondre l'objet avec succès !",
+        "AmountToSmelt": "Quantité à Fondre",
+        "SmeltingSuccess": "Vous avez réussi à fondre l'objet!",
         "ProgressBarLabel": "Fonte de x %s %s"
     },
     "Warnings": {
-        "DoNotHave": "Vous n'avez pas cet objet !",
+        "Canceled": "Annulé.",
+        "DoNotHave": "Vous n'avez pas cet objet!",
         "Smelting": "Fonte en cours...",
-        "InvalidItem": "Cet objet ne peut pas être fondu !"
+        "InvalidItem": "Cet objet ne peut pas être fondu!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s a vendu x %s %s pour $%s",
+        "PurchasedItem": "%s a acheté x %s %s pour $%s au prêteur sur gages",
+        "SmeltedItem": "%s a fondu x %s %s"
     }
 }

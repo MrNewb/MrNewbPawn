@@ -2,29 +2,47 @@
     "SubmitText": "Отправить",
     "PawnShop": {
         "Title": "Ломбард",
-        "Description": "Ломбард - это место, где вы можете продать свои предметы за деньги.",
+        "Description": "Ломбард - это место, где вы можете продать свои вещи за деньги.",
         "MenuIcon": "fa-solid fa-store",
         "TargetLabel": "Поговорить с Владельцем Ломбарда",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Ломбард закрыт!",
-        "SellItems": "Продать Предмет За $%s",
+        "SellItems": "Продать Предмет за $%s",
         "AmountToSell": "Количество для Продажи",
-        "color": "orange"
+        "AmountToPurchase": "Количество для Покупки",
+        "PawnedItemDescription": "купить x %s за $%s",
+        "SellingProgress": "Продажа x %s %s",
+        "SellTitle": "Продажа Предметов",
+        "SoldItem": "Вы продали %s %s за $%s",
+        "PawnedTitle": "Заложенные Товары",
+        "PawnedDescription": "Купите предметы, ранее проданные в ломбард.",
+        "SellDescription": "Продайте свои предметы в ломбард за быстрые деньги.",
+        "NoStock": "В настоящий момент товар отсутствует.",
+        "NoItemsToSell": "У вас нет предметов для продажи!",
+        "PurchasedPawnedItem": "Вы купили %s %s за $%s",
+        "color": "orange",
+        "NoPawnedItems": "Нет заложенных предметов для покупки."
     },
     "Smelting": {
         "MenuTitle": "Плавка",
-        "MenuDescription": "Переплавляйте предметы для создания новых предметов.",
+        "MenuDescription": "Плавьте предметы, чтобы получить компоненты.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Переплавить Предметы",
+        "TargetLabel": "Плавить Предметы",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "Количество для Плавки",
-        "SmeltingSuccess": "Вы успешно переплавили предмет!",
+        "SmeltingSuccess": "Вы успешно расплавили предмет!",
         "ProgressBarLabel": "Плавка x %s %s"
     },
     "Warnings": {
+        "Canceled": "Отменено.",
         "DoNotHave": "У вас нет этого предмета!",
         "Smelting": "Плавка...",
-        "InvalidItem": "Этот предмет нельзя переплавить!"
+        "InvalidItem": "Этот предмет нельзя расплавить!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s продал x %s %s за $%s",
+        "PurchasedItem": "%s купил x %s %s за $%s в ломбарде",
+        "SmeltedItem": "%s расплавил x %s %s"
     }
 }

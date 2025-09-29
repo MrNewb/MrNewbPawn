@@ -1,30 +1,48 @@
 {
-    "SubmitText": "Arrr, Submit!",
+    "SubmitText": "Arrr! Submit",
     "PawnShop": {
-        "Title": "Pirate Pawn Shop",
-        "Description": "The pirate pawn shop be where ye sell yer loot fer doubloons.",
+        "Title": "Pawn Shoppe",
+        "Description": "Th' pawn shoppe be a place where ye can sell yer booty fer doubloons.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "Parley with the Pawn Shop Captain",
+        "TargetLabel": "Parley with th' Pawn Shoppe Keeper",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "The pawn shop be closed, matey!",
-        "SellItems": "Trade Booty Fer $%s",
-        "AmountToSell": "How Much Booty?",
-        "color": "gold"
+        "ShopClosed": "Th' pawn shoppe be closed, matey!",
+        "SellItems": "Sell booty fer $%s",
+        "AmountToSell": "Amount t' sell",
+        "AmountToPurchase": "Amount t' purchase",
+        "PawnedItemDescription": "buy x %s fer $%s",
+        "SellingProgress": "Sellin' x %s %s",
+        "SellTitle": "Sell Booty",
+        "SoldItem": "Ye sold %s %s fer $%s",
+        "PawnedTitle": "Pawned Booty",
+        "PawnedDescription": "Buy booty previously pawned t' th' shoppe.",
+        "SellDescription": "Sell yer booty t' th' pawn shoppe fer quick doubloons.",
+        "NoStock": "No booty be available at th' moment.",
+        "NoItemsToSell": "Ye have no booty t' sell!",
+        "PurchasedPawnedItem": "Ye purchased %s %s fer $%s",
+        "color": "orange",
+        "NoPawnedItems": "No pawned booty be available fer purchase."
     },
     "Smelting": {
-        "MenuTitle": "Blacksmithin'",
-        "MenuDescription": "Smelt yer loot to forge new treasures.",
+        "MenuTitle": "Smeltin'",
+        "MenuDescription": "Smelt booty t' get parts.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Smelt Yer Booty",
+        "TargetLabel": "Smelt Booty",
         "TargetIcon": "fa-solid fa-fire",
-        "MenuIconColor": "gold",
-        "AmountToSmelt": "How Much to Smelt?",
-        "SmeltingSuccess": "Ye smelted the booty down, savvy!",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Amount t' smelt",
+        "SmeltingSuccess": "Ye smelted th' booty down, aye!",
         "ProgressBarLabel": "Smeltin' x %s %s"
     },
     "Warnings": {
-        "DoNotHave": "Ye don't have this booty, scallywag!",
+        "Canceled": "Avast! Canceled.",
+        "DoNotHave": "Ye don't have this booty!",
         "Smelting": "Smeltin'...",
-        "InvalidItem": "This booty can't be smelted, matey!"
+        "InvalidItem": "This booty can't be smelted!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s sold x %s %s fer $%s",
+        "PurchasedItem": "%s purchased x %s %s fer $%s from th' pawn shoppe",
+        "SmeltedItem": "%s smelted x %s %s"
     }
 }

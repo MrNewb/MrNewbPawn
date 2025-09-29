@@ -2,29 +2,47 @@
     "SubmitText": "提交",
     "PawnShop": {
         "Title": "當舖",
-        "Description": "當舖是一個您可以出售物品換取金錢的地方。",
+        "Description": "當舖是一個可以出售物品換取金錢的地方。",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "與當舖老闆交談",
+        "TargetLabel": "與當舖老板對話",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "當舖已關門！",
-        "SellItems": "出售物品 $%s",
+        "ShopClosed": "當舖已關閉！",
+        "SellItems": "出售物品獲得 $%s",
         "AmountToSell": "出售數量",
-        "color": "orange"
+        "AmountToPurchase": "購買數量",
+        "PawnedItemDescription": "購買 x %s 價格 $%s",
+        "SellingProgress": "正在出售 x %s %s",
+        "SellTitle": "出售物品",
+        "SoldItem": "您已出售 %s %s 獲得 $%s",
+        "PawnedTitle": "當品庫存",
+        "PawnedDescription": "購買之前出售給當舖的物品。",
+        "SellDescription": "將您的物品出售給當舖以獲得快速現金。",
+        "NoStock": "目前沒有庫存可用。",
+        "NoItemsToSell": "您沒有物品可出售！",
+        "PurchasedPawnedItem": "您已購買 %s %s 花費 $%s",
+        "color": "orange",
+        "NoPawnedItems": "沒有當品可供購買。"
     },
     "Smelting": {
         "MenuTitle": "熔煉",
-        "MenuDescription": "熔煉物品以創造新物品。",
+        "MenuDescription": "熔煉物品以獲得組件。",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "熔煉物品",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "熔煉數量",
-        "SmeltingSuccess": "您已成功熔煉了物品！",
+        "SmeltingSuccess": "您已成功熔煉了該物品！",
         "ProgressBarLabel": "正在熔煉 x %s %s"
     },
     "Warnings": {
+        "Canceled": "已取消。",
         "DoNotHave": "您沒有這個物品！",
         "Smelting": "熔煉中...",
-        "InvalidItem": "此物品無法熔煉！"
+        "InvalidItem": "該物品無法熔煉！"
+    },
+    "LogMessages": {
+        "SoldItem": "%s 已出售 x %s %s 獲得 $%s",
+        "PurchasedItem": "%s 已從當舖購買 x %s %s 花費 $%s",
+        "SmeltedItem": "%s 已熔煉 x %s %s"
     }
 }

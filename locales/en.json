@@ -9,11 +9,23 @@
         "ShopClosed": "The pawn shop is closed!",
         "SellItems": "Sell Item For $%s",
         "AmountToSell": "Amount to Sell",
-        "color": "orange"
+        "AmountToPurchase": "Amount to Purchase",
+        "PawnedItemDescription": "purchase x %s for $%s",
+        "SellingProgress": "Selling x %s %s",
+        "SellTitle": "Sell Items",
+        "SoldItem": "You have sold %s %s for $%s",
+        "PawnedTitle": "Pawned Stock",
+        "PawnedDescription": "Buy items previously sold to the pawn shop.",
+        "SellDescription": "Sell your items to the pawn shop for quick cash.",
+        "NoStock": "There is no stock available at the moment.",
+        "NoItemsToSell": "You have no items to sell!",
+        "PurchasedPawnedItem": "You have purchased %s %s for $%s",
+        "color": "orange",
+        "NoPawnedItems": "There are no pawned items available for purchase."
     },
     "Smelting": {
         "MenuTitle": "Smelting",
-        "MenuDescription": "Smelt items to create new items.",
+        "MenuDescription": "Smelt items to get components.",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "Smelt Items",
         "TargetIcon": "fa-solid fa-fire",
@@ -23,8 +35,14 @@
         "ProgressBarLabel": "Smelting x %s %s"
     },
     "Warnings": {
+        "Canceled": "Canceled.",
         "DoNotHave": "You do not have this item!",
         "Smelting": "Smelting...",
         "InvalidItem": "This item cannot be smelted!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s has sold x %s %s for $%s",
+        "PurchasedItem": "%s has purchased x %s %s for $%s from the pawn shop",
+        "SmeltedItem": "%s has smelted x %s %s"
     }
 }

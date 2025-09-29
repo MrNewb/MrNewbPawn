@@ -1,30 +1,48 @@
 {
-    "SubmitText": "送信",
+    "SubmitText": "제출",
     "PawnShop": {
         "Title": "전당포",
         "Description": "전당포는 당신의 아이템을 돈으로 팔 수 있는 곳입니다.",
         "MenuIcon": "fa-solid fa-store",
-        "TargetLabel": "전당포 주인과 대화하기",
+        "TargetLabel": "전당포 주인과 대화",
         "TargetIcon": "fa-solid fa-store",
-        "ShopClosed": "전당포가 문을 닫았습니다!",
-        "SellItems": "아이템 판매 $%s",
-        "AmountToSell": "판매 수량",
-        "color": "orange"
+        "ShopClosed": "전당포가 문을 닫었습니다!",
+        "SellItems": "아이템을 $%s에 판매",
+        "AmountToSell": "판매할 수량",
+        "AmountToPurchase": "구매할 수량",
+        "PawnedItemDescription": "x %s를 $%s에 구매",
+        "SellingProgress": "x %s %s 판매 중",
+        "SellTitle": "아이템 판매",
+        "SoldItem": "%s %s를 $%s에 판매했습니다",
+        "PawnedTitle": "전당잡힌 재고",
+        "PawnedDescription": "이전에 전당포에 판 아이템을 구매합니다.",
+        "SellDescription": "전당포에 아이템을 팔아 빠른 현금을 얻으세요.",
+        "NoStock": "현재 사용 가능한 재고가 없습니다.",
+        "NoItemsToSell": "판매할 아이템이 없습니다!",
+        "PurchasedPawnedItem": "%s %s를 $%s에 구매했습니다",
+        "color": "orange",
+        "NoPawnedItems": "구매 가능한 전당잡힌 아이템이 없습니다."
     },
     "Smelting": {
         "MenuTitle": "제련",
-        "MenuDescription": "아이템을 제련하여 새로운 아이템을 만듭니다.",
+        "MenuDescription": "아이템을 제련하여 구성 요소를 얻습니다.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "아이템 제련하기",
+        "TargetLabel": "아이템 제련",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
-        "AmountToSmelt": "제련 수량",
-        "SmeltingSuccess": "아이템 제련에 성공했습니다!",
-        "ProgressBarLabel": "%s %s x개 제련 중"
+        "AmountToSmelt": "제련할 수량",
+        "SmeltingSuccess": "아이템을 성공적으로 제련했습니다!",
+        "ProgressBarLabel": "x %s %s 제련 중"
     },
     "Warnings": {
+        "Canceled": "취소되었습니다.",
         "DoNotHave": "이 아이템을 가지고 있지 않습니다!",
         "Smelting": "제련 중...",
         "InvalidItem": "이 아이템은 제련할 수 없습니다!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s가 x %s %s를 $%s에 판매했습니다",
+        "PurchasedItem": "%s가 전당포에서 x %s %s를 $%s에 구매했습니다",
+        "SmeltedItem": "%s가 x %s %s를 제련했습니다"
     }
 }

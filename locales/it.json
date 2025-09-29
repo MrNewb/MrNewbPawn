@@ -7,13 +7,25 @@
         "TargetLabel": "Parla con il Proprietario del Banco dei Pegni",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Il banco dei pegni è chiuso!",
-        "SellItems": "Vendi Oggetto Per $%s",
+        "SellItems": "Vendi Oggetto per $%s",
         "AmountToSell": "Quantità da Vendere",
-        "color": "orange"
+        "AmountToPurchase": "Quantità da Acquistare",
+        "PawnedItemDescription": "acquista x %s per $%s",
+        "SellingProgress": "Vendendo x %s %s",
+        "SellTitle": "Vendi Oggetti",
+        "SoldItem": "Hai venduto %s %s per $%s",
+        "PawnedTitle": "Stock Impegnato",
+        "PawnedDescription": "Acquista oggetti precedentemente venduti al banco dei pegni.",
+        "SellDescription": "Vendi i tuoi oggetti al banco dei pegni per denaro veloce.",
+        "NoStock": "Non ci sono scorte disponibili al momento.",
+        "NoItemsToSell": "Non hai oggetti da vendere!",
+        "PurchasedPawnedItem": "Hai acquistato %s %s per $%s",
+        "color": "orange",
+        "NoPawnedItems": "Non ci sono oggetti impegnati disponibili per l'acquisto."
     },
     "Smelting": {
         "MenuTitle": "Fusione",
-        "MenuDescription": "Fondi oggetti per creare nuovi oggetti.",
+        "MenuDescription": "Fondi oggetti per ottenere componenti.",
         "MenuIcon": "fa-solid fa-fire",
         "TargetLabel": "Fondi Oggetti",
         "TargetIcon": "fa-solid fa-fire",
@@ -23,8 +35,14 @@
         "ProgressBarLabel": "Fondendo x %s %s"
     },
     "Warnings": {
+        "Canceled": "Annullato.",
         "DoNotHave": "Non hai questo oggetto!",
-        "Smelting": "Fusione...",
+        "Smelting": "Fondendo...",
         "InvalidItem": "Questo oggetto non può essere fuso!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s ha venduto x %s %s per $%s",
+        "PurchasedItem": "%s ha acquistato x %s %s per $%s dal banco dei pegni",
+        "SmeltedItem": "%s ha fuso x %s %s"
     }
 }

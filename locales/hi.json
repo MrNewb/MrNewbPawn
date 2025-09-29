@@ -1,30 +1,48 @@
 {
-    "SubmitText": "भेजें",
+    "SubmitText": "जमा करें",
     "PawnShop": {
         "Title": "गिरवी की दुकान",
-        "Description": "गिरवी की दुकान एक ऐसी जगह है जहाँ आप अपना सामान पैसे के लिए बेच सकते हैं।",
+        "Description": "गिरवी की दुकान एक ऐसी जगह है जहाँ आप अपनी वस्तुओं को पैसे के लिए बेच सकते हैं।",
         "MenuIcon": "fa-solid fa-store",
         "TargetLabel": "गिरवी की दुकान के मालिक से बात करें",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "गिरवी की दुकान बंद है!",
-        "SellItems": "सामान बेचें $%s",
+        "SellItems": "$%s में वस्तु बेचें",
         "AmountToSell": "बेचने की मात्रा",
-        "color": "orange"
+        "AmountToPurchase": "खरीदने की मात्रा",
+        "PawnedItemDescription": "$%s में x %s खरीदें",
+        "SellingProgress": "x %s %s बेच रहे हैं",
+        "SellTitle": "वस्तुएं बेचें",
+        "SoldItem": "आपने %s %s को $%s में बेचा है",
+        "PawnedTitle": "गिरवी रखा गया स्टॉक",
+        "PawnedDescription": "पहले गिरवी की दुकान में बेची गई वस्तुओं को खरीदें।",
+        "SellDescription": "तुरंत नकदी के लिए अपनी वस्तुओं को गिरवी की दुकान में बेचें।",
+        "NoStock": "इस समय कोई स्टॉक उपलब्ध नहीं है।",
+        "NoItemsToSell": "आपके पास बेचने के लिए कोई वस्तु नहीं है!",
+        "PurchasedPawnedItem": "आपने %s %s को $%s में खरीदा है",
+        "color": "orange",
+        "NoPawnedItems": "खरीदने के लिए कोई गिरवी रखी गई वस्तु उपलब्ध नहीं है।"
     },
     "Smelting": {
         "MenuTitle": "गलाना",
-        "MenuDescription": "नए सामान बनाने के लिए सामान गलाएं।",
+        "MenuDescription": "घटकों को प्राप्त करने के लिए वस्तुओं को गलाएं।",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "सामान गलाएं",
+        "TargetLabel": "वस्तुओं को गलाएं",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "गलाने की मात्रा",
-        "SmeltingSuccess": "आपने सामान को सफलतापूर्वक गला दिया है!",
-        "ProgressBarLabel": "गला रहे हैं x %s %s"
+        "SmeltingSuccess": "आपने सफलतापूर्वक वस्तु को गला दिया है!",
+        "ProgressBarLabel": "x %s %s गलाया जा रहा है"
     },
     "Warnings": {
-        "DoNotHave": "आपके पास यह सामान नहीं है!",
-        "Smelting": "गला रहे हैं...",
-        "InvalidItem": "यह सामान नहीं गलाया जा सकता!"
+        "Canceled": "रद्द किया गया।",
+        "DoNotHave": "आपके पास यह वस्तु नहीं है!",
+        "Smelting": "गलाया जा रहा है...",
+        "InvalidItem": "यह वस्तु नहीं गलाई जा सकती!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s ने x %s %s को $%s में बेचा है",
+        "PurchasedItem": "%s ने गिरवी की दुकान से x %s %s को $%s में खरीदा है",
+        "SmeltedItem": "%s ने x %s %s को गलाया है"
     }
 }

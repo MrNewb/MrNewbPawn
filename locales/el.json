@@ -7,24 +7,42 @@
         "TargetLabel": "Μιλήστε με τον Ιδιοκτήτη του Ενεχυροδανειστηρίου",
         "TargetIcon": "fa-solid fa-store",
         "ShopClosed": "Το ενεχυροδανειστήριο είναι κλειστό!",
-        "SellItems": "Πώληση Αντικειμένου για $%s",
+        "SellItems": "Πουλήστε Αντικείμενο για $%s",
         "AmountToSell": "Ποσότητα προς Πώληση",
-        "color": "orange"
+        "AmountToPurchase": "Ποσότητα προς Αγορά",
+        "PawnedItemDescription": "αγοράστε x %s για $%s",
+        "SellingProgress": "Πουλάω x %s %s",
+        "SellTitle": "Πώληση Αντικειμένων",
+        "SoldItem": "Πουλήσατε %s %s για $%s",
+        "PawnedTitle": "Ενεχυριασμένο Απόθεμα",
+        "PawnedDescription": "Αγοράστε αντικείμενα που πουλήθηκαν προηγουμένως στο ενεχυροδανειστήριο.",
+        "SellDescription": "Πουλήστε τα αντικείμενά σας στο ενεχυροδανειστήριο για γρήγορα μετρητά.",
+        "NoStock": "Δεν υπάρχει απόθεμα διαθέσιμο αυτή τη στιγμή.",
+        "NoItemsToSell": "Δεν έχετε αντικείμενα για πώληση!",
+        "PurchasedPawnedItem": "Αγοράσατε %s %s για $%s",
+        "color": "orange",
+        "NoPawnedItems": "Δεν υπάρχουν ενεχυριασμένα αντικείμενα διαθέσιμα για αγορά."
     },
     "Smelting": {
         "MenuTitle": "Τήξη",
-        "MenuDescription": "Λιώστε αντικείμενα για να δημιουργήσετε νέα αντικείμενα.",
+        "MenuDescription": "Τήξτε αντικείμενα για να πάρετε εξαρτήματα.",
         "MenuIcon": "fa-solid fa-fire",
-        "TargetLabel": "Λιώσιμο Αντικειμένων",
+        "TargetLabel": "Τήξτε Αντικείμενα",
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "Ποσότητα προς Τήξη",
-        "SmeltingSuccess": "Έχετε λιώσει επιτυχώς το αντικείμενο!",
-        "ProgressBarLabel": "Λιώνει x %s %s"
+        "SmeltingSuccess": "Τήξατε επιτυχώς το αντικείμενο!",
+        "ProgressBarLabel": "Τήξη x %s %s"
     },
     "Warnings": {
+        "Canceled": "Ακυρώθηκε.",
         "DoNotHave": "Δεν έχετε αυτό το αντικείμενο!",
-        "Smelting": "Λιώνει...",
-        "InvalidItem": "Αυτό το αντικείμενο δεν μπορεί να λιώσει!"
+        "Smelting": "Τήξη...",
+        "InvalidItem": "Αυτό το αντικείμενο δεν μπορεί να τακεί!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s πούλησε x %s %s για $%s",
+        "PurchasedItem": "%s αγόρασε x %s %s για $%s από το ενεχυροδανειστήριο",
+        "SmeltedItem": "%s έτηξε x %s %s"
     }
 }
