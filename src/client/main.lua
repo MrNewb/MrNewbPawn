@@ -23,8 +23,14 @@ function SliderInput(id, item, _type, inputLabel)
         if not shop or not shop.itemlist[item] then return false, Bridge.Notify.SendNotify(locale("Warnings.DoNotHave"), "error", 6000) end
     end
 
+    local menuName = Bridge.Input.GetResourceName()
+    local min = 1
+    if menuName == "lation_ui" and (itemCount == 1) then
+        min = 0
+    end
+
     local input = Bridge.Input.Open(itemLabel, {
-        { type = 'slider', label = inputLabel, min = 1, max = itemCount, step = 1 },
+        { type = 'slider', label = inputLabel, min = min, max = itemCount, step = 1 },
     })
 
     if not input or not input[1] then return false end

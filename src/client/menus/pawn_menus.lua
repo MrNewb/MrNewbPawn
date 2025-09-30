@@ -22,10 +22,14 @@ end
 
 local function inputPurchaseAmount(id, itemCount, itemLabel)
     if not itemCount or itemCount <= 0 then return end
+    local menuName = Bridge.Input.GetResourceName()
+    local min = 1
+    if menuName == "lation_ui" and (itemCount == 1) then
+        min = 0
+    end
     local input = Bridge.Input.Open(itemLabel, {
-        { type = 'slider', label = locale("PawnShop.AmountToPurchase"), min = 1, max = itemCount, step = 1 },
+        { type = 'slider', label = locale("PawnShop.AmountToPurchase"), min = min, max = itemCount, step = 1 },
 	}, false)
-
 	if not input or not input[1] then return end
     if tonumber(input[1]) <= 0 then return end
     TriggerServerEvent("MrNewbPawn_V2:Server:PurchasePawnedItem", id, itemLabel, input[1])
