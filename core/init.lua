@@ -7,7 +7,7 @@ end
 function GenerateRandomString()
     local prefix = "MrNewbPawn_"
     local randomString = Bridge.Ids.RandomLower(nil, 8)
-    return prefix .. randomString
+    return string.format("%s%s", prefix, randomString)
 end
 
 function DebugInfo(message)

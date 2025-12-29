@@ -86,20 +86,22 @@ function PawnShopClass:checkOpenHours()
     return false
 end
 
-AddEventHandler("community_bridge:Client:OnPlayerLoaded", function()
+function DestroyAllPawnShops()
+    for k, v in pairs(ActivePawnShops) do
+        v:destroy(k)
+    end
+end
+
+RegisterNetEvent("community_bridge:Client:OnPlayerLoaded", function()
     if Config.Utility.Debug then return end
     RegisterPawnPoints()
 end)
 
-AddEventHandler("community_bridge:Client:OnPlayerUnload", function()
-    for k, v in pairs(ActivePawnShops) do
-        v:destroy(k)
-    end
+RegisterNetEvent("community_bridge:Client:OnPlayerUnload", function()
+    DestroyAllPawnShops()
 end)
 
 AddEventHandler('onResourceStop', function(resource)
     if resource ~= GetCurrentResourceName() then return end
-    for k, v in pairs(ActivePawnShops) do
-        v:destroy(k)
-    end
+    DestroyAllPawnShops()
 end)

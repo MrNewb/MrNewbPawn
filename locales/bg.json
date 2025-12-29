@@ -1,0 +1,48 @@
+{
+    "SubmitText": "Изпрати",
+    "PawnShop": {
+        "Title": "Заложна къща",
+        "Description": "Заложната къща е място, където можете да продадете своите предмети за пари.",
+        "MenuIcon": "fa-solid fa-store",
+        "TargetLabel": "Говорете със собственика на заложната къща",
+        "TargetIcon": "fa-solid fa-store",
+        "ShopClosed": "Заложната къща е затворена!",
+        "SellItems": "Продай предмет за $%s",
+        "AmountToSell": "Количество за продажба",
+        "AmountToPurchase": "Количество за покупка",
+        "PawnedItemDescription": "купи x %s за $%s",
+        "SellingProgress": "Продажба на x %s %s",
+        "SellTitle": "Продай предмети",
+        "SoldItem": "Продадохте %s %s за $%s",
+        "PawnedTitle": "Заложени стоки",
+        "PawnedDescription": "Купете предмети, предварително продадени на заложната къща.",
+        "SellDescription": "Продайте предметите си на заложната къща за бързи пари.",
+        "NoStock": "В момента няма налична стока.",
+        "NoItemsToSell": "Нямате предмети за продажба!",
+        "PurchasedPawnedItem": "Закупихте %s %s за $%s",
+        "color": "orange",
+        "NoPawnedItems": "Няма заложени предмети за покупка."
+    },
+    "Smelting": {
+        "MenuTitle": "Топене",
+        "MenuDescription": "Стопете предмети, за да получите компоненти.",
+        "MenuIcon": "fa-solid fa-fire",
+        "TargetLabel": "Стопи предмети",
+        "TargetIcon": "fa-solid fa-fire",
+        "MenuIconColor": "orange",
+        "AmountToSmelt": "Количество за топене",
+        "SmeltingSuccess": "Успешно стопихте предмета!",
+        "ProgressBarLabel": "Топене на x %s %s"
+    },
+    "Warnings": {
+        "Canceled": "Отменено.",
+        "DoNotHave": "Нямате този предмет!",
+        "Smelting": "Топене...",
+        "InvalidItem": "Този предмет не може да бъде стопен!"
+    },
+    "LogMessages": {
+        "SoldItem": "%s продаде x %s %s за $%s",
+        "PurchasedItem": "%s закупи x %s %s за $%s от заложната къща",
+        "SmeltedItem": "%s стопи x %s %s"
+    }
+}

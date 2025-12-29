@@ -20,6 +20,7 @@ function PawnShopsClass:sendLog(message)
 end
 
 function PawnShopsClass:sellItem(src, item, count)
+    if count <= 0 then return false end
     local itemCount = Bridge.Inventory.GetItemCount(src, item, nil)
     if itemCount < count then return false end
 
@@ -33,12 +34,14 @@ function PawnShopsClass:sellItem(src, item, count)
     self.pawnedItems[item].count = (self.pawnedItems[item].count or 0) + count
 
     local firstName, lastName = Bridge.Framework.GetPlayerName(src)
-    self:sendLog(locale("LogMessages.SoldItem", firstName.." "..lastName, tostring(count), item, tostring(price * count)))
+    local formattedName = string.format("%s %s", firstName, lastName)
+    self:sendLog(locale("LogMessages.SoldItem", formattedName, tostring(count), item, tostring(price * count)))
     Bridge.Framework.AddAccountBalance(src, "money", price * count)
     return true, Bridge.Notify.SendNotify(src, locale("PawnShop.SoldItem", count, item, price * count), "success", 6000)
 end
 
 function PawnShopsClass:buyItem(src, item, count)
+    if count <= 0 then return false end
     local itemData = self.pawnedItems[item]
     if not itemData then return false end
     if itemData.count < count then return false end
@@ -53,7 +56,8 @@ function PawnShopsClass:buyItem(src, item, count)
     if self.pawnedItems[item].count <= 0 then self.pawnedItems[item] = nil end
 
     local firstName, lastName = Bridge.Framework.GetPlayerName(src)
-    self:sendLog(locale("LogMessages.PurchasedItem", firstName.." "..lastName, tostring(count), item, tostring(itemData.price * count)))
+    local formattedName = string.format("%s %s", firstName, lastName)
+    self:sendLog(locale("LogMessages.PurchasedItem", formattedName, tostring(count), item, tostring(itemData.price * count)))
     return true
 end
 
@@ -86,6 +90,7 @@ end)
 
 AddEventHandler('onResourceStart', function(resource)
     if resource ~= GetCurrentResourceName() then return end
+    Bridge.Version.AdvancedVersionChecker("MrNewb/patchnotes", "community_bridge")
     Bridge.Version.AdvancedVersionChecker("MrNewb/patchnotes", resource)
     for shopName, shopData in pairs(Config.PawnShops) do
         PawnShopsClass:new(shopName, shopData.position)

@@ -1,9 +1,3 @@
-RegisterNetEvent("community_bridge:Client:OnPlayerLoaded", function()
-end)
-
-RegisterNetEvent("community_bridge:Client:OnPlayerUnload", function()
-end)
-
 function SliderInput(id, item, _type, inputLabel)
     if not item then return false end
     if not _type or (_type ~= "melt" and _type ~= "pawn") then return false end
@@ -38,15 +32,3 @@ function SliderInput(id, item, _type, inputLabel)
     if not amount or amount <= 0 then return false end
     return amount
 end
-
-if not Config.Utility.Debug then return end
-AddEventHandler('onResourceStart', function(resource)
-    if resource ~= GetCurrentResourceName() then return end
-    RegisterPawnPoints()
-    RegisterSmeltPoints()
-    DebugInfo("Resource started in debug mode: " .. resource)
-    DebugInfo("Debug mode is enabled.")
-    DebugInfo("Registering pawn points and smelting points.")
-    DebugInfo("This is not for production use in this mode, it is here for prints and testing of tweaks.")
-    DebugInfo("Please disable debug mode before going live.")
-end)

@@ -24,12 +24,12 @@ Config.Settings = {
 }
 
 Config.PawnShops = {
-    Dylan = {
+    ["Christians Pawn Shop"] = {
         position = vector4(411.3616, 313.7914, 102.0207, 211.4422),
         model = "a_m_m_farmer_01",
         radius = 100.0,
         Blip = {
-            label = "Dylans Pawn Shop",
+            label = "Christians Pawn Shop",
             color = 50,
             sprite = 500,
             scale = 0.8,

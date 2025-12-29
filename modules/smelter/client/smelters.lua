@@ -55,20 +55,22 @@ function RemoveSmelterByID(id)
     shop:destroy()
 end
 
+function RemoveAllSmelters()
+    for k, v in pairs(ActiveSmeltPoints) do
+        v:destroy()
+    end
+end
+
 AddEventHandler("community_bridge:Client:OnPlayerLoaded", function()
     if Config.Utility.Debug then return print("Debug mode is enabled, restart the script for testing.") end
     RegisterSmeltPoints()
 end)
 
 AddEventHandler("community_bridge:Client:OnPlayerUnload", function()
-    for k, v in pairs(ActiveSmeltPoints) do
-        v:destroy(k)
-    end
+    RemoveAllSmelters()
 end)
 
 AddEventHandler('onResourceStop', function(resource)
     if resource ~= GetCurrentResourceName() then return end
-    for k, v in pairs(ActiveSmeltPoints) do
-        v:destroy(k)
-    end
+    RemoveAllSmelters()
 end)

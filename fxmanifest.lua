@@ -1,23 +1,22 @@
 fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
+author 'MrNewb'
 name 'MrNewbPawn'
-description 'A basic, minimally featured pawn shop system. Its an older system, slightly updated to remain functional, focusing solely on buying and selling items without any extra frills.'
-version '1.3.0'
+description 'A pawn shop system built for pure efficiency. Trade items with fast transactions buy, sell, profit. Zero bloat.'
+version '1.4.0'
 
 shared_scripts {
-	'src/shared/config.lua',
-	'src/shared/init.lua',
+	'data/config.lua',
+	'core/init.lua',
 }
 
-client_script {
-	'src/client/*.lua',
-	'src/client/classes/*.lua',
-	'src/client/menus/*.lua',
+client_scripts {
+	'modules/**/client/*.lua',
 }
 
 server_scripts {
-	'src/server/classes/*.lua',
+	'modules/**/server/*.lua',
 }
 
 files {
@@ -31,5 +30,5 @@ dependencies {
 }
 
 escrow_ignore {
-	'src/**/*.lua',
+	'***/**/*.lua',
 }
