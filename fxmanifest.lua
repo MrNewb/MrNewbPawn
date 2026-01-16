@@ -1,9 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
-author 'MrNewb'
 name 'MrNewbPawn'
 description 'A pawn shop system built for pure efficiency. Trade items with fast transactions buy, sell, profit. Zero bloat.'
+author 'MrNewb'
 version '1.4.0'
 
 shared_scripts {
@@ -30,5 +30,5 @@ dependencies {
 }
 
 escrow_ignore {
-	'***/**/*.lua',
+	'**/*.lua',
 }

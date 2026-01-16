@@ -39,3 +39,15 @@ For detailed setup, see the [documentation](https://mrnewbs-scrips.gitbook.io/gu
 
 * Community Bridge
 * Compatible framework (ESX, QBCore, Qbox/QBX)
+
+## Support & Documentation
+
+- **[Tebex](https://mrnewbscripts.tebex.io/)**
+- **[Install guide](https://mrnewbs-scrips.gitbook.io/guide)**
+- **[Youtube](https://www.youtube.com/@mrnewb2819)**
+- **[GitHub Repository](https://github.com/MrNewb/MrNewbPawn)**
+
+### Community
+[![Discord](https://discordapp.com/api/guilds/1204398264812830720/widget.png?style=banner2)](https://discord.gg/mrnewbscripts)
+
+**Join our Discord for support, feature requests, and community feedback.**
