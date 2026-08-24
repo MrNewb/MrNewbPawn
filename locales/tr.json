@@ -38,7 +38,13 @@
         "Canceled": "İptal edildi.",
         "DoNotHave": "Bu eşyanız yok!",
         "Smelting": "Eritiliyor...",
-        "InvalidItem": "Bu eşya eritilemez!"
+        "InvalidItem": "Bu eşya eritilemez!",
+        "InvalidShop": "Bu rehinci dükkanı kullanılamıyor.",
+        "TooFarFromShop": "Rehinci dükkanından çok uzaktasınız.",
+        "NotEnoughMoney": "Yeterli nakitiniz yok.",
+        "NotEnoughSpace": "Envanterinizde yeterli alan yok.",
+        "SellFailed": "Satış tamamlanamadı.",
+        "MaxSmeltBatch": "Bir seferde yalnızca %s eşya eritebilirsiniz."
     },
     "LogMessages": {
         "SoldItem": "%s x %s %s'yi $%s'ye sattı",

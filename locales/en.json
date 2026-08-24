@@ -38,7 +38,13 @@
         "Canceled": "Canceled.",
         "DoNotHave": "You do not have this item!",
         "Smelting": "Smelting...",
-        "InvalidItem": "This item cannot be smelted!"
+        "InvalidItem": "This item is not accepted here!",
+        "InvalidShop": "This pawn shop is unavailable.",
+        "TooFarFromShop": "You are too far from the pawn shop.",
+        "NotEnoughMoney": "You do not have enough cash.",
+        "NotEnoughSpace": "You do not have enough inventory space.",
+        "SellFailed": "Could not complete the sale.",
+        "MaxSmeltBatch": "You can only smelt %s items at a time."
     },
     "LogMessages": {
         "SoldItem": "%s has sold x %s %s for $%s",

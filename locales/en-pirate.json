@@ -38,7 +38,13 @@
         "Canceled": "Avast! Canceled.",
         "DoNotHave": "Ye don't have this booty!",
         "Smelting": "Smeltin'...",
-        "InvalidItem": "This booty can't be smelted!"
+        "InvalidItem": "This booty can't be smelted!",
+        "InvalidShop": "This pawn shoppe be unavailable.",
+        "TooFarFromShop": "Ye be too far from th' pawn shoppe.",
+        "NotEnoughMoney": "Ye don't have enough doubloons.",
+        "NotEnoughSpace": "Ye do not have enough hold space.",
+        "SellFailed": "Could not finish th' sale.",
+        "MaxSmeltBatch": "Ye can only smelt %s items at a time."
     },
     "LogMessages": {
         "SoldItem": "%s sold x %s %s fer $%s",

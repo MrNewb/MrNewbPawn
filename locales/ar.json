@@ -38,7 +38,13 @@
         "Canceled": "ملغى.",
         "DoNotHave": "لا تملك هذا العنصر!",
         "Smelting": "جاري الصهر...",
-        "InvalidItem": "لا يمكن صهر هذا العنصر!"
+        "InvalidItem": "لا يمكن صهر هذا العنصر!",
+        "InvalidShop": "متجر الرهن هذا غير متاح.",
+        "TooFarFromShop": "أنت بعيد جداً عن متجر الرهن.",
+        "NotEnoughMoney": "ليس لديك نقود كافية.",
+        "NotEnoughSpace": "ليس لديك مساحة كافية في المخزون.",
+        "SellFailed": "تعذر إتمام عملية البيع.",
+        "MaxSmeltBatch": "يمكنك صهر %s عنصر فقط في المرة."
     },
     "LogMessages": {
         "SoldItem": "%s باع x %s %s بـ $%s",

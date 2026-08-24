@@ -38,7 +38,13 @@
         "Canceled": "Abgebrochen.",
         "DoNotHave": "Sie haben diesen Gegenstand nicht!",
         "Smelting": "Schmelze...",
-        "InvalidItem": "Dieser Gegenstand kann nicht geschmolzen werden!"
+        "InvalidItem": "Dieser Gegenstand kann nicht geschmolzen werden!",
+        "InvalidShop": "Dieses Pfandhaus ist nicht verfügbar.",
+        "TooFarFromShop": "Sie sind zu weit vom Pfandhaus entfernt.",
+        "NotEnoughMoney": "Sie haben nicht genug Bargeld.",
+        "NotEnoughSpace": "Sie haben nicht genug Inventarplatz.",
+        "SellFailed": "Verkauf konnte nicht abgeschlossen werden.",
+        "MaxSmeltBatch": "Sie können nur %s Gegenstände auf einmal schmelzen."
     },
     "LogMessages": {
         "SoldItem": "%s hat x %s %s für $%s verkauft",

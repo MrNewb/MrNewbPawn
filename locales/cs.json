@@ -38,7 +38,13 @@
         "Canceled": "Zrušeno.",
         "DoNotHave": "Nemáte tento předmět!",
         "Smelting": "Tavení...",
-        "InvalidItem": "Tento předmět nelze roztavit!"
+        "InvalidItem": "Tento předmět nelze roztavit!",
+        "InvalidShop": "Tato záložna není dostupná.",
+        "TooFarFromShop": "Jste příliš daleko od záložny.",
+        "NotEnoughMoney": "Nemáte dostatek hotovosti.",
+        "NotEnoughSpace": "Nemáte dostatek místa v inventáři.",
+        "SellFailed": "Prodej se nepodařilo dokončit.",
+        "MaxSmeltBatch": "Najednou můžete tavit pouze %s předmětů."
     },
     "LogMessages": {
         "SoldItem": "%s prodal x %s %s za $%s",

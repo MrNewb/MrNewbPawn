@@ -38,7 +38,13 @@
         "Canceled": "Megszakítva.",
         "DoNotHave": "Nincs ilyen tárgya!",
         "Smelting": "Olvasztás...",
-        "InvalidItem": "Ez a tárgy nem olvasztható!"
+        "InvalidItem": "Ez a tárgy nem olvasztható!",
+        "InvalidShop": "Ez a zálogház nem elérhető.",
+        "TooFarFromShop": "Túl messze van a zálogháztól.",
+        "NotEnoughMoney": "Nincs elég készpénze.",
+        "NotEnoughSpace": "Nincs elég hely az inventárban.",
+        "SellFailed": "Az eladás nem fejezhető be.",
+        "MaxSmeltBatch": "Egyszerre csak %s tárgyat olvaszthat."
     },
     "LogMessages": {
         "SoldItem": "%s eladott x %s %s-t $%s-ért",

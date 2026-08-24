@@ -38,7 +38,13 @@
         "Canceled": "Peruutettu.",
         "DoNotHave": "Sinulla ei ole tätä esinettä!",
         "Smelting": "Sulatetaan...",
-        "InvalidItem": "Tätä esinettä ei voi sulattaa!"
+        "InvalidItem": "Tätä esinettä ei voi sulattaa!",
+        "InvalidShop": "Tämä panttilainaamo ei ole käytettävissä.",
+        "TooFarFromShop": "Olet liian kaukana panttilainaamosta.",
+        "NotEnoughMoney": "Sinulla ei ole tarpeeksi käteistä.",
+        "NotEnoughSpace": "Sinulla ei ole tarpeeksi tila inventaariossa.",
+        "SellFailed": "Myyntiä ei voitu suorittaa.",
+        "MaxSmeltBatch": "Voit sulattaa vain %s esinettä kerrallaan."
     },
     "LogMessages": {
         "SoldItem": "%s myi x %s %s $%s:lla",

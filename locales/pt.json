@@ -38,7 +38,13 @@
         "Canceled": "Cancelado.",
         "DoNotHave": "Você não tem este item!",
         "Smelting": "Fundindo...",
-        "InvalidItem": "Este item não pode ser fundido!"
+        "InvalidItem": "Este item não pode ser fundido!",
+        "InvalidShop": "Esta casa de penhores não está disponível.",
+        "TooFarFromShop": "Você está muito longe da casa de penhores.",
+        "NotEnoughMoney": "Você não tem dinheiro suficiente.",
+        "NotEnoughSpace": "Você não tem espaço suficiente no inventário.",
+        "SellFailed": "Não foi possível concluir a venda.",
+        "MaxSmeltBatch": "Você só pode fundir %s itens por vez."
     },
     "LogMessages": {
         "SoldItem": "%s vendeu x %s %s por $%s",

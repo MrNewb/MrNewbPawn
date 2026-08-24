@@ -38,7 +38,13 @@
         "Canceled": "Annullato.",
         "DoNotHave": "Non hai questo oggetto!",
         "Smelting": "Fondendo...",
-        "InvalidItem": "Questo oggetto non può essere fuso!"
+        "InvalidItem": "Questo oggetto non può essere fuso!",
+        "InvalidShop": "Questo banco dei pegni non è disponibile.",
+        "TooFarFromShop": "Sei troppo lontano dal banco dei pegni.",
+        "NotEnoughMoney": "Non hai abbastanza contanti.",
+        "NotEnoughSpace": "Non hai abbastanza spazio nell'inventario.",
+        "SellFailed": "Impossibile completare la vendita.",
+        "MaxSmeltBatch": "Puoi fondere solo %s oggetti alla volta."
     },
     "LogMessages": {
         "SoldItem": "%s ha venduto x %s %s per $%s",

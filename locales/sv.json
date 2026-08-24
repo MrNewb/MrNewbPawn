@@ -38,7 +38,13 @@
         "Canceled": "Avbrutet.",
         "DoNotHave": "Du har inte detta föremål!",
         "Smelting": "Smälter...",
-        "InvalidItem": "Detta föremål kan inte smältas!"
+        "InvalidItem": "Detta föremål kan inte smältas!",
+        "InvalidShop": "Denna pantbank är inte tillgänglig.",
+        "TooFarFromShop": "Du är för långt från pantbanken.",
+        "NotEnoughMoney": "Du har inte tillräckligt med kontanter.",
+        "NotEnoughSpace": "Du har inte tillräckligt med utrymme i inventariet.",
+        "SellFailed": "Försäljningen kunde inte slutföras.",
+        "MaxSmeltBatch": "Du kan bara smälta %s föremål åt gången."
     },
     "LogMessages": {
         "SoldItem": "%s har sålt x %s %s för $%s",

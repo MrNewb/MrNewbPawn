@@ -38,7 +38,13 @@
         "Canceled": "Gekanselleer.",
         "DoNotHave": "Jy het nie hierdie item nie!",
         "Smelting": "Smelt...",
-        "InvalidItem": "Hierdie item kan nie gesmelt word nie!"
+        "InvalidItem": "Hierdie item kan nie gesmelt word nie!",
+        "InvalidShop": "Hierdie pandwinkel is nie beskikbaar nie.",
+        "TooFarFromShop": "Jy is te ver van die pandwinkel.",
+        "NotEnoughMoney": "Jy het nie genoeg kontant nie.",
+        "NotEnoughSpace": "Jy het nie genoeg inventarisruimte nie.",
+        "SellFailed": "Kon nie die verkoop voltooi nie.",
+        "MaxSmeltBatch": "Jy kan net %s items per keer smelt."
     },
     "LogMessages": {
         "SoldItem": "%s het x %s %s vir $%s verkoop",

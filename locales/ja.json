@@ -38,7 +38,13 @@
         "Canceled": "キャンセルされました。",
         "DoNotHave": "このアイテムを持っていません！",
         "Smelting": "精錬中...",
-        "InvalidItem": "このアイテムは精錬できません！"
+        "InvalidItem": "このアイテムは精錬できません！",
+        "InvalidShop": "この質屋は利用できません。",
+        "TooFarFromShop": "質屋から離れすぎています。",
+        "NotEnoughMoney": "現金が足りません。",
+        "NotEnoughSpace": "インベントリに十分な空きがありません。",
+        "SellFailed": "売却を完了できませんでした。",
+        "MaxSmeltBatch": "一度に精錬できるのは %s 個までです。"
     },
     "LogMessages": {
         "SoldItem": "%sがx %s %sを$%sで売りました",

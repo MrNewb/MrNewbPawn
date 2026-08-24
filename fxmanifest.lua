@@ -1,34 +1,43 @@
 fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
+
 name 'MrNewbPawn'
-description 'A pawn shop system built for pure efficiency. Trade items with fast transactions buy, sell, profit. Zero bloat.'
+description 'Pawn shops with optional stock buy-back and foundry smelting'
 author 'MrNewb'
-version '1.4.0'
+version '1.5.0'
 
 shared_scripts {
-	'data/config.lua',
-	'core/init.lua',
+	'@ox_lib/init.lua',
+	'@Newb_Bridge/import.lua',
+	'configs/config.lua',
+	'resource/shared/locale.lua',
 }
 
 client_scripts {
-	'modules/**/client/*.lua',
+	'resource/client/shops.lua',
+	'resource/client/foundry.lua',
+	'resource/client/debug.lua',
 }
 
 server_scripts {
-	'modules/**/server/*.lua',
+	'resource/server/shops.lua',
+	'resource/server/foundry.lua',
 }
 
 files {
-	'locales/*.*',
+	'locales/*.json',
 }
 
 dependencies {
 	'/server:6116',
 	'/onesync',
-	'community_bridge',
+	'ox_lib',
+	'Newb_Bridge',
 }
 
 escrow_ignore {
-	'**/*.lua',
+	'configs/*.lua',
+	'locales/*.json',
+	'resource/**/*.lua',
 }

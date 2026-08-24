@@ -38,7 +38,13 @@
         "Canceled": "Geannuleerd.",
         "DoNotHave": "Je hebt dit item niet!",
         "Smelting": "Smelten...",
-        "InvalidItem": "Dit item kan niet worden gesmolten!"
+        "InvalidItem": "Dit item kan niet worden gesmolten!",
+        "InvalidShop": "Deze pandjeshuis is niet beschikbaar.",
+        "TooFarFromShop": "Je bent te ver van het pandjeshuis.",
+        "NotEnoughMoney": "Je hebt niet genoeg contant geld.",
+        "NotEnoughSpace": "Je hebt niet genoeg inventarisruimte.",
+        "SellFailed": "Verkoop kon niet worden voltooid.",
+        "MaxSmeltBatch": "Je kunt slechts %s items tegelijk smelten."
     },
     "LogMessages": {
         "SoldItem": "%s heeft x %s %s verkocht voor $%s",

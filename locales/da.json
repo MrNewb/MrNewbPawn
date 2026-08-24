@@ -38,7 +38,13 @@
         "Canceled": "Aflyst.",
         "DoNotHave": "Du har ikke denne genstand!",
         "Smelting": "Smelter...",
-        "InvalidItem": "Denne genstand kan ikke smeltes!"
+        "InvalidItem": "Denne genstand kan ikke smeltes!",
+        "InvalidShop": "Denne pantelåner er ikke tilgængelig.",
+        "TooFarFromShop": "Du er for langt væk fra pantelåneren.",
+        "NotEnoughMoney": "Du har ikke nok kontanter.",
+        "NotEnoughSpace": "Du har ikke nok plads i inventaret.",
+        "SellFailed": "Kunne ikke gennemføre salget.",
+        "MaxSmeltBatch": "Du kan kun smelte %s genstande ad gangen."
     },
     "LogMessages": {
         "SoldItem": "%s har solgt x %s %s for $%s",

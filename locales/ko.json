@@ -38,7 +38,13 @@
         "Canceled": "취소되었습니다.",
         "DoNotHave": "이 아이템을 가지고 있지 않습니다!",
         "Smelting": "제련 중...",
-        "InvalidItem": "이 아이템은 제련할 수 없습니다!"
+        "InvalidItem": "이 아이템은 제련할 수 없습니다!",
+        "InvalidShop": "이 전당포를 이용할 수 없습니다.",
+        "TooFarFromShop": "전당포에서 너무 멀리 떨어져 있습니다.",
+        "NotEnoughMoney": "현금이 부족합니다.",
+        "NotEnoughSpace": "인벤토리 공간이 부족합니다.",
+        "SellFailed": "판매를 완료할 수 없습니다.",
+        "MaxSmeltBatch": "한 번에 %s개까지만 제련할 수 있습니다."
     },
     "LogMessages": {
         "SoldItem": "%s가 x %s %s를 $%s에 판매했습니다",

@@ -38,7 +38,13 @@
         "Canceled": "已取消。",
         "DoNotHave": "您沒有這個物品！",
         "Smelting": "熔煉中...",
-        "InvalidItem": "該物品無法熔煉！"
+        "InvalidItem": "該物品無法熔煉！",
+        "InvalidShop": "此當舖不可用。",
+        "TooFarFromShop": "您離當舖太遠了。",
+        "NotEnoughMoney": "您的現金不足。",
+        "NotEnoughSpace": "背包空間不足。",
+        "SellFailed": "無法完成出售。",
+        "MaxSmeltBatch": "每次最多只能熔煉 %s 個物品。"
     },
     "LogMessages": {
         "SoldItem": "%s 已出售 x %s %s 獲得 $%s",

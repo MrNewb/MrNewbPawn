@@ -38,7 +38,13 @@
         "Canceled": "Anulat.",
         "DoNotHave": "Nu ai acest obiect!",
         "Smelting": "Topire...",
-        "InvalidItem": "Acest obiect nu poate fi topit!"
+        "InvalidItem": "Acest obiect nu poate fi topit!",
+        "InvalidShop": "Acest amanet nu este disponibil.",
+        "TooFarFromShop": "Ești prea departe de amanet.",
+        "NotEnoughMoney": "Nu ai suficient numerar.",
+        "NotEnoughSpace": "Nu ai suficient spațiu în inventar.",
+        "SellFailed": "Vânzarea nu a putut fi finalizată.",
+        "MaxSmeltBatch": "Poți topi doar %s obiecte odată."
     },
     "LogMessages": {
         "SoldItem": "%s a vândut x %s %s pentru $%s",

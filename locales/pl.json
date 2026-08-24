@@ -38,7 +38,13 @@
         "Canceled": "Anulowano.",
         "DoNotHave": "Nie masz tego przedmiotu!",
         "Smelting": "Przetapianie...",
-        "InvalidItem": "Tego przedmiotu nie można przetopić!"
+        "InvalidItem": "Tego przedmiotu nie można przetopić!",
+        "InvalidShop": "Ten lombard jest niedostępny.",
+        "TooFarFromShop": "Jesteś za daleko od lombardu.",
+        "NotEnoughMoney": "Nie masz wystarczającej gotówki.",
+        "NotEnoughSpace": "Nie masz wystarczająco miejsca w ekwipunku.",
+        "SellFailed": "Nie udało się zakończyć sprzedaży.",
+        "MaxSmeltBatch": "Możesz przetopić tylko %s przedmiotów naraz."
     },
     "LogMessages": {
         "SoldItem": "%s sprzedał x %s %s za $%s",

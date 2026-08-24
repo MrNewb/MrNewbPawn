@@ -38,7 +38,13 @@
         "Canceled": "Otkazano.",
         "DoNotHave": "Nemate ovaj predmet!",
         "Smelting": "Taljenje...",
-        "InvalidItem": "Ovaj predmet se ne može rastopiti!"
+        "InvalidItem": "Ovaj predmet se ne može rastopiti!",
+        "InvalidShop": "Ova zalagaonica nije dostupna.",
+        "TooFarFromShop": "Predaleko ste od zalagaonice.",
+        "NotEnoughMoney": "Nemate dovoljno gotovine.",
+        "NotEnoughSpace": "Nemate dovoljno mjesta u inventaru.",
+        "SellFailed": "Prodaja nije mogla biti dovršena.",
+        "MaxSmeltBatch": "Možete otopiti samo %s predmeta odjednom."
     },
     "LogMessages": {
         "SoldItem": "%s je prodao x %s %s za $%s",
