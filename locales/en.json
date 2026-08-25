@@ -2,7 +2,7 @@
     "SubmitText": "Submit",
     "PawnShop": {
         "Title": "Pawn Shop",
-        "Description": "The pawn shop is a place where you can sell your items for money.",
+        "Description": "Cash for your junk.",
         "MenuIcon": "fa-solid fa-store",
         "TargetLabel": "Speak to Pawn Shop Owner",
         "TargetIcon": "fa-solid fa-store",
@@ -13,13 +13,13 @@
         "PawnedItemDescription": "purchase x %s for $%s",
         "SellingProgress": "Selling x %s %s",
         "SellTitle": "Sell Items",
-        "SoldItem": "You have sold %s %s for $%s",
+        "SoldItem": "Sold %s %s for $%s",
         "PawnedTitle": "Pawned Stock",
-        "PawnedDescription": "Buy items previously sold to the pawn shop.",
-        "SellDescription": "Sell your items to the pawn shop for quick cash.",
+        "PawnedDescription": "Buy back what people dumped.",
+        "SellDescription": "Dump your stuff for cash.",
         "NoStock": "There is no stock available at the moment.",
         "NoItemsToSell": "You have no items to sell!",
-        "PurchasedPawnedItem": "You have purchased %s %s for $%s",
+        "PurchasedPawnedItem": "Bought %s %s for $%s",
         "color": "orange",
         "NoPawnedItems": "There are no pawned items available for purchase."
     },
@@ -31,7 +31,7 @@
         "TargetIcon": "fa-solid fa-fire",
         "MenuIconColor": "orange",
         "AmountToSmelt": "Amount to Smelt",
-        "SmeltingSuccess": "You have successfully smelted the item down!",
+        "SmeltingSuccess": "Smelted it down.",
         "ProgressBarLabel": "Smelting x %s %s"
     },
     "Warnings": {
@@ -39,11 +39,11 @@
         "DoNotHave": "You do not have this item!",
         "Smelting": "Smelting...",
         "InvalidItem": "This item is not accepted here!",
-        "InvalidShop": "This pawn shop is unavailable.",
-        "TooFarFromShop": "You are too far from the pawn shop.",
+        "InvalidShop": "This shop aint here.",
+        "TooFarFromShop": "Get closer to the shop.",
         "NotEnoughMoney": "You do not have enough cash.",
         "NotEnoughSpace": "You do not have enough inventory space.",
-        "SellFailed": "Could not complete the sale.",
+        "SellFailed": "Sale didnt go through.",
         "MaxSmeltBatch": "You can only smelt %s items at a time."
     },
     "LogMessages": {

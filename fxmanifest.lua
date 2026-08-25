@@ -5,7 +5,7 @@ lua54 'yes'
 name 'MrNewbPawn'
 description 'Pawn shops with optional stock buy-back and foundry smelting'
 author 'MrNewb'
-version '1.5.0'
+version '1.5.1'
 
 shared_scripts {
 	'@ox_lib/init.lua',

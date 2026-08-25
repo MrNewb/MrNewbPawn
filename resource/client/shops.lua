@@ -63,6 +63,29 @@ local function playClerkHandoff(shopId)
 	end)
 end
 
+local function startSellProgress(shopId, itemName, count, itemLabel)
+	playClerkHandoff(shopId)
+	local success = bridge.progressbar.openprogressbar({
+		duration = sellDurationMs,
+		label = locale('PawnShop.SellingProgress', count, itemLabel),
+		disable = { move = true, combat = true },
+		anim = { dict = 'mp_common', clip = 'givetake1_a', flag = 49 },
+		canCancel = true,
+	})
+	if not success then return bridge.notifications.notify({ description = locale('Warnings.Canceled'), type = 'error', duration = 3000 }) end
+	TriggerServerEvent('MrNewbPawn:Server:SellPawn', shopId, itemName, count)
+end
+
+local function itemSellAmount(shopId, itemName, itemLabel)
+	if not itemName or not shopId then return end
+	local ownedCount = bridge.inventory.getItemCount(itemName)
+	if ownedCount < 1 then return bridge.notifications.notify({ description = locale('Warnings.DoNotHave'), type = 'error', duration = 6000 }) end
+	local count = askItemAmount(itemLabel, locale('PawnShop.AmountToSell'), math.min(ownedCount, maxTradeCount))
+	if not count then return end
+	if count <= 0 then return end
+	startSellProgress(shopId, itemName, count, itemLabel)
+end
+
 local function openSellMenu(shopId)
 	local shop = Config.PawnShops[shopId]
 	if not shop or not shop.itemlist then return end
@@ -76,30 +99,7 @@ local function openSellMenu(shopId)
 			icon = itemIcon,
 			iconColor = locale('PawnShop.color'),
 			onSelect = function()
-				local ownedCount = bridge.inventory.getItemCount(itemName)
-				if ownedCount < 1 then
-					bridge.notifications.notify({ description = locale('Warnings.DoNotHave'), type = 'error', duration = 6000 })
-					return
-				end
-
-				local count = askItemAmount(itemLabel, locale('PawnShop.AmountToSell'), math.min(ownedCount, maxTradeCount))
-				if not count then return end
-
-				playClerkHandoff(shopId)
-
-				local success = bridge.progressbar.openprogressbar({
-					duration = sellDurationMs,
-					label = locale('PawnShop.SellingProgress', count, itemLabel),
-					disable = { move = true, combat = true },
-					anim = { dict = 'mp_common', clip = 'givetake1_a', flag = 49 },
-					canCancel = true,
-				})
-				if not success then
-					bridge.notifications.notify({ description = locale('Warnings.Canceled'), type = 'error', duration = 3000 })
-					return
-				end
-
-				TriggerServerEvent('MrNewbPawn:Server:SellPawn', shopId, itemName, count)
+				itemSellAmount(shopId, itemName, itemLabel)
 			end,
 		}
 	end
@@ -144,10 +144,7 @@ end
 local function openShopMenu(shopId)
 	local shop = Config.PawnShops[shopId]
 	if not shop then return end
-	if not isShopOpen(shop) then
-		bridge.notifications.notify({ description = locale('PawnShop.ShopClosed'), type = 'error', duration = 3000 })
-		return
-	end
+	if not isShopOpen(shop) then return bridge.notifications.notify({ description = locale('PawnShop.ShopClosed'), type = 'error', duration = 3000 }) end
 
 	local menuOptions = {
 		{

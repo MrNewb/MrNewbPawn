@@ -1,7 +1,6 @@
 local foundries = {}
 local lastMeltAt = {}
 local maxMeltCount = 50
-local maxFoundryDistance = 10.0
 
 local function getMeltRewards(itemName)
 	local meltItem = Config.MeltableItems and Config.MeltableItems[itemName]
@@ -10,9 +9,9 @@ local function getMeltRewards(itemName)
 end
 
 local function isPlayerNearFoundry(src, foundry)
-	local playerPed = GetPlayerPed(src)
-	if playerPed == 0 or not DoesEntityExist(playerPed) then return false end
-	return #(GetEntityCoords(playerPed) - foundry.coords) <= maxFoundryDistance
+	local ped = GetPlayerPed(src)
+	if ped == 0 then return false end
+	return #(GetEntityCoords(ped) - foundry.coords) <= 10.0
 end
 
 local function canCarryMeltRewards(src, rewards, amount)

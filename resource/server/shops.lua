@@ -1,7 +1,6 @@
 local pawnShops = {}
 local lastTradeAt = {}
 local maxTradeCount = 100
-local maxShopDistance = 6.0
 
 local function getBuybackPrice(sellPrice)
 	local markupPercent = Config.PurchaseMarkup or 20
@@ -9,20 +8,11 @@ local function getBuybackPrice(sellPrice)
 	return math.ceil(sellPrice * (100 + markupPercent) / 100)
 end
 
-local function getPlayerCharacterName(src)
-	local identifier = bridge.framework.getIdentifier(src)
-	if not identifier then return 'Unknown' end
-	return bridge.framework.getCharacterName(identifier) or 'Unknown'
-end
-
 local function isPlayerNearShop(src, shop)
-	local playerPed = GetPlayerPed(src)
-	if playerPed == 0 or not DoesEntityExist(playerPed) then return false end
-	local shopCoords = shop.coords
-	if not shopCoords then return false end
-	local x, y, z = shopCoords.x, shopCoords.y, shopCoords.z
-	if type(x) ~= 'number' or type(y) ~= 'number' or type(z) ~= 'number' then return false end
-	return #(GetEntityCoords(playerPed) - vector3(x, y, z)) <= maxShopDistance
+	local ped = GetPlayerPed(src)
+	if ped == 0 then return false end
+	if not shop.coords then return false end
+	return #(GetEntityCoords(ped) - vector3(shop.coords.x, shop.coords.y, shop.coords.z)) <= 6.0
 end
 
 local function sellPawnItem(src, shop, itemName, count)
@@ -51,7 +41,8 @@ local function sellPawnItem(src, shop, itemName, count)
 	end
 
 	if Config.Logging then
-		print(('[MrNewbPawn] %s'):format(locale('LogMessages.SoldItem', getPlayerCharacterName(src), count, itemName, payout)))
+		local identifier = bridge.framework.getIdentifier(src)
+		print(('[MrNewbPawn] %s'):format(locale('LogMessages.SoldItem', identifier and bridge.framework.getCharacterName(identifier) or 'Unknown', count, itemName, payout)))
 	end
 	bridge.notifications.notify(src, { description = locale('PawnShop.SoldItem', count, itemName, payout), type = 'success', duration = 6000 })
 	return true
@@ -71,11 +62,7 @@ local function buyPawnedItem(src, shop, itemName, count)
 	if totalCost < 1 then return false end
 
 	local cashBalance = tonumber(bridge.framework.getMoney(src, 'cash')) or 0
-	-- Some frameworks return a wrapped uint32 when cash is negative.
-	if cashBalance >= 0x80000000 then
-		cashBalance = cashBalance - 0x100000000
-	end
-	if cashBalance < totalCost then
+	if cashBalance < 0 or cashBalance < totalCost then
 		bridge.notifications.notify(src, { description = locale('Warnings.NotEnoughMoney'), type = 'error', duration = 6000 })
 		return false
 	end
@@ -93,14 +80,14 @@ local function buyPawnedItem(src, shop, itemName, count)
 		return false
 	end
 
-	-- Read stock again after money so a yielding money hook cannot sell the same units twice.
 	shop.stock[itemName] = (shop.stock[itemName] or 0) - count
 	if shop.stock[itemName] <= 0 then
 		shop.stock[itemName] = nil
 	end
 
 	if Config.Logging then
-		print(('[MrNewbPawn] %s'):format(locale('LogMessages.PurchasedItem', getPlayerCharacterName(src), count, itemName, totalCost)))
+		local identifier = bridge.framework.getIdentifier(src)
+		print(('[MrNewbPawn] %s'):format(locale('LogMessages.PurchasedItem', identifier and bridge.framework.getCharacterName(identifier) or 'Unknown', count, itemName, totalCost)))
 	end
 	bridge.notifications.notify(src, { description = locale('PawnShop.PurchasedPawnedItem', count, itemName, totalCost), type = 'success', duration = 6000 })
 	return true
@@ -138,20 +125,9 @@ RegisterNetEvent('MrNewbPawn:Server:SellPawn', function(shopId, itemName, count)
 	if lastTradeAt[src] and gameTime - lastTradeAt[src] < 1000 then return end
 
 	local shop = pawnShops[shopId]
-	if not shop then
-		bridge.notifications.notify(src, { description = locale('Warnings.InvalidShop'), type = 'error', duration = 6000 })
-		return
-	end
-
-	if not shop.itemlist[itemName] then
-		bridge.notifications.notify(src, { description = locale('Warnings.InvalidItem'), type = 'error', duration = 6000 })
-		return
-	end
-
-	if not isPlayerNearShop(src, shop) then
-		bridge.notifications.notify(src, { description = locale('Warnings.TooFarFromShop'), type = 'error', duration = 6000 })
-		return
-	end
+	if not shop then return bridge.notifications.notify(src, { description = locale('Warnings.InvalidShop'), type = 'error', duration = 6000 }) end
+	if not shop.itemlist[itemName] then return bridge.notifications.notify(src, { description = locale('Warnings.InvalidItem'), type = 'error', duration = 6000 }) end
+	if not isPlayerNearShop(src, shop) then return bridge.notifications.notify(src, { description = locale('Warnings.TooFarFromShop'), type = 'error', duration = 6000 }) end
 
 	lastTradeAt[src] = gameTime
 	sellPawnItem(src, shop, itemName, count)
@@ -171,15 +147,8 @@ RegisterNetEvent('MrNewbPawn:Server:PurchasePawnedItem', function(shopId, itemNa
 	if lastTradeAt[src] and gameTime - lastTradeAt[src] < 1000 then return end
 
 	local shop = pawnShops[shopId]
-	if not shop then
-		bridge.notifications.notify(src, { description = locale('Warnings.InvalidShop'), type = 'error', duration = 6000 })
-		return
-	end
-
-	if not isPlayerNearShop(src, shop) then
-		bridge.notifications.notify(src, { description = locale('Warnings.TooFarFromShop'), type = 'error', duration = 6000 })
-		return
-	end
+	if not shop then return bridge.notifications.notify(src, { description = locale('Warnings.InvalidShop'), type = 'error', duration = 6000 }) end
+	if not isPlayerNearShop(src, shop) then return bridge.notifications.notify(src, { description = locale('Warnings.TooFarFromShop'), type = 'error', duration = 6000 }) end
 
 	lastTradeAt[src] = gameTime
 	buyPawnedItem(src, shop, itemName, count)
@@ -191,7 +160,7 @@ end)
 
 AddEventHandler('onResourceStart', function(resourceName)
 	if GetCurrentResourceName() ~= resourceName then return end
-
+	Wait(100)
 	exports[bridge.name]:VersionCheck('MrNewb/patchnotes', resourceName)
 
 	for shopId, shop in pairs(Config.PawnShops or {}) do
