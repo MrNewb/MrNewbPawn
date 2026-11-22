@@ -154,7 +154,7 @@ local function startMelting(foundryId, itemName)
 		return
 	end
 
-	TriggerServerEvent('MrNewbPawn:Server:SmeltItem', itemName, amount, foundryId)
+	TriggerServerEvent('MrNewbPawn:server:smeltedItem', itemName, amount, foundryId)
 end
 
 local function openFoundryMenu(foundryId)
@@ -256,16 +256,16 @@ function RemoveFoundries()
 	end
 end
 
-AddEventHandler('Newb_Bridge:client:playerLoad', function()
+AddEventHandler('Newb_Bridge:client:playerLoaded', function()
 	CreateFoundries()
 end)
 
-AddEventHandler('Newb_Bridge:client:playerUnload', function()
+AddEventHandler('Newb_Bridge:client:playerUnloaded', function()
 	RemoveFoundries()
 end)
 
 AddEventHandler('onResourceStop', function(resourceName)
-	if GetCurrentResourceName() ~= resourceName then return end
+	if cache.resource ~= resourceName then return end
 	RemoveFoundries()
 end)
 

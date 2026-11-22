@@ -17,7 +17,6 @@ end
 local function canCarryMeltRewards(src, rewards, amount)
 	for rewardIndex = 1, #rewards do
 		local reward = rewards[rewardIndex]
-		if type(reward.itemName) ~= 'string' or reward.itemName == '' then return false end
 		local rewardCount = math.floor(tonumber(reward.count) or 0) * amount
 		if rewardCount < 1 then return false end
 		if not bridge.inventory.canCarryItem(src, reward.itemName, rewardCount) then
@@ -27,7 +26,7 @@ local function canCarryMeltRewards(src, rewards, amount)
 	return true
 end
 
-RegisterNetEvent('MrNewbPawn:Server:SmeltItem', function(itemName, amount, foundryId)
+RegisterNetEvent('MrNewbPawn:server:smeltedItem', function(itemName, amount, foundryId)
 	local src = source
 	local playerPed = GetPlayerPed(src)
 	if playerPed == 0 or not DoesEntityExist(playerPed) then return end
@@ -99,7 +98,7 @@ AddEventHandler('playerDropped', function()
 end)
 
 AddEventHandler('onResourceStart', function(resourceName)
-	if GetCurrentResourceName() ~= resourceName then return end
+	if cache.resource ~= resourceName then return end
 
 	for foundryId, foundry in pairs(Config.FoundryLocations or {}) do
 		local zone = foundry.Zone
@@ -110,6 +109,6 @@ AddEventHandler('onResourceStart', function(resourceName)
 end)
 
 AddEventHandler('onResourceStop', function(resourceName)
-	if GetCurrentResourceName() ~= resourceName then return end
+	if cache.resource ~= resourceName then return end
 	foundries = {}
 end)

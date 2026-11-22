@@ -1,7 +1,7 @@
 if not Config.Debug then return end
 
 AddEventHandler('onClientResourceStart', function(resourceName)
-	if resourceName ~= GetCurrentResourceName() then return end
+	if resourceName ~= cache.resource then return end
 
 	Wait(2000)
 	RemovePawnShops()

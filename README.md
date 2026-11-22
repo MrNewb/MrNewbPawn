@@ -4,6 +4,8 @@ Pawn shops with optional buy-back of sold stock, plus foundry box zones for smel
 
 [Documentation](https://mrnewb.github.io/docs/mrnewbpawn) · [Install guide](https://mrnewb.github.io/docs/mrnewbpawn/install) · [Tebex](https://mrnewbscripts.tebex.io/) · [Discord](https://discord.gg/mrnewbscripts) · [Preview](https://www.youtube.com/watch?v=T4BHIxLF6F8)
 
+Documentation is available at https://mrnewb.github.io/docs/
+
 [![MrNewbPawn preview](https://img.youtube.com/vi/T4BHIxLF6F8/hqdefault.jpg)](https://www.youtube.com/watch?v=T4BHIxLF6F8)
 
 ![Pawn shop artwork](THUMBNAIL.png)
@@ -31,6 +33,6 @@ Copy `[INSTALL]/images/` into your inventory images folder. Do not add `server.e
 
 ## Config
 
-`configs/config.lua` — shop locations, sell lists, hours, `PurchaseStock` / `PurchaseMarkup`, foundry boxes, melt recipes.
+`resource/open/shared/config.lua` — shop locations, sell lists, hours, `PurchaseStock` / `PurchaseMarkup`, foundry boxes, melt recipes.
 
 [Item setup](https://mrnewb.github.io/docs/mrnewbpawn/install/inventory) · [Item images](https://mrnewb.github.io/docs/mrnewbpawn/install/inventory-images).

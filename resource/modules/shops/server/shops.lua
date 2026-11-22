@@ -4,7 +4,7 @@ local maxTradeCount = 100
 
 local function getBuybackPrice(sellPrice)
 	local markupPercent = Config.PurchaseMarkup or 20
-	if type(markupPercent) ~= 'number' or markupPercent <= 0 then return sellPrice end
+	if markupPercent <= 0 then return sellPrice end
 	return math.ceil(sellPrice * (100 + markupPercent) / 100)
 end
 
@@ -17,7 +17,7 @@ end
 
 local function sellPawnItem(src, shop, itemName, count)
 	local sellPrice = shop.itemlist[itemName]
-	if type(sellPrice) ~= 'number' or sellPrice < 1 then return false end
+	if not sellPrice or sellPrice < 1 then return false end
 
 	if bridge.inventory.getItemCount(src, itemName) < count then
 		bridge.notifications.notify(src, { description = locale('Warnings.DoNotHave'), type = 'error', duration = 6000 })
@@ -56,7 +56,7 @@ local function buyPawnedItem(src, shop, itemName, count)
 	end
 
 	local sellPrice = shop.itemlist[itemName]
-	if type(sellPrice) ~= 'number' or sellPrice < 1 then return false end
+	if not sellPrice or sellPrice < 1 then return false end
 
 	local totalCost = getBuybackPrice(sellPrice) * count
 	if totalCost < 1 then return false end
@@ -104,14 +104,14 @@ lib.callback.register('MrNewbPawn:Callback:GetPawnedStock', function(src, shopId
 	local stock = {}
 	for itemName, count in pairs(shop.stock) do
 		local sellPrice = shop.itemlist[itemName]
-		if type(sellPrice) == 'number' and sellPrice >= 1 and count > 0 then
+		if sellPrice and sellPrice >= 1 and count > 0 then
 			stock[itemName] = { count = count, price = getBuybackPrice(sellPrice) }
 		end
 	end
 	return stock
 end)
 
-RegisterNetEvent('MrNewbPawn:Server:SellPawn', function(shopId, itemName, count)
+RegisterNetEvent('MrNewbPawn:server:soldPawnItem', function(shopId, itemName, count)
 	local src = source
 	local playerPed = GetPlayerPed(src)
 	if playerPed == 0 or not DoesEntityExist(playerPed) then return end
@@ -133,7 +133,7 @@ RegisterNetEvent('MrNewbPawn:Server:SellPawn', function(shopId, itemName, count)
 	sellPawnItem(src, shop, itemName, count)
 end)
 
-RegisterNetEvent('MrNewbPawn:Server:PurchasePawnedItem', function(shopId, itemName, count)
+RegisterNetEvent('MrNewbPawn:server:purchasedPawnedItem', function(shopId, itemName, count)
 	local src = source
 	local playerPed = GetPlayerPed(src)
 	if playerPed == 0 or not DoesEntityExist(playerPed) or not Config.PurchaseStock then return end
@@ -159,7 +159,7 @@ AddEventHandler('playerDropped', function()
 end)
 
 AddEventHandler('onResourceStart', function(resourceName)
-	if GetCurrentResourceName() ~= resourceName then return end
+	if cache.resource ~= resourceName then return end
 	Wait(100)
 	exports[bridge.name]:VersionCheck('MrNewb/patchnotes', resourceName)
 
@@ -173,6 +173,6 @@ AddEventHandler('onResourceStart', function(resourceName)
 end)
 
 AddEventHandler('onResourceStop', function(resourceName)
-	if GetCurrentResourceName() ~= resourceName then return end
+	if cache.resource ~= resourceName then return end
 	pawnShops = {}
 end)

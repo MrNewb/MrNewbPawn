@@ -73,7 +73,7 @@ local function startSellProgress(shopId, itemName, count, itemLabel)
 		canCancel = true,
 	})
 	if not success then return bridge.notifications.notify({ description = locale('Warnings.Canceled'), type = 'error', duration = 3000 }) end
-	TriggerServerEvent('MrNewbPawn:Server:SellPawn', shopId, itemName, count)
+	TriggerServerEvent('MrNewbPawn:server:soldPawnItem', shopId, itemName, count)
 end
 
 local function itemSellAmount(shopId, itemName, itemLabel)
@@ -113,7 +113,7 @@ end
 
 local function openBuyMenu(shopId)
 	local stockItems = lib.callback.await('MrNewbPawn:Callback:GetPawnedStock', false, shopId)
-	if type(stockItems) ~= 'table' or not next(stockItems) then
+	if not next(stockItems) then
 		bridge.notifications.notify({ description = locale('PawnShop.NoPawnedItems'), type = 'error', duration = 3000 })
 		return
 	end
@@ -129,7 +129,7 @@ local function openBuyMenu(shopId)
 			onSelect = function()
 				local amount = askItemAmount(locale('PawnShop.AmountToPurchase'), locale('PawnShop.AmountToPurchase'), math.min(stock.count, maxTradeCount))
 				if not amount then return end
-				TriggerServerEvent('MrNewbPawn:Server:PurchasePawnedItem', shopId, itemName, amount)
+				TriggerServerEvent('MrNewbPawn:server:purchasedPawnedItem', shopId, itemName, amount)
 			end,
 		}
 	end
@@ -243,16 +243,16 @@ function RemovePawnShops()
 	end
 end
 
-AddEventHandler('Newb_Bridge:client:playerLoad', function()
+AddEventHandler('Newb_Bridge:client:playerLoaded', function()
 	CreatePawnShops()
 end)
 
-AddEventHandler('Newb_Bridge:client:playerUnload', function()
+AddEventHandler('Newb_Bridge:client:playerUnloaded', function()
 	RemovePawnShops()
 end)
 
 AddEventHandler('onResourceStop', function(resourceName)
-	if GetCurrentResourceName() ~= resourceName then return end
+	if cache.resource ~= resourceName then return end
 	RemovePawnShops()
 end)
 
