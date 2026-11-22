@@ -5,7 +5,7 @@ lua54 'yes'
 name 'MrNewbPawn'
 description 'Pawn shops with optional stock buy-back and foundry smelting'
 author 'MrNewb'
-version '1.5.2'
+version '1.5.3'
 
 ox_libs {
 	'locale',
