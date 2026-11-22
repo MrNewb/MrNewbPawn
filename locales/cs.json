@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Odeslat",
     "PawnShop": {
         "Title": "Zastávarní",
         "Description": "Zastávarní je místo, kde můžete prodat své předměty za peníze.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Kupte předměty dříve prodalé do zastávarní.",
         "SellDescription": "Prodejte své předměty do zastávarní za rychlé peníze.",
         "NoStock": "V tuto chvíli není k dispozici žádné zboží.",
-        "NoItemsToSell": "Nemáte žádné předměty k prodeji!",
         "PurchasedPawnedItem": "Koupili jste %s %s za $%s",
         "color": "orange",
         "NoPawnedItems": "Nejsou k dispozici žádné zastávené předměty k nákupu."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Zrušeno.",
         "DoNotHave": "Nemáte tento předmět!",
-        "Smelting": "Tavení...",
         "InvalidItem": "Tento předmět nelze roztavit!",
         "InvalidShop": "Tato záložna není dostupná.",
         "TooFarFromShop": "Jste příliš daleko od záložny.",

@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Enviar",
     "PawnShop": {
         "Title": "Casa de Empeños",
         "Description": "La casa de empeños es un lugar donde puedes vender tus objetos por dinero.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Compra objetos previamente vendidos a la casa de empeños.",
         "SellDescription": "Vende tus objetos a la casa de empeños por dinero rápido.",
         "NoStock": "No hay inventario disponible en este momento.",
-        "NoItemsToSell": "¡No tienes objetos para vender!",
         "PurchasedPawnedItem": "Has comprado %s %s por $%s",
         "color": "orange",
         "NoPawnedItems": "No hay objetos empeñados disponibles para comprar."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Cancelado.",
         "DoNotHave": "¡No tienes este objeto!",
-        "Smelting": "Fundiendo...",
         "InvalidItem": "¡Este objeto no se puede fundir!",
         "InvalidShop": "Esta casa de empeños no está disponible.",
         "TooFarFromShop": "Estás demasiado lejos de la casa de empeños.",

@@ -1,5 +1,4 @@
 {
-    "SubmitText": "제출",
     "PawnShop": {
         "Title": "전당포",
         "Description": "전당포는 당신의 아이템을 돈으로 팔 수 있는 곳입니다.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "이전에 전당포에 판 아이템을 구매합니다.",
         "SellDescription": "전당포에 아이템을 팔아 빠른 현금을 얻으세요.",
         "NoStock": "현재 사용 가능한 재고가 없습니다.",
-        "NoItemsToSell": "판매할 아이템이 없습니다!",
         "PurchasedPawnedItem": "%s %s를 $%s에 구매했습니다",
         "color": "orange",
         "NoPawnedItems": "구매 가능한 전당잡힌 아이템이 없습니다."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "취소되었습니다.",
         "DoNotHave": "이 아이템을 가지고 있지 않습니다!",
-        "Smelting": "제련 중...",
         "InvalidItem": "이 아이템은 제련할 수 없습니다!",
         "InvalidShop": "이 전당포를 이용할 수 없습니다.",
         "TooFarFromShop": "전당포에서 너무 멀리 떨어져 있습니다.",

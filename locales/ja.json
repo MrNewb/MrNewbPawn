@@ -1,5 +1,4 @@
 {
-    "SubmitText": "送信",
     "PawnShop": {
         "Title": "質屋",
         "Description": "質屋はアイテムをお金と交換できる場所です。",
@@ -18,7 +17,6 @@
         "PawnedDescription": "以前質屋に売ったアイテムを購入します。",
         "SellDescription": "アイテムを質屋に売って素早く現金を得ましょう。",
         "NoStock": "現在在庫がありません。",
-        "NoItemsToSell": "売るアイテムがありません！",
         "PurchasedPawnedItem": "%s %sを$%sで購入しました",
         "color": "orange",
         "NoPawnedItems": "購入可能な質入れアイテムがありません。"
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "キャンセルされました。",
         "DoNotHave": "このアイテムを持っていません！",
-        "Smelting": "精錬中...",
         "InvalidItem": "このアイテムは精錬できません！",
         "InvalidShop": "この質屋は利用できません。",
         "TooFarFromShop": "質屋から離れすぎています。",

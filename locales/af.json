@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Indien",
     "PawnShop": {
         "Title": "Pandwinkel",
         "Description": "Die pandwinkel is 'n plek waar jy jou items vir geld kan verkoop.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Koop items wat voorheen aan die pandwinkel verkoop is.",
         "SellDescription": "Verkoop jou items aan die pandwinkel vir vinnige kontant.",
         "NoStock": "Daar is tans geen voorraad beskikbaar nie.",
-        "NoItemsToSell": "Jy het geen items om te verkoop nie!",
         "PurchasedPawnedItem": "Jy het %s %s vir $%s gekoop",
         "color": "orange",
         "NoPawnedItems": "Daar is geen gepande items beskikbaar om te koop nie."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Gekanselleer.",
         "DoNotHave": "Jy het nie hierdie item nie!",
-        "Smelting": "Smelt...",
         "InvalidItem": "Hierdie item kan nie gesmelt word nie!",
         "InvalidShop": "Hierdie pandwinkel is nie beskikbaar nie.",
         "TooFarFromShop": "Jy is te ver van die pandwinkel.",

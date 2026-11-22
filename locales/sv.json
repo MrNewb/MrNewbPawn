@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Skicka",
     "PawnShop": {
         "Title": "Pantbank",
         "Description": "Pantbanken är en plats där du kan sälja dina föremål för pengar.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Köp föremål som tidigare sålts till pantbanken.",
         "SellDescription": "Sälj dina föremål till pantbanken för snabba pengar.",
         "NoStock": "Det finns inget lager tillgängligt för tillfället.",
-        "NoItemsToSell": "Du har inga föremål att sälja!",
         "PurchasedPawnedItem": "Du har köpt %s %s för $%s",
         "color": "orange",
         "NoPawnedItems": "Det finns inga pantsatta föremål tillgängliga för köp."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Avbrutet.",
         "DoNotHave": "Du har inte detta föremål!",
-        "Smelting": "Smälter...",
         "InvalidItem": "Detta föremål kan inte smältas!",
         "InvalidShop": "Denna pantbank är inte tillgänglig.",
         "TooFarFromShop": "Du är för långt från pantbanken.",

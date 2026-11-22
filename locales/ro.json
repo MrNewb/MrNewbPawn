@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Trimite",
     "PawnShop": {
         "Title": "Amanet",
         "Description": "Amanetul este un loc unde poți să îți vinzi obiectele pentru bani.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Cumpără obiecte vândute anterior la amanet.",
         "SellDescription": "Vinde-ți obiectele la amanet pentru bani rapizi.",
         "NoStock": "Nu există stoc disponibil în acest moment.",
-        "NoItemsToSell": "Nu ai obiecte de vânzare!",
         "PurchasedPawnedItem": "Ai cumpărat %s %s pentru $%s",
         "color": "orange",
         "NoPawnedItems": "Nu există obiecte amanetate disponibile pentru cumpărare."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Anulat.",
         "DoNotHave": "Nu ai acest obiect!",
-        "Smelting": "Topire...",
         "InvalidItem": "Acest obiect nu poate fi topit!",
         "InvalidShop": "Acest amanet nu este disponibil.",
         "TooFarFromShop": "Ești prea departe de amanet.",

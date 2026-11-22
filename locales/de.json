@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Bestätigen",
     "PawnShop": {
         "Title": "Pfandhaus",
         "Description": "Das Pfandhaus ist ein Ort, an dem Sie Ihre Gegenstände für Geld verkaufen können.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Kaufen Sie Gegenstände, die zuvor an das Pfandhaus verkauft wurden.",
         "SellDescription": "Verkaufen Sie Ihre Gegenstände an das Pfandhaus für schnelles Geld.",
         "NoStock": "Derzeit ist kein Bestand verfügbar.",
-        "NoItemsToSell": "Sie haben keine Gegenstände zu verkaufen!",
         "PurchasedPawnedItem": "Sie haben %s %s für $%s gekauft",
         "color": "orange",
         "NoPawnedItems": "Es sind keine verpfändeten Gegenstände zum Kauf verfügbar."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Abgebrochen.",
         "DoNotHave": "Sie haben diesen Gegenstand nicht!",
-        "Smelting": "Schmelze...",
         "InvalidItem": "Dieser Gegenstand kann nicht geschmolzen werden!",
         "InvalidShop": "Dieses Pfandhaus ist nicht verfügbar.",
         "TooFarFromShop": "Sie sind zu weit vom Pfandhaus entfernt.",

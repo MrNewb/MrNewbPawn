@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Submit",
     "PawnShop": {
         "Title": "Pawn Shop",
         "Description": "Cash for your junk.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Buy back what people dumped.",
         "SellDescription": "Dump your stuff for cash.",
         "NoStock": "There is no stock available at the moment.",
-        "NoItemsToSell": "You have no items to sell!",
         "PurchasedPawnedItem": "Bought %s %s for $%s",
         "color": "orange",
         "NoPawnedItems": "There are no pawned items available for purchase."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Canceled.",
         "DoNotHave": "You do not have this item!",
-        "Smelting": "Smelting...",
         "InvalidItem": "This item is not accepted here!",
         "InvalidShop": "This shop aint here.",
         "TooFarFromShop": "Get closer to the shop.",

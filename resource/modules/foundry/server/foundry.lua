@@ -1,114 +1,78 @@
 local foundries = {}
 local lastMeltAt = {}
-local maxMeltCount = 50
 
-local function getMeltRewards(itemName)
-	local meltItem = Config.MeltableItems and Config.MeltableItems[itemName]
-	if not meltItem then return end
-	return meltItem.rewards or (meltItem[1] and meltItem)
+for foundryId, foundry in pairs(Config.FoundryLocations) do
+	foundries[foundryId] = foundry.Zone.coords
 end
 
-local function isPlayerNearFoundry(src, foundry)
+local function isPlayerNearFoundry(src, foundryCoords)
 	local ped = GetPlayerPed(src)
 	if ped == 0 then return false end
-	return #(GetEntityCoords(ped) - foundry.coords) <= 10.0
+	return #(GetEntityCoords(ped) - foundryCoords) <= 10.0
 end
 
 local function canCarryMeltRewards(src, rewards, amount)
 	for rewardIndex = 1, #rewards do
 		local reward = rewards[rewardIndex]
-		local rewardCount = math.floor(tonumber(reward.count) or 0) * amount
-		if rewardCount < 1 then return false end
-		if not bridge.inventory.canCarryItem(src, reward.itemName, rewardCount) then
+		if not bridge.inventory.canCarryItem(src, reward.itemName, reward.count * amount) then
 			return false
 		end
 	end
 	return true
 end
 
-RegisterNetEvent('MrNewbPawn:server:smeltedItem', function(itemName, amount, foundryId)
-	local src = source
-	local playerPed = GetPlayerPed(src)
-	if playerPed == 0 or not DoesEntityExist(playerPed) then return end
-	if type(itemName) ~= 'string' or itemName == '' or #itemName > 64 then return end
-	if type(foundryId) ~= 'string' or foundryId == '' or #foundryId > 64 then return end
-
-	amount = tonumber(amount)
-	if not amount or amount ~= amount or amount % 1 ~= 0 or amount < 1 or amount > maxMeltCount then
-		bridge.notifications.notify(src, { description = locale('Warnings.MaxSmeltBatch', maxMeltCount), type = 'error', duration = 6000 })
-		return
-	end
-
-	local gameTime = GetGameTimer()
-	if lastMeltAt[src] and gameTime - lastMeltAt[src] < 1000 then return end
-
-	local foundry = foundries[foundryId]
-	if not foundry or not isPlayerNearFoundry(src, foundry) then
-		bridge.notifications.notify(src, { description = locale('Warnings.Canceled'), type = 'error', duration = 6000 })
-		return
-	end
-
-	local rewards = getMeltRewards(itemName)
-	if not rewards or #rewards < 1 then
-		bridge.notifications.notify(src, { description = locale('Warnings.InvalidItem'), type = 'error', duration = 6000 })
-		return
-	end
-
-	if bridge.inventory.getItemCount(src, itemName) < amount then
-		bridge.notifications.notify(src, { description = locale('Warnings.DoNotHave'), type = 'error', duration = 6000 })
-		return
-	end
-
-	if not canCarryMeltRewards(src, rewards, amount) then
-		bridge.notifications.notify(src, { description = locale('Warnings.NotEnoughSpace'), type = 'error', duration = 6000 })
-		return
-	end
-
-	lastMeltAt[src] = gameTime
-
-	if not bridge.inventory.removeItem(src, itemName, amount) then return end
-
-	local grantedRewards = {}
+local function grantMeltRewards(src, rewards, amount)
+	local granted = {}
 	for rewardIndex = 1, #rewards do
 		local reward = rewards[rewardIndex]
-		local rewardCount = math.floor(tonumber(reward.count) or 0) * amount
+		local rewardCount = reward.count * amount
 		if not bridge.inventory.addItem(src, reward.itemName, rewardCount) then
-			for grantedIndex = 1, #grantedRewards do
-				local grantedReward = grantedRewards[grantedIndex]
-				bridge.inventory.removeItem(src, grantedReward.itemName, grantedReward.count)
+			for grantedIndex = 1, #granted do
+				bridge.inventory.removeItem(src, granted[grantedIndex].itemName, granted[grantedIndex].count)
 			end
-			bridge.inventory.addItem(src, itemName, amount)
-			bridge.notifications.notify(src, { description = locale('Warnings.NotEnoughSpace'), type = 'error', duration = 6000 })
-			return
+			return false
 		end
-		grantedRewards[#grantedRewards + 1] = { itemName = reward.itemName, count = rewardCount }
+		granted[#granted + 1] = { itemName = reward.itemName, count = rewardCount }
+	end
+	return true
+end
+
+local function smeltedItem(itemName, amount, foundryId)
+	local src = source
+	if src == '' or not IsValidId(itemName) or not IsValidId(foundryId) then return end
+
+	amount = ParseWholeNumber(amount, MAX_MELT_COUNT)
+	if not amount then
+		return bridge.notifications.notify(src, { description = locale('Warnings.MaxSmeltBatch', MAX_MELT_COUNT), type = 'error', duration = 6000 })
+	end
+	if IsOnCooldown(lastMeltAt, src) then return end
+
+	local foundryCoords = foundries[foundryId]
+	local rewards = GetMeltRewards(itemName)
+	local failKey
+	if not foundryCoords or not isPlayerNearFoundry(src, foundryCoords) then
+		failKey = 'Warnings.Canceled'
+	elseif not rewards then
+		failKey = 'Warnings.InvalidItem'
+	elseif not canCarryMeltRewards(src, rewards, amount) then
+		failKey = 'Warnings.NotEnoughSpace'
+	elseif not bridge.inventory.removeItem(src, itemName, amount) then
+		failKey = 'Warnings.DoNotHave'
+	elseif not grantMeltRewards(src, rewards, amount) then
+		bridge.inventory.addItem(src, itemName, amount)
+		failKey = 'Warnings.NotEnoughSpace'
 	end
 
-	if Config.Logging then
-		local identifier = bridge.framework.getIdentifier(src)
-		local characterName = identifier and bridge.framework.getCharacterName(identifier) or 'Unknown'
-		print(('[MrNewbPawn] %s'):format(locale('LogMessages.SmeltedItem', characterName, amount, itemName)))
+	if failKey then
+		return bridge.notifications.notify(src, { description = locale(failKey), type = 'error', duration = 6000 })
 	end
 
+	LogPawnAction(src, 'LogMessages.SmeltedItem', amount, itemName)
 	bridge.notifications.notify(src, { description = locale('Smelting.SmeltingSuccess'), type = 'success', duration = 6000 })
-end)
+end
+
+RegisterNetEvent('MrNewbPawn:server:smeltedItem', smeltedItem)
 
 AddEventHandler('playerDropped', function()
 	lastMeltAt[source] = nil
-end)
-
-AddEventHandler('onResourceStart', function(resourceName)
-	if cache.resource ~= resourceName then return end
-
-	for foundryId, foundry in pairs(Config.FoundryLocations or {}) do
-		local zone = foundry.Zone
-		if zone and zone.coords then
-			foundries[foundryId] = { coords = zone.coords }
-		end
-	end
-end)
-
-AddEventHandler('onResourceStop', function(resourceName)
-	if cache.resource ~= resourceName then return end
-	foundries = {}
 end)

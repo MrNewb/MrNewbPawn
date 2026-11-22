@@ -1,5 +1,4 @@
 {
-    "SubmitText": "إرسال",
     "PawnShop": {
         "Title": "محل الرهن",
         "Description": "محل الرهن هو مكان يمكنك فيه بيع أغراضك مقابل المال.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "اشتري عناصر بيعت سابقاً إلى محل الرهن.",
         "SellDescription": "بع عناصرك إلى محل الرهن للحصول على نقد سريع.",
         "NoStock": "لا يوجد مخزون متاح في الوقت الحالي.",
-        "NoItemsToSell": "ليس لديك عناصر لبيعها!",
         "PurchasedPawnedItem": "لقد اشتريت %s %s بـ $%s",
         "color": "orange",
         "NoPawnedItems": "لا توجد عناصر مرهونة متاحة للشراء."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "ملغى.",
         "DoNotHave": "لا تملك هذا العنصر!",
-        "Smelting": "جاري الصهر...",
         "InvalidItem": "لا يمكن صهر هذا العنصر!",
         "InvalidShop": "متجر الرهن هذا غير متاح.",
         "TooFarFromShop": "أنت بعيد جداً عن متجر الرهن.",

@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Send",
     "PawnShop": {
         "Title": "Pantlåner",
         "Description": "Pantlåneren er et sted, hvor du kan sælge dine ting for penge.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Køb genstande tidligere solgt til pantlåneren.",
         "SellDescription": "Sælg dine ting til pantlåneren for hurtige penge.",
         "NoStock": "Der er intet lager tilgængeligt på nuværende tidspunkt.",
-        "NoItemsToSell": "Du har ingen genstande at sælge!",
         "PurchasedPawnedItem": "Du har købt %s %s for $%s",
         "color": "orange",
         "NoPawnedItems": "Der er ingen pantsatte genstande tilgængelige til køb."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Aflyst.",
         "DoNotHave": "Du har ikke denne genstand!",
-        "Smelting": "Smelter...",
         "InvalidItem": "Denne genstand kan ikke smeltes!",
         "InvalidShop": "Denne pantelåner er ikke tilgængelig.",
         "TooFarFromShop": "Du er for langt væk fra pantelåneren.",

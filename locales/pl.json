@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Wyślij",
     "PawnShop": {
         "Title": "Lombard",
         "Description": "Lombard to miejsce, gdzie możesz sprzedać swoje przedmioty za pieniądze.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Kup przedmioty wcześniej sprzedane do lombardu.",
         "SellDescription": "Sprzedaj swoje przedmioty do lombardu za szybką gotówkę.",
         "NoStock": "W tej chwili nie ma dostępnych towarów.",
-        "NoItemsToSell": "Nie masz przedmiotów do sprzedaży!",
         "PurchasedPawnedItem": "Kupiłeś %s %s za $%s",
         "color": "orange",
         "NoPawnedItems": "Nie ma zastawionych przedmiotów dostępnych do zakupu."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Anulowano.",
         "DoNotHave": "Nie masz tego przedmiotu!",
-        "Smelting": "Przetapianie...",
         "InvalidItem": "Tego przedmiotu nie można przetopić!",
         "InvalidShop": "Ten lombard jest niedostępny.",
         "TooFarFromShop": "Jesteś za daleko od lombardu.",

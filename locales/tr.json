@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Gönder",
     "PawnShop": {
         "Title": "Rehinci",
         "Description": "Rehinci, eşyalarınızı para karşılığında satabileceğiniz bir yerdir.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Daha önce rehinciye satılan eşyaları satın alın.",
         "SellDescription": "Hızlı nakit için eşyalarınızı rehinciye satın.",
         "NoStock": "Şu anda mevcut stok yok.",
-        "NoItemsToSell": "Satacak eşyanız yok!",
         "PurchasedPawnedItem": "%s %s'yi $%s'ye satın aldınız",
         "color": "orange",
         "NoPawnedItems": "Satın alınabilecek rehinli eşya yok."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "İptal edildi.",
         "DoNotHave": "Bu eşyanız yok!",
-        "Smelting": "Eritiliyor...",
         "InvalidItem": "Bu eşya eritilemez!",
         "InvalidShop": "Bu rehinci dükkanı kullanılamıyor.",
         "TooFarFromShop": "Rehinci dükkanından çok uzaktasınız.",

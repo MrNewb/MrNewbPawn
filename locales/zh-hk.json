@@ -1,5 +1,4 @@
 {
-    "SubmitText": "提交",
     "PawnShop": {
         "Title": "當舖",
         "Description": "當舖是一個可以出售物品換取金錢的地方。",
@@ -18,7 +17,6 @@
         "PawnedDescription": "購買之前出售給當舖的物品。",
         "SellDescription": "將您的物品出售給當舖以獲得快速現金。",
         "NoStock": "目前沒有庫存可用。",
-        "NoItemsToSell": "您沒有物品可出售！",
         "PurchasedPawnedItem": "您已購買 %s %s 花費 $%s",
         "color": "orange",
         "NoPawnedItems": "沒有當品可供購買。"
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "已取消。",
         "DoNotHave": "您沒有這個物品！",
-        "Smelting": "熔煉中...",
         "InvalidItem": "該物品無法熔煉！",
         "InvalidShop": "此當舖不可用。",
         "TooFarFromShop": "您離當舖太遠了。",

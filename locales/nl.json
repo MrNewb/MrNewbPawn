@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Verzenden",
     "PawnShop": {
         "Title": "Pandjesbaas",
         "Description": "De pandjesbaas is een plek waar je je spullen kunt verkopen voor geld.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Koop items die eerder aan de pandjesbaas zijn verkocht.",
         "SellDescription": "Verkoop je items aan de pandjesbaas voor snel geld.",
         "NoStock": "Er is momenteel geen voorraad beschikbaar.",
-        "NoItemsToSell": "Je hebt geen items om te verkopen!",
         "PurchasedPawnedItem": "Je hebt %s %s gekocht voor $%s",
         "color": "orange",
         "NoPawnedItems": "Er zijn geen verpande items beschikbaar om te kopen."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Geannuleerd.",
         "DoNotHave": "Je hebt dit item niet!",
-        "Smelting": "Smelten...",
         "InvalidItem": "Dit item kan niet worden gesmolten!",
         "InvalidShop": "Deze pandjeshuis is niet beschikbaar.",
         "TooFarFromShop": "Je bent te ver van het pandjeshuis.",

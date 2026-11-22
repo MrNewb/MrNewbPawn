@@ -1,24 +1,5 @@
 local pawnShops = {}
-local maxTradeCount = 100
 local sellDurationMs = 3000
-
-local function getItemLabelAndIcon(itemName)
-	local itemInfo = bridge.inventory.getItemInfo(itemName) or {}
-	return itemInfo.label or itemName, itemInfo.image or 'fa-solid fa-box'
-end
-
-local function askItemAmount(heading, label, maxCount)
-	if not maxCount or maxCount < 1 then return end
-
-	local input = bridge.inputs.inputdialog(heading, {
-		{ type = 'slider', label = label, min = 1, max = maxCount, step = 1 },
-	})
-	if not input or not input[1] then return end
-
-	local amount = math.floor(tonumber(input[1]) or 0)
-	if amount < 1 then return end
-	return amount
-end
 
 local function isShopOpen(shop)
 	local storeHours = shop.storeHours
@@ -44,12 +25,7 @@ local function playClerkHandoff(shopId)
 		end
 
 		ClearPedTasks(clerkPed)
-		if not lib.requestAnimDict('mp_common') then
-			if DoesEntityExist(clerkPed) then
-				TaskStartScenarioInPlace(clerkPed, 'WORLD_HUMAN_SMOKING', 0, true)
-			end
-			return
-		end
+		lib.requestAnimDict('mp_common')
 		if DoesEntityExist(clerkPed) then
 			TaskPlayAnim(clerkPed, 'mp_common', 'givetake1_b', 3.0, 3.0, sellDurationMs, 49, 0.0, false, false, false)
 			Wait(sellDurationMs)
@@ -77,22 +53,17 @@ local function startSellProgress(shopId, itemName, count, itemLabel)
 end
 
 local function itemSellAmount(shopId, itemName, itemLabel)
-	if not itemName or not shopId then return end
 	local ownedCount = bridge.inventory.getItemCount(itemName)
 	if ownedCount < 1 then return bridge.notifications.notify({ description = locale('Warnings.DoNotHave'), type = 'error', duration = 6000 }) end
-	local count = askItemAmount(itemLabel, locale('PawnShop.AmountToSell'), math.min(ownedCount, maxTradeCount))
+	local count = AskItemAmount(itemLabel, locale('PawnShop.AmountToSell'), math.min(ownedCount, MAX_TRADE_COUNT))
 	if not count then return end
-	if count <= 0 then return end
 	startSellProgress(shopId, itemName, count, itemLabel)
 end
 
 local function openSellMenu(shopId)
-	local shop = Config.PawnShops[shopId]
-	if not shop or not shop.itemlist then return end
-
 	local menuOptions = {}
-	for itemName, sellPrice in pairs(shop.itemlist) do
-		local itemLabel, itemIcon = getItemLabelAndIcon(itemName)
+	for itemName, sellPrice in pairs(Config.PawnShops[shopId].itemlist) do
+		local itemLabel, itemIcon = GetItemLabelAndIcon(itemName)
 		menuOptions[#menuOptions + 1] = {
 			title = itemLabel,
 			description = locale('PawnShop.SellItems', sellPrice),
@@ -112,7 +83,7 @@ local function openSellMenu(shopId)
 end
 
 local function openBuyMenu(shopId)
-	local stockItems = lib.callback.await('MrNewbPawn:Callback:GetPawnedStock', false, shopId)
+	local stockItems = lib.callback.await('MrNewbPawn:server:requestedStock', false, shopId)
 	if not next(stockItems) then
 		bridge.notifications.notify({ description = locale('PawnShop.NoPawnedItems'), type = 'error', duration = 3000 })
 		return
@@ -120,14 +91,14 @@ local function openBuyMenu(shopId)
 
 	local menuOptions = {}
 	for itemName, stock in pairs(stockItems) do
-		local itemLabel, itemIcon = getItemLabelAndIcon(itemName)
+		local itemLabel, itemIcon = GetItemLabelAndIcon(itemName)
 		menuOptions[#menuOptions + 1] = {
 			title = itemLabel,
 			description = locale('PawnShop.PawnedItemDescription', stock.count, stock.price),
 			icon = itemIcon,
 			iconColor = locale('PawnShop.color'),
 			onSelect = function()
-				local amount = askItemAmount(locale('PawnShop.AmountToPurchase'), locale('PawnShop.AmountToPurchase'), math.min(stock.count, maxTradeCount))
+				local amount = AskItemAmount(locale('PawnShop.AmountToPurchase'), locale('PawnShop.AmountToPurchase'), math.min(stock.count, MAX_TRADE_COUNT))
 				if not amount then return end
 				TriggerServerEvent('MrNewbPawn:server:purchasedPawnedItem', shopId, itemName, amount)
 			end,
@@ -143,7 +114,6 @@ end
 
 local function openShopMenu(shopId)
 	local shop = Config.PawnShops[shopId]
-	if not shop then return end
 	if not isShopOpen(shop) then return bridge.notifications.notify({ description = locale('PawnShop.ShopClosed'), type = 'error', duration = 3000 }) end
 
 	local menuOptions = {
@@ -184,18 +154,18 @@ local function openShopMenu(shopId)
 end
 
 function CreatePawnShops()
-	for shopId, shop in pairs(Config.PawnShops or {}) do
+	for shopId, shop in pairs(Config.PawnShops) do
 		if not pawnShops[shopId] then
 			local blip
 			if shop.Blip then
 				blip = AddBlipForCoord(shop.position.x, shop.position.y, shop.position.z)
 				SetBlipSprite(blip, shop.Blip.sprite)
 				SetBlipColour(blip, shop.Blip.color)
-				SetBlipScale(blip, shop.Blip.scale or 0.8)
+				SetBlipScale(blip, shop.Blip.scale)
 				SetBlipAsShortRange(blip, true)
 				SetBlipDisplay(blip, 4)
 				BeginTextCommandSetBlipName('STRING')
-				AddTextComponentSubstringPlayerName(shop.Blip.label or shopId)
+				AddTextComponentSubstringPlayerName(shop.Blip.label)
 				EndTextCommandSetBlipName(blip)
 			end
 
@@ -205,7 +175,7 @@ function CreatePawnShops()
 				model = shop.model,
 				coords = vector3(shop.position.x, shop.position.y, shop.position.z),
 				heading = shop.position.w,
-				radius = shop.radius or 100.0,
+				radius = shop.radius,
 				scenario = 'WORLD_HUMAN_SMOKING',
 				options = {
 					{
@@ -255,9 +225,3 @@ AddEventHandler('onResourceStop', function(resourceName)
 	if cache.resource ~= resourceName then return end
 	RemovePawnShops()
 end)
-
--- CreateThread(function()
--- 	Wait(500)
--- 	if next(pawnShops) then return end
--- 	CreatePawnShops()
--- end)

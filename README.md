@@ -2,7 +2,7 @@
 
 Pawn shops with optional buy-back of sold stock, plus foundry box zones for smelting.
 
-[Documentation](https://mrnewb.github.io/docs/mrnewbpawn) · [Install guide](https://mrnewb.github.io/docs/mrnewbpawn/install) · [Tebex](https://mrnewbscripts.tebex.io/) · [Discord](https://discord.gg/mrnewbscripts) · [Preview](https://www.youtube.com/watch?v=T4BHIxLF6F8)
+[Documentation](https://mrnewb.github.io/docs/mrnewbpawn) | [Install guide](https://mrnewb.github.io/docs/mrnewbpawn/install) | [Tebex](https://mrnewbscripts.tebex.io/) | [Discord](https://discord.gg/mrnewbscripts) | [Preview](https://www.youtube.com/watch?v=T4BHIxLF6F8)
 
 Documentation is available at https://mrnewb.github.io/docs/
 
@@ -17,7 +17,7 @@ Documentation is available at https://mrnewb.github.io/docs/
 - Optional in-game store hours
 - Foundry box zones with melt recipes
 - Sold stock is in-memory per shop until restart
-- Items are **not** usable — shops and foundries are the only path
+- Items are **not** usable - shops and foundries are the only path
 
 ## Install
 
@@ -33,6 +33,6 @@ Copy `[INSTALL]/images/` into your inventory images folder. Do not add `server.e
 
 ## Config
 
-`resource/open/shared/config.lua` — shop locations, sell lists, hours, `PurchaseStock` / `PurchaseMarkup`, foundry boxes, melt recipes.
+`resource/open/shared/config.lua` - shop locations, sell lists, hours, `PurchaseStock` / `PurchaseMarkup`, foundry boxes, melt recipes.
 
-[Item setup](https://mrnewb.github.io/docs/mrnewbpawn/install/inventory) · [Item images](https://mrnewb.github.io/docs/mrnewbpawn/install/inventory-images).
+[Item setup](https://mrnewb.github.io/docs/mrnewbpawn/install/inventory) | [Item images](https://mrnewb.github.io/docs/mrnewbpawn/install/inventory-images).

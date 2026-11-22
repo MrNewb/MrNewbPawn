@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Enviar",
     "PawnShop": {
         "Title": "Casa de Penhores",
         "Description": "A casa de penhores é um lugar onde você pode vender seus itens por dinheiro.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Compre itens previamente vendidos à casa de penhores.",
         "SellDescription": "Venda seus itens à casa de penhores por dinheiro rápido.",
         "NoStock": "Não há estoque disponível no momento.",
-        "NoItemsToSell": "Você não tem itens para vender!",
         "PurchasedPawnedItem": "Você comprou %s %s por $%s",
         "color": "orange",
         "NoPawnedItems": "Não há itens penhorados disponíveis para compra."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Cancelado.",
         "DoNotHave": "Você não tem este item!",
-        "Smelting": "Fundindo...",
         "InvalidItem": "Este item não pode ser fundido!",
         "InvalidShop": "Esta casa de penhores não está disponível.",
         "TooFarFromShop": "Você está muito longe da casa de penhores.",

@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Pošaljite",
     "PawnShop": {
         "Title": "Zalagaonica",
         "Description": "Zalagaonica je mjesto gdje možete prodati svoje predmete za novac.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Kupite predmete koji su prethodno prodani u zalagaonicu.",
         "SellDescription": "Prodajte svoje predmete u zalagaonicu za brz novac.",
         "NoStock": "Trenutno nema dostupne robe.",
-        "NoItemsToSell": "Nemate predmete za prodaju!",
         "PurchasedPawnedItem": "Kupili ste %s %s za $%s",
         "color": "orange",
         "NoPawnedItems": "Nema založenih predmeta dostupnih za kupnju."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Otkazano.",
         "DoNotHave": "Nemate ovaj predmet!",
-        "Smelting": "Taljenje...",
         "InvalidItem": "Ovaj predmet se ne može rastopiti!",
         "InvalidShop": "Ova zalagaonica nije dostupna.",
         "TooFarFromShop": "Predaleko ste od zalagaonice.",

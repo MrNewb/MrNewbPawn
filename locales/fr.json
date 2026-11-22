@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Soumettre",
     "PawnShop": {
         "Title": "Prêteur sur Gages",
         "Description": "Le prêteur sur gages est un endroit où vous pouvez vendre vos objets contre de l'argent.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Achetez des objets précédemment vendus au prêteur sur gages.",
         "SellDescription": "Vendez vos objets au prêteur sur gages pour de l'argent rapide.",
         "NoStock": "Il n'y a pas de stock disponible pour le moment.",
-        "NoItemsToSell": "Vous n'avez pas d'objets à vendre!",
         "PurchasedPawnedItem": "Vous avez acheté %s %s pour $%s",
         "color": "orange",
         "NoPawnedItems": "Il n'y a pas d'objets mis en gage disponibles à l'achat."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Annulé.",
         "DoNotHave": "Vous n'avez pas cet objet!",
-        "Smelting": "Fonte en cours...",
         "InvalidItem": "Cet objet ne peut pas être fondu!",
         "InvalidShop": "Ce prêteur sur gages n'est pas disponible.",
         "TooFarFromShop": "Vous êtes trop loin du prêteur sur gages.",

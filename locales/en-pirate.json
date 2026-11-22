@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Arrr! Submit",
     "PawnShop": {
         "Title": "Pawn Shoppe",
         "Description": "Th' pawn shoppe be a place where ye can sell yer booty fer doubloons.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Buy booty previously pawned t' th' shoppe.",
         "SellDescription": "Sell yer booty t' th' pawn shoppe fer quick doubloons.",
         "NoStock": "No booty be available at th' moment.",
-        "NoItemsToSell": "Ye have no booty t' sell!",
         "PurchasedPawnedItem": "Ye purchased %s %s fer $%s",
         "color": "orange",
         "NoPawnedItems": "No pawned booty be available fer purchase."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Avast! Canceled.",
         "DoNotHave": "Ye don't have this booty!",
-        "Smelting": "Smeltin'...",
         "InvalidItem": "This booty can't be smelted!",
         "InvalidShop": "This pawn shoppe be unavailable.",
         "TooFarFromShop": "Ye be too far from th' pawn shoppe.",

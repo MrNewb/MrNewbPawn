@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Lähetä",
     "PawnShop": {
         "Title": "Panttilainaamo",
         "Description": "Panttilainaamo on paikka, jossa voit myydä tavarasi rahaksi.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Osta esineitä, jotka on aiemmin myyty panttilainaamoon.",
         "SellDescription": "Myy tavarasi panttilainaamoon nopeaa käteistä varten.",
         "NoStock": "Varastoa ei ole tällä hetkellä saatavilla.",
-        "NoItemsToSell": "Sinulla ei ole esineitä myytäväksi!",
         "PurchasedPawnedItem": "Ostit %s %s $%s:lla",
         "color": "orange",
         "NoPawnedItems": "Pantatuista esineistä ei ole saatavilla ostettavaksi."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Peruutettu.",
         "DoNotHave": "Sinulla ei ole tätä esinettä!",
-        "Smelting": "Sulatetaan...",
         "InvalidItem": "Tätä esinettä ei voi sulattaa!",
         "InvalidShop": "Tämä panttilainaamo ei ole käytettävissä.",
         "TooFarFromShop": "Olet liian kaukana panttilainaamosta.",

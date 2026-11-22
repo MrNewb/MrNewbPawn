@@ -1,5 +1,4 @@
 {
-    "SubmitText": "Invia",
     "PawnShop": {
         "Title": "Banco dei Pegni",
         "Description": "Il banco dei pegni è un posto dove puoi vendere i tuoi oggetti per denaro.",
@@ -18,7 +17,6 @@
         "PawnedDescription": "Acquista oggetti precedentemente venduti al banco dei pegni.",
         "SellDescription": "Vendi i tuoi oggetti al banco dei pegni per denaro veloce.",
         "NoStock": "Non ci sono scorte disponibili al momento.",
-        "NoItemsToSell": "Non hai oggetti da vendere!",
         "PurchasedPawnedItem": "Hai acquistato %s %s per $%s",
         "color": "orange",
         "NoPawnedItems": "Non ci sono oggetti impegnati disponibili per l'acquisto."
@@ -37,7 +35,6 @@
     "Warnings": {
         "Canceled": "Annullato.",
         "DoNotHave": "Non hai questo oggetto!",
-        "Smelting": "Fondendo...",
         "InvalidItem": "Questo oggetto non può essere fuso!",
         "InvalidShop": "Questo banco dei pegni non è disponibile.",
         "TooFarFromShop": "Sei troppo lontano dal banco dei pegni.",

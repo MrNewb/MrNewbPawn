@@ -1,21 +1,9 @@
 local foundries = {}
-local maxMeltCount = 50
 local maxMeltDuration = 30000
 local defaultMeltProp = 'prop_cs_cardbox_01'
 
 local activeMeltProp
 local activeTravelId = 0
-
-local function getItemLabelAndIcon(itemName)
-	local itemInfo = bridge.inventory.getItemInfo(itemName) or {}
-	return itemInfo.label or itemName, itemInfo.image or 'fa-solid fa-box'
-end
-
-local function getMeltRewards(itemName)
-	local meltItem = Config.MeltableItems and Config.MeltableItems[itemName]
-	if not meltItem then return end
-	return meltItem.rewards or (meltItem[1] and meltItem)
-end
 
 local function getWaypointPathLength(waypoints)
 	local pathLength = 0.0
@@ -32,7 +20,7 @@ local function getMeltDuration(foundry, progressDuration)
 		return progressDuration
 	end
 
-	local lerpSpeed = lerpProp.lerpSpeed or 0.25
+	local lerpSpeed = lerpProp.lerpSpeed
 	if lerpSpeed <= 0 then return progressDuration end
 
 	local travelDurationMs = (getWaypointPathLength(waypoints) / lerpSpeed) * 1000
@@ -49,15 +37,13 @@ local function startMeltPropTravel(foundry, durationMs, itemName)
 	local waypoints = foundry.lerpProp and foundry.lerpProp.waypoints
 	if not waypoints or #waypoints < 2 or durationMs <= 0 then return end
 
-	local meltItem = Config.MeltableItems[itemName]
-	local propModel = (meltItem and meltItem.prop) or defaultMeltProp
+	local propModel = Config.MeltableItems[itemName].prop or defaultMeltProp
 
 	activeTravelId = activeTravelId + 1
 	local thisTravelId = activeTravelId
 
 	CreateThread(function()
 		local modelHash = lib.requestModel(propModel)
-		if not modelHash then return end
 
 		local startCoords = waypoints[1]
 		local meltProp = CreateObject(modelHash, startCoords.x, startCoords.y, startCoords.z, false, false, false)
@@ -106,22 +92,8 @@ local function startMeltPropTravel(foundry, durationMs, itemName)
 	end
 end
 
-local function askItemAmount(heading, label, maxCount)
-	if not maxCount or maxCount < 1 then return end
-
-	local input = bridge.inputs.inputdialog(heading, {
-		{ type = 'slider', label = label, min = 1, max = maxCount, step = 1 },
-	})
-	if not input or not input[1] then return end
-
-	local amount = math.floor(tonumber(input[1]) or 0)
-	if amount < 1 then return end
-	return amount
-end
-
 local function startMelting(foundryId, itemName)
 	local foundry = Config.FoundryLocations[foundryId]
-	if not foundry or not getMeltRewards(itemName) then return end
 
 	local ownedCount = bridge.inventory.getItemCount(itemName)
 	if ownedCount < 1 then
@@ -129,8 +101,8 @@ local function startMelting(foundryId, itemName)
 		return
 	end
 
-	local itemLabel = getItemLabelAndIcon(itemName)
-	local amount = askItemAmount(itemLabel, locale('Smelting.AmountToSmelt'), math.min(ownedCount, maxMeltCount))
+	local itemLabel = GetItemLabelAndIcon(itemName)
+	local amount = AskItemAmount(itemLabel, locale('Smelting.AmountToSmelt'), math.min(ownedCount, MAX_MELT_COUNT))
 	if not amount then return end
 
 	local durationMs = math.min(amount * 1000, maxMeltDuration)
@@ -167,14 +139,14 @@ local function openFoundryMenu(foundryId)
 		},
 	}
 
-	for itemName in pairs(Config.MeltableItems or {}) do
-		local rewards = getMeltRewards(itemName)
+	for itemName in pairs(Config.MeltableItems) do
+		local rewards = GetMeltRewards(itemName)
 		if rewards then
-			local itemLabel, itemIcon = getItemLabelAndIcon(itemName)
+			local itemLabel, itemIcon = GetItemLabelAndIcon(itemName)
 			local rewardText = {}
 			for rewardIndex = 1, #rewards do
 				local reward = rewards[rewardIndex]
-				local rewardLabel = getItemLabelAndIcon(reward.itemName)
+				local rewardLabel = GetItemLabelAndIcon(reward.itemName)
 				rewardText[#rewardText + 1] = ('%d x %s'):format(reward.count, rewardLabel)
 			end
 
@@ -198,44 +170,42 @@ local function openFoundryMenu(foundryId)
 end
 
 function CreateFoundries()
-	for foundryId, foundry in pairs(Config.FoundryLocations or {}) do
+	for foundryId, foundry in pairs(Config.FoundryLocations) do
 		if not foundries[foundryId] then
 			local zone = foundry.Zone
-			if zone and zone.coords and zone.size then
-				local blip
-				if foundry.Blip then
-					blip = AddBlipForCoord(zone.coords.x, zone.coords.y, zone.coords.z)
-					SetBlipSprite(blip, foundry.Blip.sprite)
-					SetBlipColour(blip, foundry.Blip.color)
-					SetBlipScale(blip, foundry.Blip.scale or 0.8)
-					SetBlipAsShortRange(blip, true)
-					SetBlipDisplay(blip, 4)
-					BeginTextCommandSetBlipName('STRING')
-					AddTextComponentSubstringPlayerName(foundry.Blip.label or foundryId)
-					EndTextCommandSetBlipName(blip)
-				end
-
-				local zoneId = bridge.target.addBoxZone({
-					name = ('MrNewbPawn:foundry:%s'):format(foundryId),
-					coords = zone.coords,
-					size = zone.size,
-					rotation = zone.rotation or 0.0,
-					debug = Config.Debug,
-					options = {
-						{
-							name = ('MrNewbPawn:foundry:%s'):format(foundryId),
-							label = locale('Smelting.TargetLabel'),
-							icon = locale('Smelting.TargetIcon'),
-							distance = 5.0,
-							onSelect = function()
-								openFoundryMenu(foundryId)
-							end,
-						},
-					},
-				})
-
-				foundries[foundryId] = { blip = blip, zoneId = zoneId }
+			local blip
+			if foundry.Blip then
+				blip = AddBlipForCoord(zone.coords.x, zone.coords.y, zone.coords.z)
+				SetBlipSprite(blip, foundry.Blip.sprite)
+				SetBlipColour(blip, foundry.Blip.color)
+				SetBlipScale(blip, foundry.Blip.scale)
+				SetBlipAsShortRange(blip, true)
+				SetBlipDisplay(blip, 4)
+				BeginTextCommandSetBlipName('STRING')
+				AddTextComponentSubstringPlayerName(foundry.Blip.label)
+				EndTextCommandSetBlipName(blip)
 			end
+
+			local zoneId = bridge.target.addBoxZone({
+				name = ('MrNewbPawn:foundry:%s'):format(foundryId),
+				coords = zone.coords,
+				size = zone.size,
+				rotation = zone.rotation,
+				debug = Config.Debug,
+				options = {
+					{
+						name = ('MrNewbPawn:foundry:%s'):format(foundryId),
+						label = locale('Smelting.TargetLabel'),
+						icon = locale('Smelting.TargetIcon'),
+						distance = 5.0,
+						onSelect = function()
+							openFoundryMenu(foundryId)
+						end,
+					},
+				},
+			})
+
+			foundries[foundryId] = { blip = blip, zoneId = zoneId }
 		end
 	end
 end
@@ -268,9 +238,3 @@ AddEventHandler('onResourceStop', function(resourceName)
 	if cache.resource ~= resourceName then return end
 	RemoveFoundries()
 end)
-
--- CreateThread(function()
--- 	Wait(500)
--- 	if next(foundries) then return end
--- 	CreateFoundries()
--- end)
