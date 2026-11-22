@@ -1,8 +1,12 @@
 # MrNewbPawn
 
+![MrNewbPawn](.github/assets/banner.webp)
+
 Pawn shops with optional buy-back of sold stock, plus foundry box zones for smelting.
 
-[Documentation](https://mrnewb.github.io/docs/mrnewbpawn) | [Install guide](https://mrnewb.github.io/docs/mrnewbpawn/install) | [Tebex](https://mrnewbscripts.tebex.io/) | [Discord](https://discord.gg/mrnewbscripts) | [Preview](https://www.youtube.com/watch?v=T4BHIxLF6F8)
+[Documentation](https://mrnewb.github.io/docs/mrnewbpawn) | [Install guide](https://mrnewb.github.io/docs/mrnewbpawn/install) | [Tebex](https://mrnewbscripts.tebex.io/) | [Discord](https://discord.gg/mrnewbscripts) | [Preview](https://www.youtube.com/watch?v=T4BHIxLF6F8) | [Short](https://www.youtube.com/shorts/f6ZolcLqgZ4)
+
+<a href="https://www.youtube.com/shorts/f6ZolcLqgZ4"><img src=".github/assets/short.webp" alt="MrNewbPawn on YouTube Shorts" width="200"></a>
 
 Documentation is available at https://mrnewb.github.io/docs/
 
